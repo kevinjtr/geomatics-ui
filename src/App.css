@@ -16,4 +16,8 @@
   #portfolio {
     width: 110%;
   }
+  #annoucments{
+    max-width: 700px;
+    padding: 100px;
+}
 }

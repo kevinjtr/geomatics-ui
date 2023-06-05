@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 export const Navigation = (props) => {
   return (
-    <nav id="menu" className="navbar navbar-default navbar-fixed-top">
+    <nav id="menu" className="navbar navbar-default">
       <div className="container">
         <div className="navbar-header">
           <button
@@ -18,7 +18,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <Link className="navbar-brand page-scroll" to="/" reloadDocument>
-            React Landing Page
+            Geomatics
           </Link>{" "}
         </div>
 
@@ -28,19 +28,19 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <Link to="/gisapplications" className="page-scroll">
+              <Link to="/gisapplications">
                 GIS Applications
               </Link>
             </li>
             <li>
-              <a href="#training" className="page-scroll">
+              <Link to="/training" className="page-scroll">
                 Training
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#support-services" className="page-scroll">
+              <Link to="/supportservices" className="page-scroll">
                 Support Services
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#contact" className="page-scroll">

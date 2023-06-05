@@ -1,7 +1,7 @@
-import { Gallery } from "./gallery";
 import { useState, useEffect } from "react";
 import JsonData from "../data/data.json";
-export function GisApplications(){
+import { Services } from "./services";
+export function SupportServices(){
     
     const [landingPageData, setLandingPageData] = useState({});
     useEffect(() => {
@@ -10,7 +10,7 @@ export function GisApplications(){
 
     return(
         <>
-            <Gallery data={landingPageData.Gallery}/>
+            <Services data={landingPageData.Services}/>
         </>
     )
 }
