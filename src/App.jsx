@@ -9,6 +9,7 @@ import { SupportServices } from "./components/supportservices";
 import { Training } from "./components/training";
 import { useState, useEffect } from "react";
 import JsonData from "./data/data.json";
+import { RequestWork } from "./components/requestwork";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -34,6 +35,7 @@ const App = () => {
       </Route>
       <Route path="/supportservices" element= {<SupportServices />} />
       <Route path="/training" element= {<Training />} />
+      <Route path="/requestwork" element= {<RequestWork />}/>
     </Routes>
     </>
   );
