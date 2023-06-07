@@ -20,64 +20,88 @@
   },
   "Gallery": [
     {
+      "id": "1",
       "title": "Project Title 1",
-      "largeImage": "img/portfolio/01-large.jpg", 
-      "smallImage": "img/portfolio/01-small.jpg"
+      "largeImage": "1", 
+      "smallImage": "../img/portfolio/01-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
+      "id": "2",
       "title": "Project Title 2",
-      "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
+      "largeImage": "2",
+      "smallImage": "../img/portfolio/02-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
+      "id": "3",
       "title": "Project Title 3",
-      "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
+      "largeImage": "3",
+      "smallImage": "../img/portfolio/03-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
+      "id": "4",
       "title": "Project Title 4",
-      "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
+      "largeImage": "4",
+      "smallImage": "../img/portfolio/04-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
+      "id": "5",
       "title": "Project Title 5",
-      "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
+      "largeImage": "5",
+      "smallImage": "../img/portfolio/05-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
+      "id": "6",
       "title": "Project Title 6",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
+      "largeImage": "6",
+      "smallImage": "../img/portfolio/06-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
+      "id": "7",
       "title": "Project Title 7",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
+      "largeImage": "7",
+      "smallImage": "../img/portfolio/07-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
+      "id": "8",
       "title": "Project Title 8",
-      "largeImage": "img/portfolio/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
+      "largeImage": "8",
+      "smallImage": "../img/portfolio/08-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
+      "id": "9",
       "title": "Project Title 9",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
+      "largeImage": "9",
+      "smallImage": "../img/portfolio/06-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
+      "id": "10",
       "title": "Project Title 10",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
+      "largeImage": "10",
+      "smallImage": "../img/portfolio/08-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
+      "id": "11",
       "title": "Project Title 11",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
+      "largeImage": "11",
+      "smallImage": "../img/portfolio/07-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
+      "id": "12",
       "title": "Project Title 12",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
+      "largeImage": "12",
+      "smallImage": "../img/portfolio/09-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     }
   ],
   "Services": [
@@ -194,6 +218,58 @@
       "icon": "fa fa-magic",
       "title": "Lorem ipsum",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ],
+  "Links":[
+    {
+      "name": "Assessor Property Records Search",
+      "linkto": "https://google.com",
+      "category": "example 1"
+    },
+    {
+      "name": "Business Personal Property",
+      "linkto": "https://google.com",
+      "category": "example 1"
+    },
+    {
+      "name": "Election Records & Data",
+      "linkto": "https://google.com",
+      "category": "example 2"
+    },
+    {
+      "name": "Voter Registration",
+      "linkto": "https://google.com",
+      "category": "example 2"
+    },
+    {
+      "name": "Commerical Property Sales List",
+      "linkto": "https://google.com",
+      "category": "example 1"
+    },
+    {
+      "name": "Voter Registration Counts",
+      "linkto": "https://google.com",
+      "category": "example 2"
+    },
+    {
+      "name": "Voting Locations",
+      "linkto": "https://google.com",
+      "category": "example 2"
+    },
+    {
+      "name": "Mobile Home Sales List",
+      "linkto": "https://google.com",
+      "category": "example 1"
+    },
+    {
+      "name": "Camping Reservations",
+      "linkto": "https://google.com",
+      "category": "example 3"
+    },
+    {
+      "name": "Parks and Open Spaces",
+      "linkto": "https://google.com",
+      "category": "example 3"
     }
   ]
 }

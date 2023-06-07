@@ -4,6 +4,7 @@ import { Contact } from "./contact";
 import { useState, useEffect } from "react";
 import JsonData from "../data/data.json"
 import { Announcements } from "./announcements";
+import { BasicList } from "./linklist";
 
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
         <Header data={landingPageData.Header} />
         <Announcements />
         <About data={landingPageData.About} />
+        <BasicList data ={landingPageData.Links}/>
         <Contact data={landingPageData.Contact} />
         </div>
       </>

@@ -18,13 +18,13 @@ export function Announcements(props)
             description: "Probably the most random thing you have ever seen!"
         },
         {
-            name: "Announcement 1",
+            name: "Announcement 3",
             image: "img/portfolio/01-small.jpg",
             link: "img/portfolio/01-large.jpg",
             description: "Probably the most random thing you have ever seen!"
         },
         {
-            name: "Announcement 2",
+            name: "Announcement 4",
             image: "img/portfolio/02-small.jpg",
             link: "img/portfolio/02-large.jpg",
             description: "Probably the most random thing you have ever seen!"
@@ -43,9 +43,8 @@ export function Announcements(props)
 function Item(props)
 {
     return (
-            <div style={{height: props.item}}>
-                <Image title={props.item.name} largeImage={props.item.link} smallImage={props.item.image} />
-                <h3>{props.description}</h3>
+            <div style={{ display:"flex", justifyContent:"center"}}>
+                <Image title={props.item.name}  smallImage={props.item.image} />
             </div>
     )
 }

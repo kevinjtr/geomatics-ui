@@ -1,4 +1,4 @@
-import { Features} from "./features";
+import { TrainingMaterial } from "./trainingmaterials";
 import { useState, useEffect } from "react";
 import JsonData from "../data/data.json";
 export function Training(){
@@ -10,7 +10,7 @@ export function Training(){
 
     return(
         <>
-            <Features data={landingPageData.Features}/>
+            <TrainingMaterial data={landingPageData.Features}/>
         </>
     )
 }
