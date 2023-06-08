@@ -60,6 +60,48 @@
       "largeImage": "6",
       "smallImage": "../img/portfolio/06-small.jpg",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "id": "7",
+      "title": "Project Title 7",
+      "largeImage": "7",
+      "smallImage": "../img/portfolio/07-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "id": "8",
+      "title": "Project Title 8",
+      "largeImage": "8",
+      "smallImage": "../img/portfolio/08-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "id": "9",
+      "title": "Project Title 9",
+      "largeImage": "9",
+      "smallImage": "../img/portfolio/06-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "id": "10",
+      "title": "Project Title 10",
+      "largeImage": "10",
+      "smallImage": "../img/portfolio/08-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "id": "11",
+      "title": "Project Title 11",
+      "largeImage": "11",
+      "smallImage": "../img/portfolio/07-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "id": "12",
+      "title": "Project Title 12",
+      "largeImage": "12",
+      "smallImage": "../img/portfolio/09-small.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     }
   ],
   "Services": [

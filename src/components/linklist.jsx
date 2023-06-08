@@ -35,7 +35,7 @@ export const BasicList = (props) => {
         ))
       :"Loading"}
       </List>
-      <Divider />
+      <Divider orientation="vertical"/>
       <List >
       <h4>Example Category 2</h4>
         {props.data
@@ -56,7 +56,7 @@ export const BasicList = (props) => {
         ))
       :"Loading"}
       </List>
-      <Divider />
+      <Divider orientation="vertical"/>
       <List>
         <h4>Example Category 3</h4>
         {props.data
