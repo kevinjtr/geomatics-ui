@@ -21,87 +21,80 @@
   "Gallery": [
     {
       "id": "1",
-      "title": "Project Title 1",
-      "largeImage": "1", 
-      "smallImage": "../img/portfolio/01-small.jpg",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "title": "SAJ Channel and Harbor projects data mapping",
+      "largeImage": "saj-data-mapping", 
+      "smallImage": "../img/projects/sajharbor.79bb7c4e.png",
+      "text": "The purpose of this web map is too provide a conduit to relative information for all of SAJ Channels and Harbors. We are in the early stages of development but a one stop shop for key information is the goal. The current functions are clicking on Projects Boundary layer in Red and then clicking on the hyperlink for documents, which takes the user to supporting data in the network folders. Another function clicking on the cuts for information that includes depth, widths, and additional info. Also you may search by project or address in the search bar at the top right of the web page."
     },
     {
       "id": "2",
-      "title": "Project Title 2",
-      "largeImage": "2",
-      "smallImage": "../img/portfolio/02-small.jpg",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "title": "Real Estate parcel and coastal mapping; Civil Works mapping",
+      "largeImage": "parcel-coastal-mapping",
+      "smallImage": "../img/projects/maping.87d82719.jpg",
+      "text": "This web map provides Real Estate and Regulatory personal with access to the current Jacksonville District property interests. When clicking on a tract, relative information is displayed along with a hyperlink to deeds and documents relating to the mapped interest. Parcel data from Florida Department of revenue is included with owner information. Also you may search by tract number or address in the search bar at the top right of the web page."
     },
     {
       "id": "3",
-      "title": "Project Title 3",
-      "largeImage": "3",
-      "smallImage": "../img/portfolio/03-small.jpg",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "title": "DTM and Volume Calculations QA for Dredge work and other projects",
+      "largeImage": "dtm-calculations",
+      "smallImage": "../img/projects/DTM.be67bc0b.jpg",
+      "text": ""
     },
     {
       "id": "4",
-      "title": "Project Title 4",
-      "largeImage": "4",
-      "smallImage": "../img/portfolio/04-small.jpg",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "title": "Support UAS section flying drones and post processing data",
+      "largeImage": "support-uas-data",
+      "smallImage": "../img/projects/drone.3ab3f29a.jpg",
+      "text": ""
     },
     {
       "id": "5",
-      "title": "Project Title 5",
-      "largeImage": "5",
-      "smallImage": "../img/portfolio/05-small.jpg",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "title": "COR duties for survey work",
+      "largeImage": "cor-duties-survey",
+      "smallImage": "../img/projects/inspections.d99b4f9f.jpg",
+      "text": ""
     },
     {
       "id": "6",
-      "title": "Project Title 6",
-      "largeImage": "6",
-      "smallImage": "../img/portfolio/06-small.jpg",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "title": "Levee System Map updates; Levee Inspections mapping/report update-support work",
+      "largeImage": "levee-database",
+      "smallImage": "../img/projects/levee.2ca47296.png",
+      "text": "National Levee Database Maintenance links : Evalutate, edit and update SAJ districts levee database and the features corresponding to those systems."
     },
     {
       "id": "7",
-      "title": "Project Title 7",
-      "largeImage": "7",
-      "smallImage": "../img/portfolio/07-small.jpg",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "title": "Built Webviewer Applications",
+      "largeImage": "webviewer-apps",
+      "smallImage": "../img/projects/code.4e21d3f1.png",
+      "text": "Programming and implement web application, and database application."
     },
     {
       "id": "8",
-      "title": "Project Title 8",
-      "largeImage": "8",
-      "smallImage": "../img/portfolio/08-small.jpg",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "title": "MMC Inundation mapping",
+      "largeImage": "mmc-inundation-mapping",
+      "smallImage": "../img/projects/mmc.77b6c7a4.png",
+      "text": "MMC Dam mapping production: Generate Dam Breach flood scenarios for USACE Dams and produce mapbooks for districts and local governments to procur."
     },
     {
       "id": "9",
-      "title": "Project Title 9",
-      "largeImage": "9",
-      "smallImage": "../img/portfolio/06-small.jpg",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "title": "Data Management/Building – Oracle",
+      "largeImage": "data-management-oracle",
+      "smallImage": "../img/projects/data.8af5c055.png",
+      "text": ""
     },
     {
       "id": "10",
-      "title": "Project Title 10",
-      "largeImage": "10",
-      "smallImage": "../img/portfolio/08-small.jpg",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "title": "Vegetation Mapping using aerial imagery; Lidar processing and mapping",
+      "largeImage": "vegetation-mapping-lidar",
+      "smallImage": "../img/projects/mapping.5b9de7c6.jpg",
+      "text": "EN-DG personnel are tasked with creating vegetation maps of the Everglades National Park (ENP) as part of the Comprehensive Everglades Restoration Plan (CERP) Monitoring and Assessment Plan (MAP). Vegetation maps are created via stereoscopic interpretation of multi-band, digital aerial imagery. Interpretation of the stereo imagery is accomplished utilizing modern digital photogrammetric workstations, and the vegetation classification information is created and stored within a Geographic Information System (GIS) for subsequent analyses. The intent of the vegetation mapping is to monitor landscape change within the remnant Everglades ecosystem and serve as a baseline condition for which the CERP can be assessed."
     },
     {
       "id": "11",
-      "title": "Project Title 11",
-      "largeImage": "11",
-      "smallImage": "../img/portfolio/07-small.jpg",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "id": "12",
-      "title": "Project Title 12",
-      "largeImage": "12",
-      "smallImage": "../img/portfolio/09-small.jpg",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "title": "SIMDAMS construction mapping, data management",
+      "largeImage": "simdams",
+      "smallImage": "../img/projects/construction.65bf7614.jpg",
+      "text": ""
     }
   ],
   "Services": [

@@ -19,12 +19,13 @@ export const Gallery = (props) => {
                   <div
                     key={`${d.title}-${i}`}
                     className="col-sm-6 col-md-4 col-lg-4"
+                    style={{maxWidth:"350px", maxHeight:"200px", minHeight:"200px", minWidth:"350px", padding:"15px"}}
                   >
                     <Image
                       title={d.title}
                       largeImage={d.largeImage}
                       smallImage={d.smallImage}
-                    />
+                     />
                   </div>
                 ))
               : "Loading..."}

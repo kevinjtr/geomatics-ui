@@ -16,9 +16,9 @@ export const GisProjects = (props) => {
                         {
                             id === d.largeImage ? 
                             <div style={{paddingTop:"60px"}}>
-                            <img src={d.smallImage}  alt={d.title} style={{float:"left"}}/>
+                            <img src={d.smallImage}  alt={d.title} style={{float:"left", maxWidth:"600px"}}/>
                             <h2>{d.title}</h2>
-                            <p style={{textAlign:"center", paddingLeft:'50px'}}>
+                            <p>
                                 {d.text}
                             </p>
                             </div>
