@@ -13,7 +13,7 @@ export const Gallery = (props) => {
           </p>
         </div>
         <div className="row">
-          <div className="gis-app-items">
+          <div className="gis-app-items"  style={{margin:"50px", alignContent:"center"}}>
             {props.data
               ? props.data.map((d, i) => (
                   <div
