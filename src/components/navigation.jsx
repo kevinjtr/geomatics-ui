@@ -17,6 +17,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
+          <img src="../img/getsitelogo.png" alt="title" style={{float:"left", width:"80px", paddingRight:"10px"}}/>
           <Link className="navbar-brand page-scroll" to="/" reloadDocument>
             Geomatics
           </Link>{" "}

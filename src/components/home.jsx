@@ -15,7 +15,7 @@ const Home = () => {
     return (
      <>
        <div>
-        <Header data={landingPageData.Header} />
+       <Header data={landingPageData.Header} />
         <Announcements />
         <About data={landingPageData.About} />
         <BasicList data ={landingPageData.Links}/>
