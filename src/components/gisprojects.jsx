@@ -6,7 +6,7 @@ export const GisProjects = (props) => {
     return(
         <div id="gis-apps" className="text-center">
             <div className="container">
-                <div className="section-title">
+                <div>
                     {props.data
                     ? props.data.map((d, i) => (
                   <div
@@ -16,7 +16,7 @@ export const GisProjects = (props) => {
                         {
                             id === d.largeImage ? 
                             <div style={{paddingTop:"60px"}}>
-                            <img src={d.smallImage}  alt={d.title} style={{float:"left", maxWidth:"600px"}}/>
+                            <img src={d.smallImage}  alt={d.title} style={{float:"left", maxWidth:"600px", paddingRight:"20px"}}/>
                             <h2>{d.title}</h2>
                             <p>
                                 {d.text}

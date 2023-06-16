@@ -43,7 +43,7 @@ export function Announcements(props)
 function Item(props)
 {
     return (
-            <div style={{ display:"flex", justifyContent:"center"}}>
+            <div style={{ display:"flex", justifyContent:"center", height:"350px", width:"100%"}}>
                 <Image title={props.item.name}  smallImage={props.item.image} />
             </div>
     )
