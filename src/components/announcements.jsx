@@ -7,9 +7,11 @@ export const  Announcements = (props) =>
     
 
     return (
-        <Carousel navButtonsAlwaysVisible animation='slide' duration='1200' interval={10000}>
+        <Carousel navButtonsAlwaysVisible animation='slide' duration='1200' interval={10000} height={350}>
             {
+                props.data?
                 props.data.map( (item, i) => <Item key={i} item={item} /> )
+                : "Loading"
             }
         </Carousel>
 
@@ -19,7 +21,7 @@ export const  Announcements = (props) =>
 function Item(props)
 {
     return (
-            <div style={{ display:"flex", justifyContent:"center", height:"350px"}}>
+            <div style={{ display:"flex", justifyContent:"center"}}>
               <h4 style={{padding:"30px"}}>{props.item.description}</h4>
                 <Image title={props.item.name}  smallImage={props.item.image}/>
             </div>
