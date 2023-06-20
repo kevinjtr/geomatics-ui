@@ -1,6 +1,7 @@
 import { Navigation } from "./components/navigation";
 import { GisProjects } from "./components/gisprojects";
 import { GisApplications } from "./components/gisapplications";
+import { Footer } from "./components/footer";
 import Home from "./components/home"
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -37,7 +38,11 @@ const App = () => {
       <Route path="/training" element= {<Training />} />
       <Route path="/requestwork" element= {<RequestWork />}/>
     </Routes>
+    <div>
+      <Footer />
+    </div>
     </>
+    
   );
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 
 export const Services = (props) => {
   return (
-    <div className="text-center">
+    <div className="text-center" style={{paddingBottom:"75px"}}>
       {props.data
       ? props.data.map((d,i) => (
         <div

@@ -18,6 +18,32 @@
       "Lorem ipsum dolor"
     ]
   },
+  "Announcements":[
+    {
+        "name": "Announcement 1",
+        "image": "img/portfolio/01-small.jpg",
+        "link": "img/portfolio/01-large.jpg",
+        "description": "Probably the most random thing you have ever seen!"
+    },
+    {
+        "name": "Announcement 2",
+        "image": "img/portfolio/02-small.jpg",
+        "link": "img/portfolio/02-large.jpg",
+        "description": "Tons of important information about this announcement."
+    },
+    {
+        "name": "Announcement 3",
+        "image": "img/portfolio/03-small.jpg",
+        "link": "img/portfolio/03-large.jpg",
+        "description": "I can't believe we lived without this information before."
+    },
+    {
+        "name": "Announcement 4",
+       "image": "img/portfolio/04-small.jpg",
+        "link": "img/portfolio/04-large.jpg",
+        "description": "I wanted to put a quick joke here, but I really couldn't think of a good one."
+    }
+  ],
   "Gallery": [
     {
       "id": "1",
