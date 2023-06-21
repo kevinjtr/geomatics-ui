@@ -42,6 +42,12 @@
        "image": "img/portfolio/04-large.jpg",
         "link": "img/portfolio/04-large.jpg",
         "description": "I wanted to put a quick joke here, but I really couldn't think of a good one."
+    },
+    {
+      "name": "Announcement 5",
+       "image": "img/portfolio/04-large.jpg",
+        "link": "img/portfolio/04-large.jpg",
+        "description": "I wanted to put a quick joke here, but I really couldn't think of a good one."
     }
   ],
   "Gallery": [

@@ -5,19 +5,8 @@ export const Navigation = (props) => {
     <nav id="menu" className="navbar navbar-default">
       <div className="container">
         <div className="navbar-header">
-          <button
-            type="button"
-            className="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
-          >
-            {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-          </button>
-          <img src="../img/getsitelogo.png" alt="title" style={{float:"left", width:"80px", paddingRight:"10px"}}/>
+          
+          <img src="../img/saj_usace_logo.jpg" alt="title" style={{float:"left", width:"80px", paddingRight:"10px"}}/>
           <Link className="navbar-brand page-scroll" to="/" reloadDocument>
             Geomatics
           </Link>{" "}
@@ -34,17 +23,17 @@ export const Navigation = (props) => {
               </Link>
             </li>
             <li>
-              <Link to="/training" className="page-scroll">
+              <Link to="/training" >
                 Training
               </Link>
             </li>
             <li>
-              <Link to="/supportservices" className="page-scroll">
+              <Link to="/supportservices" >
                 Support Services
               </Link>
             </li>
             <li>
-              <a href="/requestwork" className="page-scroll">
+              <a href="/requestwork" >
                 Request Work
               </a>
             </li>
