@@ -30,9 +30,9 @@ export const BasicList = (props) => {
           >
               {
               d.category === "usace-websites" ?
-              <ListItem disablePadding>
+              <ListItem>
                 <ListItemButton a href={d.linkto}>
-                <ListItemText primary={d.name} style={{color:"#125780"}}/>
+                <ListItemText primary={d.name} style={{color:"#125780", fontSize:"15px"}} disableTypography/>
                 </ListItemButton>
               </ListItem>
               : null
@@ -56,9 +56,9 @@ export const BasicList = (props) => {
           >
               {
               d.category === "fl-county-webview" ?
-              <ListItem disablePadding>
+              <ListItem>
                 <ListItemButton a href={d.linkto}>
-                <ListItemText primary={d.name} style={{color:"#8a2b1e"}}/>
+                <ListItemText primary={d.name} style={{color:"#8a2b1e", fontSize:"15px"}} disableTypography/>
                 </ListItemButton>
               </ListItem>
               : null
@@ -82,9 +82,9 @@ export const BasicList = (props) => {
           >
               {
               d.category === "local-federal-agencies" ?
-              <ListItem disablePadding>
+              <ListItem>
                 <ListItemButton a href={d.linkto}>
-                <ListItemText primary={d.name} style={{color:"#a68716"}}/>
+                <ListItemText primary={d.name} style={{color:"#a68716", fontSize:"15px"}} disableTypography/>
                 </ListItemButton>
               </ListItem>
               : null
@@ -108,9 +108,9 @@ export const BasicList = (props) => {
           >
               {
               d.category === "other" ?
-              <ListItem disablePadding>
+              <ListItem>
                 <ListItemButton a href={d.linkto}>
-                <ListItemText primary={d.name} style={{color:"#a68716"}}/>
+                <ListItemText primary={d.name} style={{color:"#a68716", fontSize:"15px"}} disableTypography/>
                 </ListItemButton>
               </ListItem>
               : null
