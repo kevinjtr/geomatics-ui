@@ -21,7 +21,9 @@ export const GisProjects = (props) => {
                             <p>
                                 {d.text}
                             </p>
+                            {d.link ? <a href={d.link} target="_blank">{d.link}</a> : null }
                             </div>
+                              
                             : null
                         }    
                     </div>

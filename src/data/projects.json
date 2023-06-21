@@ -34,6 +34,14 @@
           "largeImage": "geomatics-pcl",
           "smallImage": "../img/projects/pcl storyboard - alt 2.png",
           "text": "Project Contract Log (PCL) Application currently user interface is in development."
-        }
+        },
+         {
+          "id":"6",
+          "title":"Modernizing Foundation Mapping",
+          "largeImage":"modernizing-foundation-mapping",
+          "smallImage":"../img/projects/modernizing foundation mapping.PNG",
+          "text":"Work done for C23/24 STA  in developing a process for our geologists to collect field data digitally.",
+          "link":"https://storymaps.arcgis.com/stories/7269c1140700470f9c92cb40e91d370c"
+         }
       ]
 }
