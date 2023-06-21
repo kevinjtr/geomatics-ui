@@ -16,23 +16,6 @@ export const TrainingMaterial = (props) => {
         <h2 style={{textAlign:"center"}}>SOP</h2>
         <ul>
           <li>
-            <h3 style={{textAlign:"center"}}>Videos</h3>
-            <ul>
-              {
-                props.data ? props.data.map((d,i) => (
-                  <div key={`${d.title}-${i}`}>{
-              d.category === "videos" ?
-              <li>
-              <Link to={d.link} download>{d.title}</Link>
-            </li>
-              : null
-              }
-              </div>
-                ))
-              : "Loading"}
-            </ul>
-          </li>
-          <li>
           <h3 style={{textAlign:"center"}}>PDFS</h3>
             <ul>
               {
@@ -40,7 +23,7 @@ export const TrainingMaterial = (props) => {
                   <div key={`${d.title}-${i}`}>{
               d.category === "pdfs" ?
                 <li>
-                  <Link to={d.link} download>{d.title}</Link>
+                  <a href={d.link} download>{d.title}</a>
                 </li>
               : null
               }
@@ -57,7 +40,7 @@ export const TrainingMaterial = (props) => {
                   <div key={`${d.title}-${i}`}>{
               d.category === "powerpoints" ?
               <li>
-              <Link to={d.link} download>{d.title}</Link>
+              <a href={d.link} download>{d.title}</a>
               </li>
               : null
               }
@@ -65,6 +48,23 @@ export const TrainingMaterial = (props) => {
                 ))
               : "Loading"}
             </ul>
+            <h3 style={{textAlign:"center"}}>Videos</h3>
+            <ul>
+              {
+                props.data ? props.data.map((d,i) => (
+                  <div key={`${d.title}-${i}`}>{
+              d.category === "videos" ?
+              <li>
+              <a href={d.link} download>{d.title}</a>
+            </li>
+              : null
+              }
+              </div>
+                ))
+              : "Loading"}
+            </ul>
+          </li>
+          <li>
           </li>
         </ul>
         </div>
