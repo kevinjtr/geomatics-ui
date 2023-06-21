@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const TrainingMaterial = (props) => {
   return (
@@ -12,34 +13,61 @@ export const TrainingMaterial = (props) => {
     </div>
     <body style={{display:"flex", justifyContent:"center"}}>
       <div>
-        <h4>SOP</h4>
+        <h2 style={{textAlign:"center"}}>SOP</h2>
         <ul>
           <li>
-            <p>Videos and PDFs</p>
-          </li>
-          <li>
-            <p>PowerPoint Presentations</p>
-          </li>
-          <li>
-            <h5>SAJ Data Management and CAD Groups</h5>
+            <h3 style={{textAlign:"center"}}>Videos</h3>
             <ul>
+              {
+                props.data ? props.data.map((d,i) => (
+                  <div key={`${d.title}-${i}`}>{
+              d.category === "videos" ?
               <li>
-                <p>Group 1</p>
-              </li>
-              <li>
-                <p>Group 2</p>
-              </li>
-              <li>
-                <p>Group 3</p>
-              </li>
+              <Link to={d.link} download>{d.title}</Link>
+            </li>
+              : null
+              }
+              </div>
+                ))
+              : "Loading"}
             </ul>
           </li>
           <li>
-            <h5>GIS USER GROUPS</h5>
+          <h3 style={{textAlign:"center"}}>PDFS</h3>
+            <ul>
+              {
+                props.data ? props.data.map((d,i) => (
+                  <div key={`${d.title}-${i}`}>{
+              d.category === "pdfs" ?
+                <li>
+                  <Link to={d.link} download>{d.title}</Link>
+                </li>
+              : null
+              }
+              </div>
+                ))
+              : "Loading"}
+            </ul>
+          </li>
+          <li>
+            <h3 style={{textAlign:"center"}}>PowerPoint Presentations</h3>
+            <ul>
+              {
+                props.data ? props.data.map((d,i) => (
+                  <div key={`${d.title}-${i}`}>{
+              d.category === "powerpoints" ?
+              <li>
+              <Link to={d.link} download>{d.title}</Link>
+              </li>
+              : null
+              }
+              </div>
+                ))
+              : "Loading"}
+            </ul>
           </li>
         </ul>
-        <p>Really, I'm ultimately unsure of how I should design this page as I can't envision it too well. But we'll talk it over soon and hopefully I'll have some template designed here</p>
-      </div>
+        </div>
     </body>
     </>
   );

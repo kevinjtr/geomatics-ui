@@ -1,16 +1,16 @@
 import { Gallery } from "./gallery";
 import { useState, useEffect } from "react";
-import JsonData from "../data/data.json";
+import projectData from "../data/projects.json";
 export function GisApplications(){
     
-    const [landingPageData, setLandingPageData] = useState({});
+    const [projectPageData, setProjectPageData] = useState({});
     useEffect(() => {
-      setLandingPageData(JsonData);
+      setProjectPageData(projectData);
     }, []);
 
     return(
         <>
-            <Gallery data={landingPageData.Gallery}/>
+            <Gallery data={projectPageData.Projects}/>
         </>
     )
 }

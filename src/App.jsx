@@ -8,7 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import { SupportServices } from "./components/supportservices";
 import { Training } from "./components/training";
 import { useState, useEffect } from "react";
-import JsonData from "./data/data.json";
+import projectData from "./data/projects.json";
 import { RequestWork } from "./components/requestwork";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -17,9 +17,9 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 const App = () => {
-  const [landingPageData, setLandingPageData] = useState({});
+  const [projectPageData, setProjectPageData] = useState({});
   useEffect(() => {
-    setLandingPageData(JsonData);
+    setProjectPageData(projectData);
   }, []);
   
   return (
@@ -29,9 +29,9 @@ const App = () => {
       </div>
     <Routes>
       <Route path="/" element={ <Home /> }/>
-      <Route path="/gisapplications">
+      <Route path="/gisprojects">
         <Route path="" element= {<GisApplications />}/>
-        <Route path=":id" element={<GisProjects data={landingPageData.Gallery}/>}/>
+        <Route path=":id" element={<GisProjects data={projectPageData.Projects}/>}/>
       </Route>
       <Route path="/supportservices" element= {<SupportServices />} />
       <Route path="/training" element= {<Training />} />

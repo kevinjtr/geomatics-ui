@@ -18,8 +18,8 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <Link to="/gisapplications">
-                GIS Applications
+              <Link to="/gisprojects">
+                GIS Projects
               </Link>
             </li>
             <li>

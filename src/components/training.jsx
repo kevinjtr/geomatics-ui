@@ -1,16 +1,16 @@
 import { TrainingMaterial } from "./trainingmaterials";
 import { useState, useEffect } from "react";
-import JsonData from "../data/data.json";
+import trainingData from "../data/training.json";
 export function Training(){
     
-    const [landingPageData, setLandingPageData] = useState({});
+    const [trainingPageData, setTrainingPageData] = useState({});
     useEffect(() => {
-      setLandingPageData(JsonData);
+      setTrainingPageData(trainingData);
     }, []);
 
     return(
         <>
-            <TrainingMaterial data={landingPageData.Features}/>
+            <TrainingMaterial data={trainingPageData.Training}/>
         </>
     )
 }

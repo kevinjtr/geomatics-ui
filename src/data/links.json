@@ -1,0 +1,44 @@
+{
+  "Links":[
+    {
+      "name": "MARS",
+      "linkto": "https://uas.sec.usace.army.mil/",
+      "category": "usace-websites"
+    },
+    {
+      "name": "NLD",
+      "linkto": "https://levees.sec.usace.army.mil/#/",
+      "category": "usace-websites"
+    },
+    {
+      "name": "Volusia Municipalities / Cities",
+      "linkto": "https://google.com",
+      "category": "fl-county-webview"
+    },
+    {
+      "name": "NOAA",
+      "linkto": "https://www.noaa.gov/satellite-imagery-reports-launch-information",
+      "category": "local-federal-agencies"
+    },
+    {
+      "name": "FEMA",
+      "linkto": " https://gis.fema.gov/",
+      "category": "other"
+    },
+    {
+      "name": "UFWS",
+      "linkto": "https://gis-fws.opendata.arcgis.com/",
+      "category": "other"
+    },
+    {
+      "name": "FWC",
+      "linkto": "https://myfwc.com/research/gis/",
+      "category": "other"
+    },
+    {
+      "name": "FLORIDA DISASTER",
+      "linkto": "https://www.floridadisaster.org/weather/",
+      "category": "other"
+    }
+  ]
+}

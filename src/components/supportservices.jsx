@@ -1,16 +1,16 @@
 import { useState, useEffect } from "react";
-import JsonData from "../data/data.json";
+import supportData from "../data/support.json";
 import { Services } from "./services";
 export function SupportServices(){
     
-    const [landingPageData, setLandingPageData] = useState({});
+    const [supportPageData, setSupportPageData] = useState({});
     useEffect(() => {
-      setLandingPageData(JsonData);
+      setSupportPageData(supportData);
     }, []);
 
     return(
         <>
-            <Services data={landingPageData.Services}/>
+            <Services data={supportData.Services}/>
         </>
     )
 }

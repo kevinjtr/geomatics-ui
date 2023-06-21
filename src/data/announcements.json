@@ -1,0 +1,42 @@
+{
+    "Announcements":[
+        {
+            "name": "Geospatial Technical Exchange Webinar",
+            "image": "img/portfolio/01-large.jpg",
+            "link": "img/portfolio/01-large.jpg",
+            "description": "I can't believe we lived without this information before.",
+            "date": "16 FEB 2023 1330ET",
+            "agenda1": "1330-1350 Improved Survey and Dredge Management Application (SANDMAN)",
+            "agenda2": "1350-1410 Visualization Tips for Evaluating Levee Centerline Surveys",
+            "agenda3": "1410-1430 National Sediment Management Framework (NSMF)"
+        },
+        {
+            "name": "Announcement 2",
+            "image": "img/portfolio/02-large.jpg",
+            "link": "img/portfolio/02-large.jpg",
+            "description": "Tons of important information about this announcement.",
+            "date":"",
+            "agenda1":"",
+            "agenda2":"",
+            "agenda3":""
+        },
+        {
+            "name": "Announcement 3",
+            "image": "img/portfolio/03-large.jpg",
+            "link": "img/portfolio/03-large.jpg",
+            "description": "I can't believe we lived without this information before."
+        },
+        {
+            "name": "Announcement 4",
+           "image": "img/portfolio/04-large.jpg",
+            "link": "img/portfolio/04-large.jpg",
+            "description": "I wanted to put a quick joke here, but I really couldn't think of a good one."
+        },
+        {
+          "name": "Announcement 5",
+           "image": "img/portfolio/04-large.jpg",
+            "link": "img/portfolio/04-large.jpg",
+            "description": "I wanted to put a quick joke here, but I really couldn't think of a good one."
+        }
+      ]
+}
