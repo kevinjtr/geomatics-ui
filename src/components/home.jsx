@@ -1,4 +1,3 @@
-import { Header } from "./header";
 import { About } from "./about";
 import { useState, useEffect } from "react";
 import JsonData from "../data/data.json"
@@ -15,7 +14,6 @@ const Home = () => {
     return (
      <>
        <div>
-       <Header data={landingPageData.Header} />
         <Announcements data={landingPageData.Announcements}/>
         <About data={landingPageData.About} />
         <BasicList data ={landingPageData.Links}/>
