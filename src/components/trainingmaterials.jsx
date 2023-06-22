@@ -21,7 +21,7 @@ export const TrainingMaterial = (props) => {
                 props.data ? props.data.map((d,i) => (
                   <div key={`${d.title}-${i}`}>{
               d.category === "pdfs" ?
-                <li>
+                <li style={{textAlign:"center"}}>
                   <a href={d.link} download>{d.title}</a>
                 </li>
               : null
@@ -38,7 +38,7 @@ export const TrainingMaterial = (props) => {
                 props.data ? props.data.map((d,i) => (
                   <div key={`${d.title}-${i}`}>{
               d.category === "powerpoints" ?
-              <li>
+              <li style={{textAlign:"center"}}>
               <a href={d.link} download>{d.title}</a>
               </li>
               : null
@@ -53,7 +53,7 @@ export const TrainingMaterial = (props) => {
                 props.data ? props.data.map((d,i) => (
                   <div key={`${d.title}-${i}`}>{
               d.category === "videos" ?
-              <li>
+              <li style={{textAlign:"center"}}>
               <a href={d.link} download>{d.title}</a>
             </li>
               : null

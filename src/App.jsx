@@ -29,7 +29,7 @@ const App = () => {
       </div>
     <Routes>
       <Route path="/" element={ <Home /> }/>
-      <Route path="/gisprojects">
+      <Route path="/gisapplications">
         <Route path="" element= {<GisApplications />}/>
         <Route path=":id" element={<GisProjects data={projectPageData.Projects}/>}/>
       </Route>

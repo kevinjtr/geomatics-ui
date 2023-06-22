@@ -6,7 +6,7 @@ export const Gallery = (props) => {
     <div id="gis-apps" className="text-center" style={{paddingBottom:"75px"}}>
       <div className="container">
         <div className="section-title">
-          <h2>GIS Projects</h2>
+          <h2>GIS Applications</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
             dapibus leonec.
