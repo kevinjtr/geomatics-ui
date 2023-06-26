@@ -6,6 +6,7 @@ import linkData from "../data/links.json"
 import { Announcements } from "./announcements";
 import { BasicList } from "./linklist";
 import { Contact } from "./contact";
+import { Socials } from "./socials";
 
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
     return (
      <>
        <div>
+        <Socials data={landingPageData.Contact}/>
         <Announcements data={announcementPageData.Announcements}/>
         <About data={landingPageData.About} />
         <BasicList data ={linkListPageData.Links}/>
