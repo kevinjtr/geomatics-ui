@@ -94,10 +94,10 @@ export const BasicList = (props) => {
       :"Loading"}
       </List>
       <Divider orientation="vertical"/>
-      <List inset sx={{ width: '100%', maxWidth: 250, bgcolor: '#a68716' }}
+      <List inset sx={{ width: '100%', maxWidth: 250, bgcolor: 'green' }}
       component="nav"
       subheader={
-        <ListSubheader component="h4" sx={{bgcolor: "#a68716", color:"white", fontSize:"20px"}}>
+        <ListSubheader component="h4" sx={{bgcolor: "green", color:"white", fontSize:"20px"}}>
           Other
         </ListSubheader>} >
         {props.data
@@ -110,7 +110,7 @@ export const BasicList = (props) => {
               d.category === "other" ?
               <ListItem>
                 <ListItemButton a href={d.linkto}>
-                <ListItemText primary={d.name} style={{color:"#a68716", fontSize:"15px"}} disableTypography/>
+                <ListItemText primary={d.name} style={{color:"green", fontSize:"15px"}} disableTypography/>
                 </ListItemButton>
               </ListItem>
               : null
