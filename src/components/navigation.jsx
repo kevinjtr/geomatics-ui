@@ -5,7 +5,6 @@ export const Navigation = (props) => {
     <nav id="menu" className="navbar navbar-default">
       <div className="container">
         <div className="navbar-header">
-          
           <img src="../img/saj_usace_logo.jpg" alt="title" style={{float:"left", width:"80px", paddingRight:"10px"}}/>
           <Link className="navbar-brand page-scroll" to="/" reloadDocument>
             Geomatics
