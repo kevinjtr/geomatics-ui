@@ -15,7 +15,7 @@ export const BasicList = (props) => {
       </div>
     <Box sx={{ width: '100%', display:"flex", justifyContent:"center", paddingBottom:"30px"}}>
       
-      <List inset sx={{ width: '100%', maxWidth: 250, bgcolor: '#125780' }}
+      <List inset sx={{ width: '100%', maxWidth: 250, bgcolor: '#125780' , borderRadius:"10px" }}
       component="nav"
       subheader={
         <ListSubheader component="h4" sx={{bgcolor: "#125780", color:"white", fontSize:"20px"}}>
@@ -42,7 +42,7 @@ export const BasicList = (props) => {
       :"Loading"}
       </List>
       <Divider orientation="vertical"/>
-      <List inset sx={{ width: '100%', maxWidth: 250, bgcolor: '#8a2b1e' }}
+      <List inset sx={{ width: '100%', maxWidth: 250, bgcolor: '#8a2b1e', borderRadius:"10px" }}
       component="nav"
       subheader={
         <ListSubheader component="h4" sx={{bgcolor: "#8a2b1e", color:"white",fontSize:"20px"}}>
@@ -68,17 +68,17 @@ export const BasicList = (props) => {
       :"Loading"}
       </List>
       <Divider orientation="vertical"/>
-      <List inset sx={{ width: '100%', maxWidth: 250, bgcolor: '#a68716' }}
+      <List inset sx={{ width: '100%', maxWidth: 250, bgcolor: '#a68716', borderRadius:"10px"}}
       component="nav"
       subheader={
-        <ListSubheader component="h4" sx={{bgcolor: "#a68716", color:"white", fontSize:"20px"}}>
+        <ListSubheader component="h4" sx={{bgcolor: "#a68716", color:"white", fontSize:"20px", borderRadius:"10px"}}>
           Local and Federal Agencies
         </ListSubheader>} >
         {props.data
         ? props.data.map((d,i) => (
           <div 
             key={`${d.name}-${i}`}
-            style={{backgroundColor:"#d5d9db"}}
+            style={{backgroundColor:"#d5d9db" }}
           >
               {
               d.category === "local-federal-agencies" ?
@@ -94,7 +94,7 @@ export const BasicList = (props) => {
       :"Loading"}
       </List>
       <Divider orientation="vertical"/>
-      <List inset sx={{ width: '100%', maxWidth: 250, bgcolor: 'green' }}
+      <List inset sx={{ width: '100%', maxWidth: 250, bgcolor: 'green', borderRadius:"10px" }}
       component="nav"
       subheader={
         <ListSubheader component="h4" sx={{bgcolor: "green", color:"white", fontSize:"20px"}}>
