@@ -1,27 +1,29 @@
 import React from "react"
-                
+import { Link } from "react-router-dom"      
+
+
 export const Socials = (props) => {
     return(
     
     <div style={{display:"flex", justifyContent:"end", paddingRight:"35px"}}>
-      <a href={props.data ? props.data.linkedin : "/"}>
+      <Link to={props.data ? props.data.linkedin : "/"}>
         <i className="fa fa-linkedin" style={{paddingLeft:"30px"}}></i>
-      </a> 
+      </Link> 
       
-      <a href={props.data ? props.data.facebook : "/"}>
+      <Link to={props.data ? props.data.facebook : "/"}>
         <i className="fa fa-facebook" style={{paddingLeft:"30px"}}></i>
-      </a>
-      <a href={props.data ? props.data.twitter : "/"}>
+      </Link>
+      <Link to={props.data ? props.data.twitter : "/"}>
         <i className="fa fa-twitter" style={{paddingLeft:"30px"}}></i>
-      </a>
+      </Link>
    
-      <a href={props.data ? props.data.youtube : "/"}>
+      <Link to={props.data ? props.data.youtube : "/"}>
         <i className="fa fa-youtube" style={{paddingLeft:"30px"}}></i>
-      </a>
+      </Link>
       
-      <a href={props.data ? props.data.email : "/"}>
+      <Link to={props.data ? props.data.email : "/"}>
         <i className="fa fa-envelope" style={{paddingLeft:"30px"}}></i>
-      </a>                
+      </Link>                
   </div>
     )
 }     
