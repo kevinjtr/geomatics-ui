@@ -7,13 +7,9 @@ export const Gallery = (props) => {
       <div className="container">
         <div className="section-title">
           <h2>GIS Applications</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
-          </p>
         </div>
         <div className="row">
-          <div className="gis-app-items"  style={{margin:"50px", alignContent:"center"}}>
+          <div className="gis-app-items"  style={{marginTop:"10px",marginBottom:"50px", marginLeft:"50px",marginRight:"50px", alignContent:"center"}}>
             {props.data
               ? props.data.map((d, i) => (
                   <div
