@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 export const Socials = (props) => {
     return(
     
-    <div style={{display:"flex", justifyContent:"end", paddingRight:"35px"}}>
+    <div style={{display:"flex", justifyContent:"end", paddingRight:"35px", paddingBottom:'10px'}}>
       <Link to={props.data ? props.data.linkedin : "/"}>
         <i className="fa fa-linkedin" style={{paddingLeft:"30px"}}></i>
       </Link> 

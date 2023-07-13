@@ -76,7 +76,7 @@ hr {
   transition: all 0.8s;
 }
 #menu.navbar-default {
-  background-color: #fff;
+  background-color: #043e8c;
   border-color: rgba(231, 231, 231, 0);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
@@ -373,7 +373,7 @@ header .intro-text {
     rgba(99, 114, 255, 0.8) 0%,
     rgba(92, 169, 251, 0.8) 100%
   );
-  padding: 30% 0 0;
+  padding: 15% 0 0;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -460,7 +460,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #044c8c 0%, #043e8c 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {

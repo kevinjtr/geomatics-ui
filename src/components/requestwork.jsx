@@ -10,7 +10,7 @@ export function RequestWork(){
 
     return(
         <>
-            <Contact data={landingPageData.Gallery}/>
+            <Contact data={landingPageData.Contact}/>
         </>
     )
 }

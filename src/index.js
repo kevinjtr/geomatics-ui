@@ -5,6 +5,8 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
+//alert("Popup for test purposes.");
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

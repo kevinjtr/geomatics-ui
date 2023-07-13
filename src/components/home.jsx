@@ -10,6 +10,8 @@ import { Socials } from "./socials";
 
 
 const Home = () => {
+  
+
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
     setLandingPageData(JsonData);
@@ -31,7 +33,7 @@ const Home = () => {
         <Announcements data={announcementPageData.Announcements}/>
         <About data={landingPageData.About} />
         <BasicList data ={linkListPageData.Links}/>
-        <Contact data={landingPageData.Contact}/>
+        <Contact data={landingPageData.Contact} />
         </div>
       </>
     );

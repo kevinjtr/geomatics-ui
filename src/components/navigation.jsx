@@ -6,7 +6,7 @@ export const Navigation = (props) => {
       <div className="container">
         <div className="navbar-header">
           <img src="../img/saj_usace_logo.jpg" alt="title" style={{float:"left", width:"80px", paddingRight:"10px"}}/>
-          <Link className="navbar-brand page-scroll" to="/" reloadDocument>
+          <Link className="navbar-brand page-scroll" to="/" reloadDocument style={{color:"white"}}>
             Geomatics
           </Link>{" "}
         </div>
@@ -17,22 +17,22 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <Link to="/gisapplications">
+              <Link to="/gisapplications" style={{color:"white"}}>
                 GIS Applications
               </Link>
             </li>
             <li>
-              <Link to="/training" >
+              <Link to="/training" style={{color:"white"}}>
                 Training
               </Link>
             </li>
             <li>
-              <Link to="/supportservices" >
+              <Link to="/supportservices" style={{color:"white"}} >
                 Support Services
               </Link>
             </li>
             <li>
-              <a href="/requestwork" >
+              <a href="/requestwork" style={{color:"white"}}>
                 Request Work
               </a>
             </li>

@@ -7,12 +7,14 @@
   #services,
   #testimonials,
   #team,
-  #contact,
   #external-links,
   #footer {
     width: 111%;
   }
-
+  #contact{
+    width: 111%;
+    background-color: #14144c;
+  }
   #portfolio {
     width: 110%;
   }
