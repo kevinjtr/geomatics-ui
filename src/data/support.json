@@ -4,37 +4,43 @@
           "type": "left",
           "name": "Lorem ipsum dolor 1 ",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
-          "image": "../img/portfolio/01-small.jpg"
+          "image": "../img/portfolio/01-small.jpg",
+          "link": "https://google.com"
         },
         {
           "type": "right", 
           "name": "Consectetur adipiscing 2",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
-          "image": "../img/portfolio/02-small.jpg"
+          "image": "../img/portfolio/02-small.jpg",
+          "link": "https://google.com"
         },
         {
           "type": "top", 
           "name": "Lorem ipsum dolor 3",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
-          "image": "../img/portfolio/03-small.jpg"
+          "image": "../img/portfolio/03-small.jpg",
+          "link": "https://google.com"
         },
         {
           "type": "right", 
           "name": "Consectetur adipiscing 4",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
-          "image": "../img/portfolio/04-small.jpg"
+          "image": "../img/portfolio/04-small.jpg",
+          "link": "https://google.com"
         },
         {
           "type": "left", 
           "name": "Lorem ipsum dolor 5",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
-          "image": "../img/portfolio/05-small.jpg"
+          "image": "../img/portfolio/05-small.jpg",
+          "link": "https://google.com"
         },
         {
           "type": "top", 
           "name": "Consectetur adipiscing 6",
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
-          "image": "../img/portfolio/06-small.jpg"
+          "image": "../img/portfolio/06-small.jpg",
+          "link": "https://google.com"
         }
       ]
 }
