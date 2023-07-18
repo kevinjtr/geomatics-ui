@@ -9,11 +9,11 @@ import { Divider } from "@mui/material";
 
 export const BasicList = (props) => {
   return (
-    <>
+    <div>
     <div>
         <h1 style={{display:"flex", justifyContent:"center"}}>Reference Links</h1>
       </div>
-    <Box sx={{ width: '100%', display:"flex", justifyContent:"center", paddingBottom:"30px"}}>
+    <Box sx={{ width: '100%', display:"flex", justifyContent:"center", paddingBottom:"30px" }}>
       
       <List inset sx={{ width: '100%', maxWidth: 250, bgcolor: '#125780' , borderRadius:"10px" }}
       component="nav"
@@ -120,7 +120,7 @@ export const BasicList = (props) => {
       :"Loading"}
       </List>
     </Box>
-    </>
+    </div>
   );
   
 }

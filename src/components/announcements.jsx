@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
-import { Box, Link } from '@mui/material';
+import { Box } from '@mui/material';
 export const  Announcements = (props) =>
 {
     
@@ -25,7 +25,7 @@ function Item(props)
 {
     return (
         
-            <article style={{height:'100%', position:"relative", display:"flex", justifyContent:"center", flexFlow:"row wrap"}}>
+            <article style={{height:'100%', position:"relative", display:"flex", justifyContent:"center", flexFlow:"row wrap", boxShadow:'0px 0px 12px lightgray'}}>
                 <container>
                 <div style={{float:"left", position:"relative" , flexBasis:"50%"}}>
                     <a href={props.item.link}>
