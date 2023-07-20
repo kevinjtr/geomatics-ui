@@ -8,7 +8,7 @@ export const TrainingMaterial = (props) => {
     </div>
     <body style={{display:"flex", justifyContent:"center"}}>
       <div>
-        <h2 style={{textAlign:"center"}}>SOP</h2>
+        <h1 style={{textAlign:"center"}}>Standard Operating Procedure</h1>
         <ul>
           <li>
           <h3 style={{textAlign:"center"}}>PDFS</h3>

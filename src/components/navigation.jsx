@@ -32,9 +32,9 @@ export const Navigation = (props) => {
               </Link>
             </li>
             <li>
-              <a href="/requestwork" style={{color:"white"}}>
+              <Link to="/requestwork" style={{color:"white"}}>
                 Request Work
-              </a>
+              </Link>
             </li>
             <li>
               

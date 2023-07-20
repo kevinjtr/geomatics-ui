@@ -11,7 +11,7 @@ export const BasicList = (props) => {
   return (
     <div>
     <div>
-        <h1 style={{display:"flex", justifyContent:"center"}}>Reference Links</h1>
+        <h1 style={{display:"flex", justifyContent:"center", paddingBottom: '20px'}}>Reference Links</h1>
       </div>
     <Box sx={{ width: '100%', display:"flex", justifyContent:"center", paddingBottom:"30px" }}>
       
