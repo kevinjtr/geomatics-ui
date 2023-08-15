@@ -585,8 +585,10 @@ label {
 }
 /* Footer Section*/
 #footer {
-  background: #f6f6f6;
-  padding: 30px 0;
+  
+    padding: 70px 0 0;
+    background: linear-gradient(to right, #044c8c 0%, #043e8c 100%);
+  
 }
 #footer p {
   color: #888;

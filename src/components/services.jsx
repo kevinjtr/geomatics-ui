@@ -2,55 +2,31 @@ import React from "react";
 
 export const Services = (props) => {
   return (
-    <div className="text-center" style={{paddingBottom:"75px"}}>
-      {props.data
-      ? props.data.map((d,i) => (
-        <div
-          key={`${d.title}-${i}`}
-          >
-            <div>
+    <>
+    <div className="text-center">
+          <h2>Support Services</h2>
+    </div>
+    <body style={{display:"flex", justifyContent:"center"}}>
+      <div>
+        <ul>
+          <li>
+          <h3 style={{textAlign:"center"}}>Category 1</h3>
+            <ul>
               {
-                d.type === "left" ?
-                <div className="container">
-                <div style={{paddingTop:"100px"}}>
-                <a href={d.link}>
-                <img src ={d.image} alt="title" style={{float:"left"}}/> </a>
-                <h2>{d.name}</h2>
-                <p style={{textAlign:"center", paddingLeft:"50px"}}>
-                {d.text}
-                </p>
-               
-                </div>
-                </div>
-                : d.type ===  "right" ?
-                <div className="container">
-                <div style={{paddingTop:"100px"}}>
-                
-                <a href={d.link}><img src ={d.image} alt="title" style={{float:"right"}}/></a>
-                <h2>{d.name}</h2>
-                <p style={{textAlign:"center", paddingLeft:"50px"}}>
-                {d.text}
-                </p>
-                
-                </div>
-                </div>
-                : d.type === "top" ? 
-                <div className="container">
-                <div style={{paddingTop:"100px"}}>
-                
-                <h2>{d.name}</h2>
-                <p style={{textAlign:"center", paddingLeft:"50px"}}>
-                {d.text}
-                </p>
-                <a href={d.link}><img src ={d.image} alt="title" /></a>
-                </div>
-                </div>
-                : null
+                props.data ? props.data.map((d,i) => (
+                  <div key={`${d.title}-${i}`}>{
+                <li style={{textAlign:"center", padding:"10px"}}>
+                  <a href={d.link}>{d.name}</a>
+                </li>
               }
-            </div>
-            </div>
-      )): "Loading..."} 
-   </div>
-    
+              </div>
+                ))
+              : "Loading"}
+            </ul>
+          </li>
+        </ul>
+        </div>
+    </body>
+    </>
   );
 };

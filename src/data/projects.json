@@ -43,5 +43,50 @@
           "text":"Work done for C23/24 STA  in developing a process for our geologists to collect field data digitally.",
           "link":"https://storymaps.arcgis.com/stories/7269c1140700470f9c92cb40e91d370c"
          }
+      ],
+      "Apps": [
+        {
+          "id": "1",
+          "title": "Jacksonville District - Constrution Division Web Application Map",
+          "largeImage": "construction-division-webapp-map", 
+          "smallImage": "../img/projects/cd site web map storyboard - alt 2.png",
+          "text": "Geomatics Engineering Section currently supports Construction Division in providing and maintaining an interactive project site web application of all Construction Division's project sites and office locations available to all SAJ employees. This application provides project detail information to include Program Type, Stage, and Contract Number/ID, as well as situational awareness for personnel and office location planning. Additionally, this web application may be utilized by Regulatory Division to assist in their permitting process in the near future."
+        },
+        {
+          "id": "2",
+          "title": "Jacksonville District - Geomatics Section GIS Emergency Management Support",
+          "largeImage": "geomatics-gis-emergency-support",
+          "smallImage": "../img/projects/fiona-ian storyboard.png",
+          "text": "Geomatics has been providing GIS(Geographic Information Systems) support to Emergency Management for the Fiona and Ian hurricane missions. The Commander’s Update Brief has been displayed in a web application, where GIS data has been incorporated as interactive dashboards, enhancing the information displayed and providing easy and fast access to details. This web application has been useful along these two missions providing an interactive format for the Commander as well as other emergency responders within USACE."
+        },
+        {
+          "id": "3",
+          "title": "Jacksonville District - High Water Application",
+          "largeImage": "high-water-app",
+          "smallImage": "../img/projects/highWaterApp storyboard - alt 2.png",
+          "text": "Geomatics has created a High Water Mobile Application that can be downloaded on any government cell phone and utilized for field collection. This survey was designed for high water inspections and provides near real-time data ensuring all required data is entered before a user can submit the information collected in the field. The associated reporting template allows the DSPM (Dam Safety Program Manager) to generate reports with the push of a button. This greatly reduces the amount of time it takes from a user collecting information in the field to reporting up to the appropriate parties."
+        },
+        {
+          "id": "4",
+          "title": "Jacksonville District - Modeling, Mapping, & Consequences (MMC) Production Center",
+          "largeImage": "mmc-production-center",
+          "smallImage": "../img/projects/mmc storyboard - alt 2.png",
+          "text": "As part of the national MMC Production Center, Geomatics Engineering Section is finalizing inundation maps this week (7 March) for Pomona Dam in Kansas (potential downstream flooding of Ottawa Kansas shown at right) and initiating inundation maps for Mount St. Helens Dam in Washington. These inundation maps are prepared in accordance with Federal Guidelines for Dam Safety (FEMA Publication 64, FEMA 2004) to support the dam owner and emergency management officials in facilitating timely notification and evacuation of areas affected by a dam breach or flood condition."
+        },
+        {
+          "id": "5",
+          "title": "Jacksonville District - Geomatics Section Project Contract Log Application (PCL)",
+          "largeImage": "geomatics-pcl",
+          "smallImage": "../img/projects/pcl storyboard - alt 2.png",
+          "text": "Project Contract Log (PCL) Application currently user interface is in development."
+        },
+         {
+          "id":"6",
+          "title":"Modernizing Foundation Mapping",
+          "largeImage":"modernizing-foundation-mapping",
+          "smallImage":"../img/projects/modernizing foundation mapping.PNG",
+          "text":"Work done for C23/24 STA  in developing a process for our geologists to collect field data digitally.",
+          "link":"https://storymaps.arcgis.com/stories/7269c1140700470f9c92cb40e91d370c"
+         }
       ]
 }

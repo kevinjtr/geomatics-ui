@@ -1,9 +1,9 @@
 import { Image } from "./image";
 import React from "react";
 
-export const Gallery = (props) => {
+export const AppGallery = (props) => {
   return (
-    <div id="gis-apps" className="text-center" style={{paddingBottom:"75px"}}>
+    <div id="gis-apps" className="text-center" style={{paddingBottom:"300px"}}>
       <div className="container">
         <div className="section-title">
           <h2>GIS Applications</h2>
