@@ -12,47 +12,37 @@
             "host": "Hosted by John Smith, Jane Kay, Another Name"
         },
         {
-            "name": "Geospatial Technical Exchange Webinar",
+            "name": "GIS CoP",
             "image": "img/portfolio/02-large.jpg",
             "link": "img/portfolio/02-large.jpg",
             "description": "I can't believe we lived without this information before.",
-            "date": "16 FEB 2023 1330ET",
-            "agenda1": "1330-1350 Improved Survey and Dredge Management Application (SANDMAN)",
-            "agenda2": "1350-1410 Visualization Tips for Evaluating Levee Centerline Surveys",
-            "agenda3": "1410-1430 National Sediment Management Framework (NSMF)",
-            "host": "Hosted by John Smith, Jane Kay, Another Name"
+            "date": "Tentative 06-07 MAR 2024",
+            "agenda1": "",
+            "agenda2": "",
+            "agenda3": "",
+            "host": "Location TBD"
         },
         {
-            "name": "Geospatial Technical Exchange Webinar",
+            "name": "Hydro-Survey CoP",
             "image": "img/portfolio/03-large.jpg",
             "link": "img/portfolio/03-large.jpg",
             "description": "I can't believe we lived without this information before.",
-            "date": "16 FEB 2023 1330ET",
-            "agenda1": "1330-1350 Improved Survey and Dredge Management Application (SANDMAN)",
-            "agenda2": "1350-1410 Visualization Tips for Evaluating Levee Centerline Surveys",
-            "agenda3": "1410-1430 National Sediment Management Framework (NSMF)",
-            "host": "Hosted by John Smith, Jane Kay, Another Name"
+            "date": "Tentative 24-26 OCT 2024",
+            "agenda1": "",
+            "agenda2": "",
+            "agenda3": "",
+            "host": "Virtual"
         },
         {
-            "name": "Geospatial Technical Exchange Webinar",
+            "name": "Topo-Survey CoP",
             "image": "img/portfolio/04-large.jpg",
             "link": "img/portfolio/04-large.jpg",
             "description": "I can't believe we lived without this information before.",
-            "date": "16 FEB 2023 1330ET",
-            "agenda1": "1330-1350 Improved Survey and Dredge Management Application (SANDMAN)",
-            "agenda2": "1350-1410 Visualization Tips for Evaluating Levee Centerline Surveys",
-            "agenda3": "1410-1430 National Sediment Management Framework (NSMF)",
-            "host": "Hosted by John Smith, Jane Kay, Another Name"
-        },
-        {
-            "name": "Geospatial Technical Exchange Webinar",
-            "image": "img/portfolio/05-large.jpg",
-            "description": "I can't believe we lived without this information before.",
-            "date": "16 FEB 2023 1330ET",
-            "agenda1": "1330-1350 Improved Survey and Dredge Management Application (SANDMAN)",
-            "agenda2": "1350-1410 Visualization Tips for Evaluating Levee Centerline Surveys",
-            "agenda3": "1410-1430 National Sediment Management Framework (NSMF)",
-            "host": "Hosted by John Smith, Jane Kay, Another Name"
+            "date": "20-21 FEB 2024",
+            "agenda1": "",
+            "agenda2": "",
+            "agenda3": "",
+            "host": "In-Person at SPA"
         }
       ]
 }
