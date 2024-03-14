@@ -5,7 +5,8 @@ export const Navigation = (props) => {
     <nav id="menu" className="navbar navbar-default">
       <div className="container">
         <div className="navbar-header">
-          <img src="../img/saj_usace_logo.jpg" alt="title" style={{float:"left", width:"80px", paddingRight:"10px"}}/>
+          <img src="..\img\Army Star.png" alt="title" style={{float:"left", width:"60px", paddingRight:"10px"}}/>
+          <img src="..\img\Castle.png" alt="title" style={{float:"left", width:"80px", paddingRight:"10px"}}/>
           <Link className="navbar-brand page-scroll" to="/" reloadDocument style={{color:"white"}}>
             Geomatics
           </Link>{" "}
@@ -17,13 +18,8 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <Link to="/gisapplications" style={{color:"white"}}>
-                GIS Apps
-              </Link>
-            </li>
-            <li>
-              <Link to="/gisprojects" style={{color:"white"}}>
-                GIS Projects
+              <Link to="/geospatial" style={{color:"white"}}>
+                Geospatial
               </Link>
             </li>
             <li>

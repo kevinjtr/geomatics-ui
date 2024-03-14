@@ -1,6 +1,6 @@
-import { Contact } from "./contact"
+import { Contact } from "../contact"
 import { useState, useEffect } from "react";
-import JsonData from "../data/data.json";
+import JsonData from "../../data/data.json";
 export function RequestWork(){
     
     const [landingPageData, setLandingPageData] = useState({});

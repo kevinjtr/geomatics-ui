@@ -1,12 +1,12 @@
-import { About } from "./about";
+import { About } from "../about";
 import { useState, useEffect } from "react";
-import JsonData from "../data/data.json"
-import announcementData from "../data/announcements.json"
-import linkData from "../data/links.json"
-import { Announcements } from "./announcements";
-import { BasicList } from "./linklist";
-import { Contact } from "./contact";
-import { Socials } from "./socials";
+import JsonData from "../../data/data.json"
+import announcementData from "../../data/announcements.json"
+import linkData from "../../data/links.json"
+import { Announcements } from "../announcements";
+import { BasicList } from "../linklist";
+import { Contact } from "../contact";
+import { Socials } from "../socials";
 
 
 const Home = () => {
