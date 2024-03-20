@@ -42,6 +42,11 @@ export const Navigation = (props) => {
               </Link>
             </li>
             <li>
+              <Link to="/aboutus" style={{color:"white"}}>
+                About Us
+              </Link>
+            </li>
+            <li>
               
             </li>
           </ul>

@@ -4,20 +4,19 @@
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Our mission is to leverage cutting-edge technology and geospatial intelligence to enhance the capabilities of the US Army Corps of Engineers. We provide robust GIS solutions, efficient data management, and advanced web applications that empower decision-makers and support critical missions. We aim to continuously innovate, adapt to emerging technologies, and contribute significantly to the success of the US Army Corps of Engineers.",
+    
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "To drive excellence in GIS, data management, and web application development",
+      "To leverage cutting-edge technology and geospatial intelligence",
+      "To provide robust GIS solutions, efficient data management, and advanced web applications empowering decision-makers"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "To continuously innovate and adapt to emerging technologies",
+      "To contribute significantly to the success of the US Army Corps of Engineers",
+      "To bring a wealth of experience and a collaborative spirit to every project"
     ]
-  },
+},
   "Contact": {
     "address": "4321 California St, San Francisco, CA 12345 ",
     "phone": "+1 123 456 1234",

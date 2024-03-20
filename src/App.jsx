@@ -12,7 +12,10 @@ import { Training } from "./components/training";
 import { useState, useEffect } from "react";
 import projectData from "./data/projects.json";
 import { RequestWork } from "./components/requestwork";
+import AboutUs from "./components/about-us";
 import { Footer } from "./components/footer";
+import  NestedNavBar  from './components/nested-nav-bar';
+import  NestedAppBar  from './components/nested-app-bar';
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -29,6 +32,8 @@ const App = () => {
    <>
      <div>
       <Navigation />
+      <NestedAppBar/>
+      <NestedNavBar/>
       </div>
     <Routes>
       <Route path="/" element={ <Home /> }/>
@@ -43,6 +48,7 @@ const App = () => {
       <Route path="/supportservices" element= {<SupportServices />} />
       <Route path="/training" element= {<Training />} />
       <Route path="/requestwork" element= {<RequestWork />}/>
+      <Route path="/aboutus" element= {<AboutUs />}/>
     </Routes>
       <Footer />
     </>
