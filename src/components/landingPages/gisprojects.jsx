@@ -1,6 +1,6 @@
-import { ProjectGallery } from "./projectgallery";
+import { ProjectGallery } from "../projectgallery";
 import { useState, useEffect } from "react";
-import projectData from "../data/projects.json";
+import projectData from "../../data/projects.json";
 export function GisProjects(){
     
     const [projectPageData, setProjectPageData] = useState({});
