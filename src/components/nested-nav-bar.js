@@ -12,6 +12,22 @@ import { grey } from '@mui/material/colors';
 //import BasicMenu from './nested-menu'
 import { NestedDropdown } from 'mui-nested-menu';
 import {Adb as NewIcon, Save as SaveIcon, SaveAs as SaveAsIcon, ImportExportRounded as ImportExportRoundedIcon, NewIc } from "@mui/icons-material"
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  components: {
+    // Name of the component
+    MuiTypography: {
+      styleOverrides: {
+        // Name of the slot
+        root: {
+          // Some CSS
+          fontSize: '1.25rem',
+        },
+      },
+    },
+  },
+});
 
 const menuItemsData2 = {
     label: 'Web Applications',
@@ -105,12 +121,14 @@ export default function ButtonAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar  sx={{backgroundColor: grey[800]}} position="static">
         <Toolbar>
-        <NestedDropdown
-        menuItemsData={menuItemsData2}
-        MenuProps={{elevation: 3}}
-        ButtonProps={{variant: 'text', sx:{ fontSize: '1.5rem', color: 'white'}}}
-        onClick={() => console.log('Clicked')}
-      />
+          <ThemeProvider theme={theme}>
+            <NestedDropdown
+              menuItemsData={menuItemsData2}
+              MenuProps={{elevation: 3}}
+              ButtonProps={{variant: 'text', sx:{ fontSize: '1.5rem', color: 'white'}}}
+              onClick={() => console.log('Clicked')}
+            />
+          </ThemeProvider>
         </Toolbar>
       </AppBar>
     </Box>

@@ -9,6 +9,22 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { grey } from '@mui/material/colors';
 import { NestedDropdown } from 'mui-nested-menu';
 import {Adb as NewIcon, Save as SaveIcon, SaveAs as SaveAsIcon, ImportExportRounded as ImportExportRoundedIcon, NewIc } from "@mui/icons-material"
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  components: {
+    // Name of the component
+    MuiTypography: {
+      styleOverrides: {
+        // Name of the slot
+        root: {
+          // Some CSS
+          fontSize: '1.25rem',
+        },
+      },
+    },
+  },
+});
 
 const menuItemsData2 = {
     label: 'Geospatial',
@@ -16,6 +32,7 @@ const menuItemsData2 = {
       {
         label: 'GIS',
         leftIcon: <SaveIcon />,
+        sx: {"&.Mui-Popover": {sx: {fontSize: '50px !important'}}},
         items: [
           {
             label: 'GIS Apps',
@@ -153,7 +170,8 @@ const menuItemsData2 = {
 
 export default function ButtonAppBar() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    
+<Box sx={{ flexGrow: 1 }}>
       <AppBar  position="static">
         <Toolbar>
           {/* <IconButton
@@ -164,12 +182,14 @@ export default function ButtonAppBar() {
             sx={{ mr: 2 }}
           > */}
             <Button sx={{fontSize: '1.5rem'}} color="inherit">Home</Button>
+            <ThemeProvider theme={theme}>
       <NestedDropdown
         menuItemsData={menuItemsData2}
         MenuProps={{elevation: 3}}
         ButtonProps={{variant: 'text', sx:{ fontSize: '1.5rem', color: 'white'}}}
         onClick={() => console.log('Clicked')}
       />
+      </ThemeProvider>
       <Button sx={{fontSize: '1.5rem'}} color="inherit">Training</Button>
       <Button sx={{fontSize: '1.5rem'}} color="inherit">Support Services</Button>
       <Button sx={{fontSize: '1.5rem'}} color="inherit">Request Work</Button>

@@ -1,17 +1,15 @@
 import { About } from "../about";
 import { useState, useEffect } from "react";
-<<<<<<< HEAD:src/components/home.jsx
-import JsonData from "../data/data.json"
-import announcementData from "../data/announcements.json"
-import linkData from "../data/links.json"
-import { Announcements } from "./announcements";
-import { BasicList } from "./linklist";
-import { Contact } from "./contact";
-import { Socials } from "./socials";
+//import JsonData from "../data/data.json"
+//import announcementData from "../data/announcements.json"
+//import linkData from "../data/links.json"
+//import { Announcements } from "./announcements";
+//import { BasicList } from "./linklist";
+//import { Contact } from "./contact";
+//import { Socials } from "./socials";
 import './landingpage.css'
-import BgVideo from '../videos/geo.mp4'
-import {Button} from "@mui/material"
-=======
+import BgVideo from '../../videos/geo.mp4'
+import { Button } from "@mui/material"
 import JsonData from "../../data/data.json"
 import announcementData from "../../data/announcements.json"
 import linkData from "../../data/links.json"
@@ -21,7 +19,6 @@ import { Contact } from "../contact";
 import { Socials } from "../socials";
 
 
->>>>>>> origin/merrittTestBranch:src/components/landingPages/home.jsx
 const Home = () => {
   
 
