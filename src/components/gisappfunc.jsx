@@ -8,7 +8,6 @@ export const GisAppFunc = (props) => {
             <div className="container" >
                 <div>
                   <p>
-                   id is "{id}"
                    
                   </p>
                     {props.data

@@ -39,7 +39,7 @@ const App = () => {
   return (
    <>
      <div>
-      <Navigation />
+  
       <NestedAppBar/>
       <NestedNavBar/>
       </div>
@@ -100,7 +100,7 @@ const App = () => {
 
 
       <Route path="/supportservices" element= {<SupportServices />} />
-      <Route path="/training" element= {<Training />} />
+      <Route path="/training" element= {<Training />}/>
       <Route path="/requestwork" element= {<RequestWork />}/>
       <Route path="/aboutus" element= {<AboutUs />}/>
     </Routes>

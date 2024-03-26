@@ -45,6 +45,7 @@ const featuredPosts = [
       'Discover the power of Geographic Information Systems (GIS) in analyzing and visualizing spatial data for informed decision-making.',
     image: './img/gis.png',
     imageLabel: 'GIS Image',
+    url: "/gis"
   },
   {
     title: 'Remote Sensing',
@@ -52,20 +53,23 @@ const featuredPosts = [
       'Explore Remote Sensing and unlock insights from aerial and satellite imagery for various applications including environmental monitoring and urban planning.',
     image: './img/remote-sensing.png',
     imageLabel: 'Remote Sensing Image',
+    url: "remote-sensing"
   },
   {
-    title: 'Survey/Contracting',
+    title: 'Survey / Contracting',
     description:
       'Gain insights into Surveying and Contracting services tailored to meet your project requirements with precision and efficiency.',
     image: './img/surveying.png',
     imageLabel: 'Survey/Contracting Image',
+    url: "/survey-contracting"
   },
   {
-    title: 'Data Management',
+    title: 'Data Management / Database Design',
     description:
       'Efficiently manage your spatial data assets with our Data Management solutions, ensuring accessibility, integrity, and security.',
     image: './img/database-management.png',
     imageLabel: 'Data Management Image',
+    url:"data-management"
   },
   {
     title: 'Application Development',
@@ -73,6 +77,7 @@ const featuredPosts = [
       'Empower your operations with custom Application Development services, leveraging GIS technologies to create tailored solutions for your unique needs.',
     image: './img/app-development.png',
     imageLabel: 'Application Development Image',
+    url: "application-development"
   },
 ];
 

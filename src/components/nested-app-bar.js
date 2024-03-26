@@ -2,6 +2,7 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
+import { Link } from 'react-router-dom';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
@@ -28,31 +29,36 @@ const theme = createTheme({
 
 const menuItemsData2 = {
     label: 'Geospatial',
+    callback: (event, item) => window.open("/geospatial"), 
     items: [
       {
-        label: 'GIS',
+        label: "Geospatial Overview",
         leftIcon: <SaveIcon />,
         sx: {"&.Mui-Popover": {sx: {fontSize: '50px !important'}}},
+        callback: (event, item) => window.open("/geospatial", "_self"), 
+      },
+      {
+        label: "GIS",
+        leftIcon: <SaveIcon />,
+        sx: {"&.Mui-Popover": {sx: {fontSize: '50px !important'}}},
+        callback: (event, item) => window.open("/gis"), 
         items: [
           {
-            label: 'GIS Apps',
+            label: "GIS Apps",
             leftIcon: <SaveAsIcon />,
-            items: [
+            callback:(event, item) => window.open("/gisapplications", "_self"),
+            /*items: [
               {
                 label: 'Individual App Description',
               leftIcon: <SaveAsIcon />,
+              
             }
-            ]
+            ]*/
           },
           {
-            label: 'GIS Projects',
+            label: "GIS Projects",
             leftIcon: <SaveAsIcon />,
-            items:[
-              {
-                label: 'Individual Project Description',
-                leftIcon: <SaveAsIcon />,
-              }
-            ]
+            callback:(event, item) => window.open("/gisprojects", "_self"),            
           },
         ]
         //callback: (event, item) => console.log('Save clicked', event, item),
@@ -112,7 +118,7 @@ const menuItemsData2 = {
         // ],
       },
       {
-        label: 'Data Management',
+        label: 'Data Management / Database Design',
         leftIcon: <SaveAsIcon />,
         items: [
           {
@@ -181,7 +187,9 @@ export default function ButtonAppBar() {
             aria-label="menu"
             sx={{ mr: 2 }}
           > */}
-            <Button sx={{fontSize: '1.5rem'}} color="inherit">Home</Button>
+             <img src="..\img\Army Star.png" alt="title" style={{float:"left", width:"60px", paddingRight:"10px"}}/>
+          <img src="..\img\Castle.png" alt="title" style={{float:"left", width:"80px", paddingRight:"10px"}}/>
+            <Button href="\"sx={{fontSize: '1.5rem'}} color="inherit">Geomatics</Button>
             <ThemeProvider theme={theme}>
       <NestedDropdown
         menuItemsData={menuItemsData2}
@@ -190,10 +198,19 @@ export default function ButtonAppBar() {
         onClick={() => console.log('Clicked')}
       />
       </ThemeProvider>
-      <Button sx={{fontSize: '1.5rem'}} color="inherit">Training</Button>
-      <Button sx={{fontSize: '1.5rem'}} color="inherit">Support Services</Button>
-      <Button sx={{fontSize: '1.5rem'}} color="inherit">Request Work</Button>
-      <Button sx={{fontSize: '1.5rem'}} color="inherit">About Us</Button>
+      <Link to="/training">
+      <Button sx={{fontSize: '1.5rem', color:"white"}} color="inherit">Training</Button>
+      </Link>
+      <Link to="/supportservices">
+      <Button  sx={{fontSize: '1.5rem', color:"white"}} color="inherit">Support Services</Button>
+      </Link>
+      <Link to="/requestwork">
+      <Button sx={{fontSize: '1.5rem', color:"white"}} color="inherit">Request Work</Button>
+      </Link>
+      <Link to="/aboutus">
+      <Button sx={{fontSize: '1.5rem', color:"white"}} color='inherit'>About Us</Button>
+      </Link>
+      
           {/* </IconButton> */}
           {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             News
