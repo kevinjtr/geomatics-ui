@@ -10,11 +10,7 @@ export function GisApplications(){
 
     return(
         <>
-<<<<<<< Updated upstream
-            <AppGallery data={projectPageData.Apps}/>
-=======
             <AppGallery data={projectPageData.GISApps}/>
->>>>>>> Stashed changes
         </>
     )
 }
