@@ -7,6 +7,12 @@ export const GisAppFunc = (props) => {
         <div id="gis-apps" className="text-center">
             <div className="container" >
                 <div>
+<<<<<<< Updated upstream
+=======
+                  <p>
+                   
+                  </p>
+>>>>>>> Stashed changes
                     {props.data
                     ? props.data.map((d, i) => (
                   <div

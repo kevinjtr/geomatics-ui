@@ -15,7 +15,19 @@ import { RequestWork } from "./components/requestwork";
 import AboutUs from "./components/about-us";
 import { Footer } from "./components/footer";
 import  NestedNavBar  from './components/nested-nav-bar';
+<<<<<<< Updated upstream
 import  NestedAppBar  from './components/nested-app-bar';
+=======
+// import  NestedAppBar  from './components/nested-app-bar';
+import { RequestWork } from "./components/landingPages/requestwork";
+import { Footer } from "./components/footer";
+import { Geospatial } from "./components/landingPages/geospatial";
+import { GIS } from "./components/landingPages/gis";
+import { RemoteSensing } from "./components/landingPages/remotesensing";
+import { DataManagement } from "./components/landingPages/datamanagement";
+import { SurveyContracting } from "./components/landingPages/surveycontracting";
+import { AppDevelopment } from "./components/landingPages/appdevelopment";
+>>>>>>> Stashed changes
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -31,8 +43,9 @@ const App = () => {
   return (
    <>
      <div>
-      <Navigation />
-      <NestedAppBar/>
+     <Navigation/>
+{/*   
+      // <NestedAppBar/> */}
       <NestedNavBar/>
       </div>
     <Routes>
@@ -46,7 +59,7 @@ const App = () => {
         <Route path=":id" element={<GisProjectFunc data={projectPageData.Projects}/>}/>
       </Route>
       <Route path="/supportservices" element= {<SupportServices />} />
-      <Route path="/training" element= {<Training />} />
+      <Route path="/training" element= {<Training />}/>
       <Route path="/requestwork" element= {<RequestWork />}/>
       <Route path="/aboutus" element= {<AboutUs />}/>
     </Routes>

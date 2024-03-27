@@ -16,19 +16,6 @@ import post1 from './blog-post.1.md';
 import post2 from './blog-post.2.md';
 import post3 from './blog-post.3.md';
 
-const sections = [
-  { title: 'Technology', url: '#' },
-  { title: 'Design', url: '#' },
-  { title: 'Culture', url: '#' },
-  { title: 'Business', url: '#' },
-  { title: 'Politics', url: '#' },
-  { title: 'Opinion', url: '#' },
-  { title: 'Science', url: '#' },
-  { title: 'Health', url: '#' },
-  { title: 'Style', url: '#' },
-  { title: 'Travel', url: '#' },
-];
-
 const mainFeaturedPost = {
   title: 'Geospatial',
   description:
@@ -45,6 +32,7 @@ const featuredPosts = [
       'Discover the power of Geographic Information Systems (GIS) in analyzing and visualizing spatial data for informed decision-making.',
     image: './img/gis.png',
     imageLabel: 'GIS Image',
+    url:'/gis'
   },
   {
     title: 'Remote Sensing',
@@ -52,6 +40,7 @@ const featuredPosts = [
       'Explore Remote Sensing and unlock insights from aerial and satellite imagery for various applications including environmental monitoring and urban planning.',
     image: './img/remote-sensing.png',
     imageLabel: 'Remote Sensing Image',
+    url:'/remote-sensing'
   },
   {
     title: 'Survey/Contracting',
@@ -59,6 +48,7 @@ const featuredPosts = [
       'Gain insights into Surveying and Contracting services tailored to meet your project requirements with precision and efficiency.',
     image: './img/surveying.png',
     imageLabel: 'Survey/Contracting Image',
+    url:'/survey-contracting'
   },
   {
     title: 'Data Management',
@@ -66,6 +56,7 @@ const featuredPosts = [
       'Efficiently manage your spatial data assets with our Data Management solutions, ensuring accessibility, integrity, and security.',
     image: './img/database-management.png',
     imageLabel: 'Data Management Image',
+    url:'/data-management'
   },
   {
     title: 'Application Development',
@@ -73,34 +64,9 @@ const featuredPosts = [
       'Empower your operations with custom Application Development services, leveraging GIS technologies to create tailored solutions for your unique needs.',
     image: './img/app-development.png',
     imageLabel: 'Application Development Image',
+    url:'/application-development'
   },
 ];
-
-const posts = [post1, post2, post3];
-
-const sidebar = {
-  title: 'About',
-  description:
-    'Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.',
-  archives: [
-    { title: 'March 2020', url: '#' },
-    { title: 'February 2020', url: '#' },
-    { title: 'January 2020', url: '#' },
-    { title: 'November 1999', url: '#' },
-    { title: 'October 1999', url: '#' },
-    { title: 'September 1999', url: '#' },
-    { title: 'August 1999', url: '#' },
-    { title: 'July 1999', url: '#' },
-    { title: 'June 1999', url: '#' },
-    { title: 'May 1999', url: '#' },
-    { title: 'April 1999', url: '#' },
-  ],
-  social: [
-    { name: 'GitHub', icon: GitHubIcon },
-    { name: 'X', icon: XIcon },
-    { name: 'Facebook', icon: FacebookIcon },
-  ],
-};
 
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();

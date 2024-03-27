@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ButtonAppBar from "./nested-app-bar";
+
 export const Navigation = (props) => {
   return (
-    <nav id="menu" className="navbar navbar-default">
+    <nav style={{marginBottom: '0px', borderRadius:0}} id="menu" className="navbar navbar-default">
       <div className="container">
         <div className="navbar-header">
           <img src="../img/saj_usace_logo.jpg" alt="title" style={{float:"left", width:"80px", paddingRight:"10px"}}/>
@@ -17,6 +19,7 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
+<<<<<<< Updated upstream
               <Link to="/gisapplications" style={{color:"white"}}>
                 GIS Apps
               </Link>
@@ -25,6 +28,12 @@ export const Navigation = (props) => {
               <Link to="/gisprojects" style={{color:"white"}}>
                 GIS Projects
               </Link>
+=======
+              <ButtonAppBar/>
+              {/* <Link to="/geospatial" style={{color:"white"}}>
+                Geospatial
+              </Link> */}
+>>>>>>> Stashed changes
             </li>
             <li>
               <Link to="/training" style={{color:"white"}}>
