@@ -4,12 +4,13 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Main from '../../templates/landing/Main';
-import FeaturedPost from '../../templates/landing/FeaturedPost';
-import post1 from "../../templates/landing/blog-post.1.md";
-import post2 from "../../templates/landing/blog-post.2.md";
-import post3 from "../../templates/landing/blog-post.3.md";
-import MainFeaturedPost from '../../templates/landing/MainFeaturedPost';
+import Main from "../Main";
+import FeaturedPost from "../FeaturedPost";
+import post1 from "../blog-post.1.md";
+import post2 from "../blog-post.2.md";
+import post3 from "../blog-post.3.md";
+import MainFeaturedPost from "../MainFeaturedPost";
+
 
 const mainFeaturedPost = {
   title: 'GIS',
@@ -28,7 +29,7 @@ const featuredPosts = [
       'Here is a collection of GIS related projects.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    url: "/gisprojects",
+    link: "/gisprojects",
     },
   {
     title: 'GIS Apps',
@@ -37,7 +38,7 @@ const featuredPosts = [
       'Here is a collection of GIS related apps.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    url: "/gisapplications"
+    link: "/gisapplications"
   },
 ];
 

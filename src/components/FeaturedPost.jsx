@@ -11,21 +11,21 @@ function FeaturedPost(props) {
   const { post } = props;
 
   return (
-    <Grid item xs={12} md={6}>
-      <CardActionArea component="a" href="#">
+    <Grid item xs={12} md={6} height={150}>
+      <CardActionArea component="a" href={post.link}>
         <Card sx={{ display: 'flex' }}>
           <CardContent sx={{ flex: 1 }}>
-            <Typography component="h2" variant="h2">
+            <Typography component="h2" variant="h5">
               {post.title}
             </Typography>
-            <Typography variant="h4" color="text.secondary">
+            <Typography variant="subtitle1" color="text.secondary">
               {post.date}
             </Typography>
-            <Typography variant="h6" paragraph>
+            <Typography variant="subtitle1" paragraph>
               {post.description}
             </Typography>
-            <Typography variant="h6" color="primary">
-              Continue reading...
+            <Typography variant="subtitle1" color="primary">
+              
             </Typography>
           </CardContent>
           <CardMedia
