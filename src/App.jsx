@@ -43,51 +43,51 @@ const App = () => {
       <Route path="/gis" element={<GIS/> } />
       <Route path="/gisapplications">
         <Route path="" element= {<GisApplications />}/>
-        <Route path=":id" element={<GisAppFunc data={projectPageData.Projects}/>}/>
+        <Route path=":id" element={<GisAppFunc data={projectPageData.GISApps}/>}/>
       </Route>
       <Route path="/gisprojects">
         <Route path="" element={<GisProjects />} />
-        <Route path=":id" element={<GisProjectFunc data={projectPageData.Projects}/>}/>
+        <Route path=":id" element={<GisProjectFunc data={projectPageData.GISProjects}/>}/>
       </Route>
       {/*Remote Sensing Landing and Project Pages*/}
       <Route path="/remote-sensing" element={<RemoteSensing/> } />
       <Route path="/rsapplications">
         <Route path="" element= {<GisApplications />}/>
-        <Route path=":id" element={<GisAppFunc data={projectPageData.Projects}/>}/>
+        <Route path=":id" element={<GisAppFunc data={projectPageData.RSApps}/>}/>
       </Route>
       <Route path="/rsprojects">
         <Route path="" element={<GisProjects />} />
-        <Route path=":id" element={<GisProjectFunc data={projectPageData.Projects}/>}/>
+        <Route path=":id" element={<GisProjectFunc data={projectPageData.RSProjects}/>}/>
       </Route>
       {/*Data Management Landing and Project Pages*/}
       <Route path="/data-management" element={<DataManagement/> } />
       <Route path="/dmapplications">
         <Route path="" element= {<GisApplications />}/>
-        <Route path=":id" element={<GisAppFunc data={projectPageData.Projects}/>}/>
+        <Route path=":id" element={<GisAppFunc data={projectPageData.DMApps}/>}/>
       </Route>
       <Route path="/dmprojects">
         <Route path="" element={<GisProjects />} />
-        <Route path=":id" element={<GisProjectFunc data={projectPageData.Projects}/>}/>
+        <Route path=":id" element={<GisProjectFunc data={projectPageData.DMProjects}/>}/>
       </Route>
       {/*Survey Contracting Landing and Project Pages*/}
       <Route path="/survey-contracting" element={<SurveyContracting/> } />
       <Route path="/scapplications">
         <Route path="" element= {<GisApplications />}/>
-        <Route path=":id" element={<GisAppFunc data={projectPageData.Projects}/>}/>
+        <Route path=":id" element={<GisAppFunc data={projectPageData.SCApps}/>}/>
       </Route>
       <Route path="/scprojects">
         <Route path="" element={<GisProjects />} />
-        <Route path=":id" element={<GisProjectFunc data={projectPageData.Projects}/>}/>
+        <Route path=":id" element={<GisProjectFunc data={projectPageData.SCProjects}/>}/>
       </Route>
       {/*Application Development Landing and Project Pages*/}
       <Route path="/application-development" element={<AppDevelopment/> } />
       <Route path="/adapplications">
         <Route path="" element= {<GisApplications />}/>
-        <Route path=":id" element={<GisAppFunc data={projectPageData.Projects}/>}/>
+        <Route path=":id" element={<GisAppFunc data={projectPageData.APApps}/>}/>
       </Route>
       <Route path="/adprojects">
         <Route path="" element={<GisProjects />} />
-        <Route path=":id" element={<GisProjectFunc data={projectPageData.Projects}/>}/>
+        <Route path=":id" element={<GisProjectFunc data={projectPageData.APProjects}/>}/>
       </Route>
 
 

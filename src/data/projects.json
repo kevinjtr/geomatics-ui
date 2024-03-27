@@ -1,5 +1,5 @@
 {
-    "Projects": [
+    "GISProjects": [
         {
           "id": "1",
           "title": "Jacksonville District - Constrution Division Web Application Map",
@@ -44,7 +44,7 @@
           "link":"https://storymaps.arcgis.com/stories/7269c1140700470f9c92cb40e91d370c"
          }
       ],
-      "Apps": [
+      "GISApps": [
         {
           "id": "1",
           "title": "Jacksonville District - Constrution Division Web Application Map",
