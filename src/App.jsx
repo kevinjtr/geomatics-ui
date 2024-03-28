@@ -7,23 +7,21 @@ import Home from "./components/landingPages/home"
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { SupportServices } from "./components/landingPages/supportservices";
-import { Training } from "./components/landingPages/training";
+import { SupportServices } from "./components/supportservices";
+import { Training } from "./components/training";
 import { useState, useEffect } from "react";
 import projectData from "./data/projects.json";
-//import { RequestWork } from "./components/requestwork";
+import { RequestWork } from "./components/requestwork";
 import AboutUs from "./components/about-us";
-//import { Footer } from "./components/footer";
-import  NestedNavBar  from './components/nested-nav-bar';
-import  NestedAppBar  from './components/nested-app-bar';
-import { RequestWork } from "./components/landingPages/requestwork";
 import { Footer } from "./components/footer";
-import { Geospatial } from "./components/landingPages/geospatial";
+import  NestedNavBar  from './components/nested-nav-bar';
 import { GIS } from "./components/landingPages/gis";
+import { Geospatial } from "./components/landingPages/geospatial";
 import { RemoteSensing } from "./components/landingPages/remotesensing";
 import { DataManagement } from "./components/landingPages/datamanagement";
 import { SurveyContracting } from "./components/landingPages/surveycontracting";
 import { AppDevelopment } from "./components/landingPages/appdevelopment";
+import { NoMatch } from "./components/NoMatch.jsx"
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -39,15 +37,17 @@ const App = () => {
   return (
    <>
      <div>
-      <Navigation />
-      <NestedAppBar/>
+     <Navigation/>
+{/*   
+      // <NestedAppBar/> */}
       <NestedNavBar/>
       </div>
     <Routes>
       <Route path="/" element={ <Home /> }/>
-      <Route path="/geospatial" element={<Geospatial />} />
-      {/*GIS Landing and Project Pages*/}
-      <Route path="/gis" element={<GIS/> } />
+      <Route path="/geospatial" element={ <Geospatial />}/>
+      
+       {/*GIS Landing and Project Pages*/}
+      <Route path="/gis" element={<GIS />}/>
       <Route path="/gisapplications">
         <Route path="" element= {<GisApplications />}/>
         <Route path=":id" element={<GisAppFunc data={projectPageData.GISApps}/>}/>
@@ -97,12 +97,12 @@ const App = () => {
         <Route path=":id" element={<GisProjectFunc data={projectPageData.APProjects}/>}/>
       </Route>
 
-
-
       <Route path="/supportservices" element= {<SupportServices />} />
-      <Route path="/training" element= {<Training />} />
+      <Route path="/training" element= {<Training />}/>
       <Route path="/requestwork" element= {<RequestWork />}/>
       <Route path="/aboutus" element= {<AboutUs />}/>
+
+      <Route path="*" element= {<NoMatch />}/>
     </Routes>
       <Footer />
     </>

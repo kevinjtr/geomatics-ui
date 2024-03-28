@@ -4,13 +4,9 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Main from "../Main";
-import FeaturedPost from "../FeaturedPost";
-import post1 from "../blog-post.1.md";
-import post2 from "../blog-post.2.md";
-import post3 from "../blog-post.3.md";
-import MainFeaturedPost from "../MainFeaturedPost";
 
+import FeaturedPost from '../../templates/landing/FeaturedPost';
+import MainFeaturedPost from '../../templates/landing/MainFeaturedPost';
 
 const mainFeaturedPost = {
   title: 'GIS',
@@ -29,7 +25,7 @@ const featuredPosts = [
       'Here is a collection of GIS related projects.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    link: "/gisprojects",
+    url: "/gisprojects",
     },
   {
     title: 'GIS Apps',
@@ -38,11 +34,10 @@ const featuredPosts = [
       'Here is a collection of GIS related apps.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    link: "/gisapplications"
+    url: "/gisapplications"
   },
 ];
 
-const posts = [post1, post2, post3];
 
 const defaultTheme = createTheme();
 
@@ -55,15 +50,14 @@ export function GIS(){
  
         <main>
           
-          <Grid container spacing={6}>
+          <Grid container spacing={6} sx={{mt:1, mb: 5,}}>
             {featuredPosts.map((post) => (
-              <FeaturedPost key={post.title} post={post} />
+              <FeaturedPost key={post.title} post={post}/>
             ))}
           </Grid>
-          <MainFeaturedPost post={mainFeaturedPost} />
-          <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main title="From the firehose" posts={posts} />
-            
+          <MainFeaturedPost post={mainFeaturedPost}/>
+          <Grid container spacing={0} sx={{ mt: 40 }}>
+          
           </Grid>
         </main>
       </Container>

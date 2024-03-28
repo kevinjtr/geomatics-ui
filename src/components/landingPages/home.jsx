@@ -17,7 +17,8 @@ import { Announcements } from "../announcements";
 import { BasicList } from "../linklist";
 import { Contact } from "../contact";
 import { Socials } from "../socials";
-
+import TwoColumnComponent from "../two-column";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   
@@ -47,11 +48,13 @@ const Home = () => {
                 <h1 className="v-h1">Welcome to the Geomatics Website.</h1>
                 {/* <p className="v-p">Come live out your ideal vacation with us</p> */}
             </div>
-
+            <Link to='/geospatial'>
             <Button variant="outlined" sx={{color: 'white', borderColor: 'white', height: '5em', width: '15em', fontSize: '2rem'}}//className="v-home-btn"
             >Explore Our Services</Button>
+           </Link>
+            
         </div>
-
+        <TwoColumnComponent/>
         <Socials data={landingPageData.Contact}/>
         <Announcements data={announcementPageData.Announcements}/>
         <About data={landingPageData.About} />

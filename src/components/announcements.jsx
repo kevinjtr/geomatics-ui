@@ -29,7 +29,7 @@ function Item(props)
                 <container>
                 <div style={{ float:"left", position:"relative" , flexBasis:"auto", width:"50%"}}>
                     <a href={props.item.link}>
-                    <img style={{ height:"500px", width:"100%"}} src={props.item.image} alt='announcement'/>
+                    <img style={{ height:"100%", width:"100%"}} src={props.item.image} alt='announcement'/>
                     
                     <h4 style={{ fontSize:"40px", color:"white", textAlign:"center", paddingRight:"inherit", width:"20%", position:"absolute", top:"0",bottom:"0",left:"0", right:"0", height:"fit-content", margin:"auto", textShadow:"0 0 25px black"}}>{props.item.name}</h4>
                     </a>

@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ButtonAppBar from "./nested-app-bar";
+
 export const Navigation = (props) => {
   return (
-    <nav id="menu" className="navbar navbar-default">
+    <nav style={{marginBottom: '0px', borderRadius:0}} id="menu" className="navbar navbar-default">
       <div className="container">
         <div className="navbar-header">
           <img src="..\img\Army Star.png" alt="title" style={{float:"left", width:"60px", paddingRight:"10px"}}/>
@@ -18,9 +20,10 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <Link to="/geospatial" style={{color:"white"}}>
+              <ButtonAppBar/>
+              {/* <Link to="/geospatial" style={{color:"white"}}>
                 Geospatial
-              </Link>
+              </Link> */}
             </li>
             <li>
               <Link to="/training" style={{color:"white"}}>
