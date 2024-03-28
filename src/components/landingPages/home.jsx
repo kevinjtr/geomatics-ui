@@ -16,7 +16,7 @@ import linkData from "../../data/links.json"
 import { Announcements } from "../announcements";
 import { BasicList } from "../linklist";
 import { Contact } from "../contact";
-import { Socials } from "../socials";
+//import { Socials } from "../socials";
 import TwoColumnComponent from "../two-column";
 import { Link } from "react-router-dom";
 
@@ -55,7 +55,7 @@ const Home = () => {
             
         </div>
         <TwoColumnComponent/>
-        <Socials data={landingPageData.Contact}/>
+        {/*<Socials data={landingPageData.Contact}/>*/}
         <Announcements data={announcementPageData.Announcements}/>
         <About data={landingPageData.About} />
         <BasicList data ={linkListPageData.Links}/>

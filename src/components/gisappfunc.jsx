@@ -1,5 +1,6 @@
 import React from "react";
 import {  useParams } from "react-router-dom";
+import { NoMatch } from "./NoMatch";
 
 export const GisAppFunc = (props) => {
     const {id} = useParams()
@@ -28,7 +29,7 @@ export const GisAppFunc = (props) => {
                     </div>
                   </div>
                 ))
-              : "Loading..."}
+              : <NoMatch />}
                 </div>
             </div>
         </div>

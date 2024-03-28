@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 
-function MainFeaturedPost(props) {
+function DisciplineMainFeaturedPost(props) {
   const { post } = props;
 
   return (
@@ -20,6 +20,7 @@ function MainFeaturedPost(props) {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundImage: `url(${post.image})`,
+        borderRadius:"50px"
       }}
     >
       {/* Increase the priority of the hero background image */}
@@ -32,6 +33,7 @@ function MainFeaturedPost(props) {
           right: 0,
           left: 0,
           backgroundColor: 'rgba(0,0,0,.3)',
+          borderRadius:"50px"
         }}
       />
       <Grid container>
@@ -43,7 +45,7 @@ function MainFeaturedPost(props) {
               pr: { md: 0 },
             }}
           >
-            <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+            <Typography sx={{animationName: 'fade', animationDuration: '3s' }} component="h1" variant="h3" color="inherit" gutterBottom>
               {post.title}
             </Typography>
             <Typography variant="h5" color="inherit" paragraph>
@@ -59,7 +61,7 @@ function MainFeaturedPost(props) {
   );
 }
 
-MainFeaturedPost.propTypes = {
+DisciplineMainFeaturedPost.propTypes = {
   post: PropTypes.shape({
     description: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
@@ -69,4 +71,4 @@ MainFeaturedPost.propTypes = {
   }).isRequired,
 };
 
-export default MainFeaturedPost;
+export default DisciplineMainFeaturedPost;

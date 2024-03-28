@@ -1,3 +1,4 @@
+import { NoMatch } from "./NoMatch";
 import { Image } from "./image";
 import React from "react";
 
@@ -24,7 +25,7 @@ export const ProjectGallery = (props) => {
                      />
                   </div>
                 ))
-              : "Loading..."}
+              : <NoMatch />}
           </div>
         </div>
       </div>

@@ -5,8 +5,8 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-import FeaturedPost from '../../templates/landing/FeaturedPost';
-import MainFeaturedPost from '../../templates/landing/MainFeaturedPost';
+import DisciplineFeaturedPost from '../../templates/landing/DisciplineFeaturedPost';
+import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFeaturedPost';
 
 const mainFeaturedPost = {
   title: 'GIS',
@@ -38,6 +38,18 @@ const featuredPosts = [
   },
 ];
 
+const featuredProject = {
+
+    title: 'Featured Project',
+    date: 'Nov 11',
+    description:
+      'This project has this description.Also a test idea of highlighting certain new projects when they are added.',
+    image: 'https://source.unsplash.com/random?wallpapers',
+    imageText: 'Image Text',
+    url: "/gisapplications/geomatics-gis-emergency-support"
+  };
+
+
 
 const defaultTheme = createTheme();
 
@@ -52,11 +64,12 @@ export function GIS(){
           
           <Grid container spacing={6} sx={{mt:1, mb: 5,}}>
             {featuredPosts.map((post) => (
-              <FeaturedPost key={post.title} post={post}/>
+              <DisciplineFeaturedPost key={post.title} post={post} />
             ))}
           </Grid>
-          <MainFeaturedPost post={mainFeaturedPost}/>
-          <Grid container spacing={0} sx={{ mt: 40 }}>
+          <DisciplineMainFeaturedPost post={mainFeaturedPost} />
+          <DisciplineFeaturedPost post={featuredProject} />
+          <Grid container spacing={0} sx ={{mb:10}}>
           
           </Grid>
         </main>
