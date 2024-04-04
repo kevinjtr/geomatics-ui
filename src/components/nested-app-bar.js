@@ -294,12 +294,18 @@ const open = Boolean(anchorEl);
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="Remote Sensing Projects"
+                onClick={() => {
+                  navigate("/rsprojects");
+                }}
                 parentMenuOpen={open}
         ></NestedMenuItem>
         <NestedMenuItem
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="Remote Sensing Apps"
+                onClick={() => {
+                  navigate("/rsapplications");
+                }}
                 parentMenuOpen={open}
         ></NestedMenuItem>
         </NestedMenuItem>
@@ -317,12 +323,18 @@ const open = Boolean(anchorEl);
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="Survey/Contracting Projects"
+                onClick={() => {
+                  navigate("/scprojects");
+                }}
                 parentMenuOpen={open}
         ></NestedMenuItem>
         <NestedMenuItem
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="Survey/Contracting Apps"
+                onClick={() => {
+                  navigate("/scapplications");
+                }}
                 parentMenuOpen={open}
         ></NestedMenuItem>
         </NestedMenuItem>
@@ -340,12 +352,18 @@ const open = Boolean(anchorEl);
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="Data Management/Database Design Projects"
+                onClick={() => {
+                  navigate("/dmprojects");
+                }}
                 parentMenuOpen={open}
         ></NestedMenuItem>
         <NestedMenuItem
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="Data Management/Database Apps"
+                onClick={() => {
+                  navigate("/dmapplications");
+                }}
                 parentMenuOpen={open}
         ></NestedMenuItem>
         </NestedMenuItem>
@@ -363,12 +381,18 @@ const open = Boolean(anchorEl);
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="Application Development Projects"
+                onClick={() => {
+                  navigate("/adprojects");
+                }}
                 parentMenuOpen={open}
         ></NestedMenuItem>
         <NestedMenuItem
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="Application Development Apps"
+                onClick={() => {
+                  navigate("/adapplications");
+                }}
                 parentMenuOpen={open}
         ></NestedMenuItem>
         </NestedMenuItem>
