@@ -1,7 +1,9 @@
 import React from "react";
-
+import EnhancedTable  from "./test";
 export const Services = (props) => {
+  
   return (
+    
     <>
     <div className="text-center">
           <h2>Support Services</h2>

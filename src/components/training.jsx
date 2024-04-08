@@ -10,7 +10,7 @@ export function Training(){
 
     return(
         <>
-            <TrainingMaterial data={trainingPageData.Training}/>
+            <TrainingMaterial/>
         </>
     )
 }
