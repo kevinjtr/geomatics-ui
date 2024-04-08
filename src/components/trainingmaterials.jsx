@@ -69,6 +69,8 @@ export const TrainingMaterial = (props) => {
       
     <Box sx={{width:1500}}>
     <DataGrid
+      autoHeight
+      rowHeight={50}
      disableColumSelector
      disableColumnResize
         sx={{fontSize:20}}
