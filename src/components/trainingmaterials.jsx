@@ -1,11 +1,4 @@
 import * as React from "react";
-import { Table } from "@mui/material";
-import { TableBody } from "@mui/material";
-import { TableCell } from "@mui/material";
-import { TableContainer } from "@mui/material";
-import { TableHead } from "@mui/material";
-import { TableRow } from "@mui/material";
-import { Paper } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import{ Box } from "@mui/material";
 
@@ -14,11 +7,11 @@ import{ Box } from "@mui/material";
 export const TrainingMaterial = (props) => {
   const columns =
   [
-    {field: 'title', headerName:"Title", width:500,},
-    {field:"discipline", headerName:"Discipline", width:335},
+    {field: 'title', headerName:"Title", width:400,},
+    {field:"discipline", headerName:"Discipline", width:250},
     {field:"fileType", headerName:"File Type", width:140},
-    {field:"dateAdded", headerName:"Date Uploaded", width:260},
-    {field:"link", headerName:"Download Link", width:260, sortable: false, renderCell: (params) =>(
+    {field:"dateAdded", headerName:"Date Uploaded", width:200},
+    {field:"link", headerName:"Download Link", width:505, sortable: false, renderCell: (params) =>(
       <a download href={(params.value)}>{params.value}</a>
     )}
     
@@ -72,8 +65,10 @@ export const TrainingMaterial = (props) => {
       autoHeight
       rowHeight={50}
      disableColumSelector
+     disableColumnMenu
      disableColumnResize
-        sx={{fontSize:20}}
+     disableRowSelectionOnClick
+        sx={{fontSize:16}}
         rows={rows}
         columns={columns}
       />       
