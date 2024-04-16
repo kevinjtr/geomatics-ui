@@ -4,7 +4,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
 import DisciplineFeaturedPost from '../../templates/landing/DisciplineFeaturedPost';
 import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFeaturedPost';
 
@@ -59,9 +58,7 @@ export function SurveyContracting(){
     <ThemeProvider theme={defaultTheme} >
       <CssBaseline />
       <Container maxWidth="lg">
- 
-        <main>
-          
+        <main>         
           <Grid container spacing={6} sx={{mt:1, mb: 5,}}>
             {featuredPosts.map((post) => (
               <DisciplineFeaturedPost key={post.title} post={post} />
@@ -69,8 +66,7 @@ export function SurveyContracting(){
           </Grid>
           <DisciplineMainFeaturedPost post={mainFeaturedPost} />
           <DisciplineFeaturedPost post={featuredProject} />
-          <Grid container spacing={0} sx ={{mb:10}}>
-          
+          <Grid container spacing={0} sx ={{mb:10}}>        
           </Grid>
         </main>
       </Container>

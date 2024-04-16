@@ -22,8 +22,7 @@ export const GisAppFunc = (props) => {
                             <p>
                                 {d.text}
                             </p>
-                            </div>
-                              
+                            </div>  
                             : null
                         }    
                     </div>

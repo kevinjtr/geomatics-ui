@@ -13,7 +13,7 @@ const TwoColumnComponent = () => {
   return (
     <Box sx={{ margin: '50px auto', pl:'10%', pr: '10%' }}>
         <Typography variant="h2" sx={{pb: 2.5, textAlign: 'center'}} >
-            Explore how our teams contribute to mission success
+            Explore how the Geomatics section teams contribute to mission success
         </Typography>
       <Grid container spacing={3}>
         {/* GIS & Application Development Unit */}

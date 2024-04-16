@@ -13,17 +13,15 @@ export const TrainingMaterial = (props) => {
     {field:"link", headerName:"Download Link", width:505, sortable: false, renderCell: (params) =>(
       <a download href={(params.value)}>{params.value}</a>
     )}
-    
   ]
   const rows = 
   [
-    
     {
       id: 1 ,
-      title: "Overview of Geomatics Section",
+      title: "Overview of Geomatics Section", 
       fileType: "PDF",
       link: "../training/Geomatics_QMS_Chief_update.pdf",
-      dateCreated: "07/25/2023",
+      dateCreated: "",
       discipline: "Geomatics General"
     },
     {
@@ -31,7 +29,7 @@ export const TrainingMaterial = (props) => {
       fileType: "PDF",
       title: "Data Management Best Practices",
       link: "../training/DB_Overview_SAJ_ForInternalUseV2.1.17.2023.pdf",
-      dateCreated: "01/26/2024",
+      dateCreated: "01/17/2023",
       discipline: "Data Management"
     },
     {
@@ -39,40 +37,41 @@ export const TrainingMaterial = (props) => {
       fileType: "MP4",
       title: "Introduction to Geomatics",
       link: "../training/17 Geomatics Section (EN-DG) 2023-04-12.mp4",
-      dateCreated: "12/30/2023",
+      dateCreated: "04/12/2023",
       discipline: "Geomatics General"
+    },
+    {
+      id: 4,
+      fileType: "PDF",
+      title: "How to Build a Data Dictionary",
+      link: "../training/How to Build a Data Dictionary.pdf",
+      dateCreated: "",
+      discipline: "Database Design"
     }
-  
 ]
-
-
-
   return (
     <>
     <div className="text-center" style={{paddingTop:"25px"}}>
-          <h2>Training Materials</h2>
+      <h2>Training Materials</h2>
     </div>
     <body style={{display:"flex", justifyContent:"center", paddingTop:"50px"}}>
       <div>
       <ul>
-      
-    <Box sx={{width:1500}}>
-    <DataGrid
-      autoHeight
-      rowHeight={50}
-     disableColumSelector
-     disableColumnMenu
-     disableColumnResize
-     disableRowSelectionOnClick
-        sx={{fontSize:16}}
-        rows={rows}
-        columns={columns}
-      />       
-    </Box>
-       
-            </ul>
-        
-        </div>
+        <Box sx={{width:1500}}>
+          <DataGrid
+          autoHeight
+          rowHeight={50}
+          disableColumSelector
+          disableColumnMenu
+          disableColumnResize
+          disableRowSelectionOnClick
+          sx={{fontSize:16}}
+          rows={rows}
+          columns={columns}
+          />       
+        </Box>
+      </ul>
+      </div>
     </body>
     </>
   );

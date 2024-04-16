@@ -39,7 +39,6 @@ const featuredPosts = [
 ];
 
 const featuredProject = {
-
     title: 'Featured Project',
     date: 'Nov 11',
     description:
@@ -59,9 +58,7 @@ export function DataManagement(){
     <ThemeProvider theme={defaultTheme} >
       <CssBaseline />
       <Container maxWidth="lg">
- 
-        <main>
-          
+        <main> 
           <Grid container spacing={6} sx={{mt:1, mb: 5,}}>
             {featuredPosts.map((post) => (
               <DisciplineFeaturedPost key={post.title} post={post} />
@@ -69,8 +66,7 @@ export function DataManagement(){
           </Grid>
           <DisciplineMainFeaturedPost post={mainFeaturedPost} />
           <DisciplineFeaturedPost post={featuredProject} />
-          <Grid container spacing={0} sx ={{mb:10}}>
-          
+          <Grid container spacing={0} sx ={{mb:10}}>          
           </Grid>
         </main>
       </Container>

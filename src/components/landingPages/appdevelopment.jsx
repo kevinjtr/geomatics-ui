@@ -25,7 +25,7 @@ const featuredPosts = [
       'Here is a collection of Application Development related projects.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    url: "/approjects",
+    url: "/adprojects",
     },
   {
     title: 'Application Development Apps',
@@ -34,34 +34,28 @@ const featuredPosts = [
       'Here is a collection of Application Development related apps.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    url: "/apapplications"
+    url: "/adapplications"
   },
 ];
 
 const featuredProject = {
-
     title: 'Featured Project',
     date: 'Nov 11',
     description:
       'This project has this description.Also a test idea of highlighting certain new projects when they are added.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageText: 'Image Text',
-    url: "/apapplications/example404"
+    url: "/adapplications/example404"
   };
 
-
-
 const defaultTheme = createTheme();
-
 
 export function AppDevelopment(){
   return (
     <ThemeProvider theme={defaultTheme} >
       <CssBaseline />
       <Container maxWidth="lg">
- 
         <main>
-          
           <Grid container spacing={6} sx={{mt:1, mb: 5,}}>
             {featuredPosts.map((post) => (
               <DisciplineFeaturedPost key={post.title} post={post} />
@@ -70,7 +64,6 @@ export function AppDevelopment(){
           <DisciplineMainFeaturedPost post={mainFeaturedPost} />
           <DisciplineFeaturedPost post={featuredProject} />
           <Grid container spacing={0} sx ={{mb:10}}>
-          
           </Grid>
         </main>
       </Container>
