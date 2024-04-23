@@ -52,7 +52,8 @@ const Home = () => {
             <Link to='/geomatics/geospatial'>
             <Button variant="outlined" sx={{color: 'white', borderColor: 'white', height: '4em', width: '15em', fontSize: '1.25rem'}}//className="v-home-btn"
             >Explore Our Services</Button>
-            </Link>
+           </Link>
+            
         </div>
         <Box sx={{ margin: '50px auto', pl:'10%', pr: '10%' }}>
         <Typography variant="h3" sx={{pb: 1, textAlign: 'center'}} >

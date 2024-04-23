@@ -1,10 +1,10 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
+import { useState } from 'react';
+import { AppBar, Menu, MenuItem } from '@mui/material';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
+import IconButton from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { grey } from '@mui/material/colors';
 import { NestedMenuItem, NestedDropdown, IconMenuItem } from 'mui-nested-menu';
@@ -16,15 +16,21 @@ import {
   ArrowDownward as ArrowDownwardIcon,
 } from '@mui/icons-material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import NavBarButtonLinks from './nav-bar-button-links';
 
 const theme = createTheme({
   components: {
-    // Name of the component
     MuiTypography: {
       styleOverrides: {
-        // Name of the slot
         root: {
-          // Some CSS
+          fontSize: '1.25rem',
+        },
+      },
+    },
+    MuiMenuItem: {
+      styleOverrides: {
+        root: {
           fontSize: '1.25rem',
         },
       },
@@ -32,91 +38,35 @@ const theme = createTheme({
   },
 });
 
-const menuItemsData2 = {
-    label: 'Web Applications',
-    items: [
-      {
-        label: 'Budget Tool',
-        leftIcon: <NewIcon />,
-        callback: (event, item) => window.open("https://sajgis.saj.usace.army.mil/eba", "_blank"),
-      },
-      {
-        label: 'PCL',
-        leftIcon: <SaveIcon />,
-        callback: (event, item) => window.open("https://sajgis.saj.usace.army.mil/pcl", "_blank"),
-      },
-      {
-        label: 'Inventory',
-        leftIcon: <SaveAsIcon />,
-        callback: (event, item) => window.open("https://sajgis.saj.usace.army.mil/inventory", "_blank"),
-        // items: [
-        //   {
-        //     label: 'Option 1',
-        //     rightIcon: <SaveAsIcon />,
-        //     callback: (event, item) => console.log('Save As > Option 1 clicked', event, item),
-        //   },
-        //   {
-        //     label: 'Option 2',
-        //     leftIcon: <SaveAsIcon />,
-        //     callback: (event, item) => console.log('Save As > Option 2 clicked', event, item),
-        //     disabled: true,
-        //   },
-        // ],
-      },
-      // {
-      //   label: 'Survey/Contracting',
-      //   leftIcon: <SaveAsIcon />,
-      //   // items: [
-      //   //   {
-      //   //     label: 'Option 1',
-      //   //     rightIcon: <SaveAsIcon />,
-      //   //     callback: (event, item) => console.log('Save As > Option 1 clicked', event, item),
-      //   //   },
-      //   //   {
-      //   //     label: 'Option 2',
-      //   //     leftIcon: <SaveAsIcon />,
-      //   //     callback: (event, item) => console.log('Save As > Option 2 clicked', event, item),
-      //   //     disabled: true,
-      //   //   },
-      //   // ],
-      // },
-      // {
-      //   label: 'Data Management',
-      //   leftIcon: <SaveAsIcon />,
-      //   // items: [
-      //   //   {
-      //   //     label: 'Option 1',
-      //   //     rightIcon: <SaveAsIcon />,
-      //   //     callback: (event, item) => console.log('Save As > Option 1 clicked', event, item),
-      //   //   },
-      //   //   {
-      //   //     label: 'Option 2',
-      //   //     leftIcon: <SaveAsIcon />,
-      //   //     callback: (event, item) => console.log('Save As > Option 2 clicked', event, item),
-      //   //     disabled: true,
-      //   //   },
-      //   // ],
-      // },
-      // {
-      //   label: 'Application Development',
-      //   leftIcon: <SaveAsIcon />,
-      //   // items: [
-      //   //   {
-      //   //     label: 'Option 1',
-      //   //     rightIcon: <SaveAsIcon />,
-      //   //     callback: (event, item) => console.log('Save As > Option 1 clicked', event, item),
-      //   //   },
-      //   //   {
-      //   //     label: 'Option 2',
-      //   //     leftIcon: <SaveAsIcon />,
-      //   //     callback: (event, item) => console.log('Save As > Option 2 clicked', event, item),
-      //   //     disabled: true,
-      //   //   },
-      //   // ],
-      // },
-    ],
-  };
+const menuItemsDataWebApplications = [
+  {
+    label: 'Eng Budget App (EBA)',
+    url: 'https://sajgis.saj.usace.army.mil/eba',
+  },
+  {
+    label: 'Project Contract Log (PCL)',
+    url: 'https://sajgis.saj.usace.army.mil/pcl',
+  },
+  {
+    label: 'Inventory App',
+    url: 'https://sajgis.saj.usace.army.mil/inventory',
+  },
+  {
+    label: 'Calculator Tool',
+    url: 'https://sajgis.saj.usace.army.mil/pcl',
+  },
+]
 
+const menuItemsGisLinks = [
+  {
+    label: 'USGS',
+    url: 'https://www.usgs.gov/',
+  },
+  {
+    label: 'NOAA',
+    url: 'https://www.noaa.gov/',
+  },
+]
 
 const referenceLinks = [
   {
@@ -185,7 +135,7 @@ export default function ButtonAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar  sx={{backgroundColor: grey[800]}} position="static">
+      <AppBar sx={{ backgroundColor: grey[800] }} position="static">
         <Toolbar>
           <ThemeProvider theme={theme}>
             <NavBarButtonLinks identifier="web-apps" label={"Web Applications"} menuItemsData={menuItemsDataWebApplications}/>

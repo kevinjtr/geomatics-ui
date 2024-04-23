@@ -1,7 +1,8 @@
-import { AppGallery } from "../appgallery";
+import { ProjectGallery } from "./projectgallery";
 import { useState, useEffect } from "react";
-import projectData from "../../data/projects.json";
-export function GisApplications(){
+import projectData from "../data/projects.json";
+export function GisProjects(){
+    
     const [projectPageData, setProjectPageData] = useState({});
     useEffect(() => {
       setProjectPageData(projectData);
@@ -9,7 +10,7 @@ export function GisApplications(){
 
     return(
         <>
-            <AppGallery data={projectPageData.Projects}/>
+            <ProjectGallery data={projectPageData.Projects}/>
         </>
     )
 }

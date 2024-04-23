@@ -1,5 +1,12 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
+import {useState} from 'react';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import { grey } from '@mui/material/colors';
+import { NestedDropdown, NestedMenuItem } from 'mui-nested-menu';
+import {Adb as NewIcon, Save as SaveIcon, SaveAs as SaveAsIcon, ImportExportRounded as ImportExportRoundedIcon, NewIc } from "@mui/icons-material"
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { AppBar, Menu, MenuItem } from '@mui/material';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -18,6 +25,15 @@ const theme = createTheme({
         },
       },
     },
+    MuiMenuItem: {
+      styleOverrides: {
+        // Name of the slot
+        root: {
+          // Some CSS
+          fontSize: '1.25rem',
+        },
+      },
+    },
   },
 });
 
@@ -27,7 +43,6 @@ const menuItemsData2 = {
       {
         label: 'GIS',
         leftIcon: <SaveIcon />,
-        sx: {"&.Mui-Popover": {sx: {fontSize: '50px !important'}}},
         items: [
           {
             label: 'GIS Apps',
@@ -35,8 +50,8 @@ const menuItemsData2 = {
             items: [
               {
                 label: 'Individual App Description',
-              leftIcon: <SaveAsIcon />,
-            }
+                leftIcon: <SaveAsIcon />,
+              }
             ]
           },
           {
@@ -163,6 +178,33 @@ const menuItemsData2 = {
     ],
   };
 
+  const GetItemMenus = (label, open) => {
+    return(
+      <NestedMenuItem
+        //leftIcon={<NewIcon />}
+        //rightIcon={<SaveAsIcon />}
+        label={label}
+        parentMenuOpen={open}
+        >
+        <NestedMenuItem
+              //leftIcon={<NewIcon />}
+              //rightIcon={<SaveAsIcon />}
+              label={`${label} Projects`}
+              parentMenuOpen={open}
+        >
+
+        </NestedMenuItem>
+        <NestedMenuItem
+              //leftIcon={<NewIcon />}
+              //rightIcon={<SaveAsIcon />}
+              label={`${label} Apps`}
+              parentMenuOpen={open}
+        >
+
+        </NestedMenuItem>
+      </NestedMenuItem>
+    )
+  }
 export default function ButtonAppBar() {
   const [anchorEl, setAnchorEl] = useState(null);
   const navigate = useNavigate();
