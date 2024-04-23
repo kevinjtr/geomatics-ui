@@ -21,7 +21,7 @@ export const AppGallery = (props) => {
     <div id="gis-apps" className="text-center" style={{paddingBottom:"320px"}}>
       <div className="container">
         <div className="section-title">
-          <h2>GIS Applications</h2>
+          
         </div>
         <Grid
           container

@@ -1,4 +1,3 @@
-import { Navigation } from "./components/navigation";
 import { GisAppFunc } from "./components/gisappfunc";
 import { GisApplications } from "./components/landingPages/gisapplications";
 import { GisProjectFunc } from "./components/gisprojectfunc";
@@ -13,7 +12,7 @@ import { useState, useEffect } from "react";
 import projectData from "./data/projects.json";
 import { RequestWork } from "./components/requestwork";
 import AboutUs from "./components/about-us";
-import { Footer } from "./components/footer";
+//import { Footer } from "./components/footer";
 import  NestedNavBar  from './components/nested-nav-bar';
 import  NestedAppBar  from './components/nested-app-bar';
 import { Geospatial } from "./components/landingPages/geospatial";
@@ -48,11 +47,11 @@ const App = () => {
                 <Route index element={<GIS />}/>
                 <Route path="apps">
                   <Route index element= {<GisApplications />}/>
-                  <Route path=":id" element={<GisAppFunc data={projectPageData.Projects}/>}/>
+                  <Route path=":id" element={<GisAppFunc data={projectPageData.GISProjects}/>}/>
                 </Route>
                 <Route path="projects">
                   <Route index element= {<GisProjects />}/>
-                  <Route path=":id" element={<GisProjectFunc data={projectPageData.Projects}/>}/>
+                  <Route path=":id" element={<GisProjectFunc data={projectPageData.GISProjects}/>}/>
                 </Route>
               </Route>
 
@@ -113,11 +112,11 @@ const App = () => {
           <Route path="remote-sensing" element={<RemoteSensing/> } />
           <Route path="rsapplications">
             <Route path="" element= {<GisApplications />}/>
-            <Route path=":id" element={<GisAppFunc data={projectPageData.Projects}/>}/>
+            <Route path=":id" element={<GisAppFunc data={projectPageData.GISProjects}/>}/>
           </Route>
           <Route path="rsprojects">
             <Route path="" element={<GisProjects />} />
-            <Route path=":id" element={<GisProjectFunc data={projectPageData.Projects}/>}/>
+            <Route path=":id" element={<GisProjectFunc data={projectPageData.GISProjects}/>}/>
           </Route>
           {/*Data Management Landing and Project Pages*/}
           <Route path="data-management" element={<DataManagement/> } />

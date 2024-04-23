@@ -4,13 +4,18 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import DisciplineFeaturedPost from '../../templates/landing/DisciplineFeaturedPost';
-import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFeaturedPost';
+import Main from '../../templates/landing/Main';
+import FeaturedPost from "../../templates/landing/FeaturedPost";
+import post1 from "../blog-post.1.md";
+import post2 from "../blog-post.2.md";
+import post3 from "../blog-post.3.md";
+import MainFeaturedPost from "../../templates/landing/MainFeaturedPost";
+
 
 const mainFeaturedPost = {
   title: 'GIS',
   description:
-    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents. Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents. Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
+    "Whether it's spatial analysis, cartography, remote sensing, or custom GIS application development, we are committed to delivering precise, actionable insights that drive informed decision-making. From urban planning and environmental management to infrastructure development and natural resource exploration, we empower organizations across various sectors to optimize their operations, mitigate risks, and achieve sustainable growth.",
   image: 'https://source.unsplash.com/random?wallpapers',
   imageText: 'main image description',
   linkText: '',
@@ -19,32 +24,33 @@ const mainFeaturedPost = {
 const featuredPosts = [
   {
     title: 'GIS Projects',
-    date: 'Nov 12',
-    description:
-      'Here is a collection of GIS related projects.',
+    //date: 'Nov 12',
+    //description:
+      //'Here is a collection of GIS related projects.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    url: "/gisprojects",
+    url: "gis/projects",
     },
   {
     title: 'GIS Apps',
-    date: 'Nov 11',
-    description:
-      'Here is a collection of GIS related apps.',
+    //date: 'Nov 11',
+    //description:
+      //'Here is a collection of GIS related apps.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    url: "/gisapplications"
+    url: "gis/apps"
   },
 ];
 
+const posts = [post1, post2, post3];
 const featuredProject = {
-    title: 'Featured Project',
-    date: 'Nov 11',
+    title: 'Featured Project Showcase',
+    date: '',
     description:
-      'This project has this description.Also a test idea of highlighting certain new projects when they are added.',
-    image: 'https://source.unsplash.com/random?wallpapers',
-    imageText: 'Image Text',
-    url: "/gisapplications/geomatics-gis-emergency-support"
+      'Jacksonville District - Geomatics Section GIS Emergency Management Support',
+    image: '../img/projects/fiona-ian storyboard.png',
+    imageText: 'geomatics-gis-emergency-support',
+    url: "/gisprojects/geomatics-gis-emergency-support"
   };
 
 
@@ -57,16 +63,19 @@ export function GIS(){
     <ThemeProvider theme={defaultTheme} >
       <CssBaseline />
       <Container maxWidth="lg">
-        <main>  
-          <Grid container spacing={6} sx={{mt:1, mb: 5,}}>
+ 
+        <main>
+          
+          <Grid sx={{py: 2.5}} container spacing={6}>
             {featuredPosts.map((post) => (
-              <DisciplineFeaturedPost key={post.title} post={post} />
+              <FeaturedPost key={post.title} post={post} />
             ))}
           </Grid>
-          <DisciplineMainFeaturedPost post={mainFeaturedPost} />
-          <DisciplineFeaturedPost post={featuredProject} />
-          <Grid container spacing={0} sx ={{mb:10}}>          
-          </Grid>
+          <MainFeaturedPost post={mainFeaturedPost} />
+          {/* <Grid container spacing={5} sx={{ mt: 3 }}>
+            <Main title="From the firehose" posts={posts} />
+            
+          </Grid> */}
         </main>
       </Container>
     </ThemeProvider>

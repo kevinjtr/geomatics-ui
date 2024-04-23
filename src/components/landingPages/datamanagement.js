@@ -40,14 +40,13 @@ const featuredPosts = [
 
 const featuredProject = {
     title: 'Featured Project',
-    date: 'Nov 11',
+    date: '',
     description:
-      'This project has this description.Also a test idea of highlighting certain new projects when they are added.',
-    image: 'https://source.unsplash.com/random?wallpapers',
-    imageText: 'Image Text',
-    url: "/dmapplications/example404"
+      'Jacksonville District - Data Dictionary Tool Generator for ASTM Testing',
+    image: '../img/projects/datadictionarytool.png',
+    imageText: 'astm-data-dictionary-gen',
+    url: "/dmapplications/astm-data-dictionary-gen"
   };
-
 
 
 const defaultTheme = createTheme();

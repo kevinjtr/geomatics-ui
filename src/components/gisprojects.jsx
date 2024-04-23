@@ -10,7 +10,7 @@ export function GisProjects(){
 
     return(
         <>
-            <ProjectGallery data={projectPageData.Projects}/>
+            <ProjectGallery data={projectPageData.GISProjects}/>
         </>
     )
 }

@@ -7,7 +7,7 @@
           "smallImage": "/img/projects/cd site web map storyboard - alt 2.png",
           "text": "Geomatics Engineering Section currently supports Construction Division in providing and maintaining an interactive project site web application of all Construction Division's project sites and office locations available to all SAJ employees. This application provides project detail information to include Program Type, Stage, and Contract Number/ID, as well as situational awareness for personnel and office location planning. Additionally, this web application may be utilized by Regulatory Division to assist in their permitting process in the near future.",
           "smallText": "Geomatics Engineering Section currently supports Construction Division in providing and maintaining an interactive project site web application of all Construction Division's project sites and office locations available to all SAJ employees."
-        },
+          },
         {
           "id": "2",
           "title": "SAJ - Geomatics Section GIS Emergency Management Support",
@@ -15,7 +15,7 @@
           "smallImage": "/img/projects/fiona-ian storyboard.png",
           "text": "Geomatics has been providing GIS(Geographic Information Systems) support to Emergency Management for the Fiona and Ian hurricane missions. The Commander’s Update Brief has been displayed in a web application, where GIS data has been incorporated as interactive dashboards, enhancing the information displayed and providing easy and fast access to details. This web application has been useful along these two missions providing an interactive format for the Commander as well as other emergency responders within USACE.",
           "smallText": "This web application has been useful along these two missions providing an interactive format for the Commander as well as other emergency responders within USACE."
-        },
+         },
         {
           "id": "3",
           "title": "SAJ - High Water Application",
@@ -38,7 +38,7 @@
           "text": "Project Contract Log (PCL) Application currently user interface is in development."
         },
          {
-          "id":"6",
+          "id":"2",
           "title":"Modernizing Foundation Mapping",
           "largeImage":"modernizing-foundation-mapping",
           "smallImage":"/img/projects/modernizing foundation mapping.PNG",
@@ -46,7 +46,16 @@
           "link":"https://storymaps.arcgis.com/stories/7269c1140700470f9c92cb40e91d370c"
          }
       ],
-      "GISApps": [
+      "RSProjects":[
+
+      ],
+      "RSApps":[
+
+      ],
+      "SCProjects":[
+
+      ],
+      "SCApps":[
         {
           "id": "1",
           "title": "SAJ - Constrution Division Web Application Map",
@@ -67,7 +76,9 @@
           "largeImage": "high-water-app",
           "smallImage": "/img/projects/highWaterApp storyboard - alt 2.png",
           "text": "Geomatics has created a High Water Mobile Application that can be downloaded on any government cell phone and utilized for field collection. This survey was designed for high water inspections and provides near real-time data ensuring all required data is entered before a user can submit the information collected in the field. The associated reporting template allows the DSPM (Dam Safety Program Manager) to generate reports with the push of a button. This greatly reduces the amount of time it takes from a user collecting information in the field to reporting up to the appropriate parties."
-        },
+        }
+      ],
+      "DMApps":[
         {
           "id": "4",
           "title": "SAJ - Modeling, Mapping, & Consequences (MMC) Production Center",
@@ -81,9 +92,11 @@
           "largeImage": "geomatics-pcl",
           "smallImage": "/img/projects/pcl storyboard - alt 2.png",
           "text": "Project Contract Log (PCL) Application currently user interface is in development."
-        },
+        }
+      ],
+      "ADProjects":[
          {
-          "id":"6",
+          "id":"3",
           "title":"Modernizing Foundation Mapping",
           "largeImage":"modernizing-foundation-mapping",
           "smallImage":"/img/projects/modernizing foundation mapping.PNG",

@@ -11,7 +11,7 @@ export const ProjectGallery = (props) => {
     <div id="gis-apps" className="text-center" style={{paddingBottom:"320px"}}>
       <div className="container">
         <div className="section-title">
-          <h2>GIS Projects</h2>
+          
         </div>
         <div className="row">
           {/* <div className="gis-app-items"  style={{display: "flex", direction: "column", marginTop:"10px",marginBottom:"50px", marginLeft:"50px",marginRight:"50px", alignContent:"center"}}> */}
