@@ -15,7 +15,7 @@ import MainFeaturedPost from "../MainFeaturedPost";
 const mainFeaturedPost = {
   title: 'GIS',
   description:
-    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents. Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents. Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
+    "Whether it's spatial analysis, cartography, remote sensing, or custom GIS application development, we are committed to delivering precise, actionable insights that drive informed decision-making. From urban planning and environmental management to infrastructure development and natural resource exploration, we empower organizations across various sectors to optimize their operations, mitigate risks, and achieve sustainable growth.",
   image: 'https://source.unsplash.com/random?wallpapers',
   imageText: 'main image description',
   linkText: '',
@@ -24,21 +24,21 @@ const mainFeaturedPost = {
 const featuredPosts = [
   {
     title: 'GIS Projects',
-    date: 'Nov 12',
-    description:
-      'Here is a collection of GIS related projects.',
+    //date: 'Nov 12',
+    //description:
+      //'Here is a collection of GIS related projects.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    link: "/gisprojects",
+    url: "gis/projects",
     },
   {
     title: 'GIS Apps',
-    date: 'Nov 11',
-    description:
-      'Here is a collection of GIS related apps.',
+    //date: 'Nov 11',
+    //description:
+      //'Here is a collection of GIS related apps.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    link: "/gisapplications"
+    url: "gis/apps"
   },
 ];
 
@@ -55,16 +55,16 @@ export function GIS(){
  
         <main>
           
-          <Grid container spacing={6}>
+          <Grid sx={{py: 2.5}} container spacing={6}>
             {featuredPosts.map((post) => (
               <FeaturedPost key={post.title} post={post} />
             ))}
           </Grid>
           <MainFeaturedPost post={mainFeaturedPost} />
-          <Grid container spacing={5} sx={{ mt: 3 }}>
+          {/* <Grid container spacing={5} sx={{ mt: 3 }}>
             <Main title="From the firehose" posts={posts} />
             
-          </Grid>
+          </Grid> */}
         </main>
       </Container>
     </ThemeProvider>

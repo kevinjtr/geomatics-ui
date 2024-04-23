@@ -7,10 +7,6 @@ export const GisAppFunc = (props) => {
         <div id="gis-apps" className="text-center">
             <div className="container" >
                 <div>
-                  <p>
-                   id is "{id}"
-                   
-                  </p>
                     {props.data
                     ? props.data.map((d, i) => (
                   <div

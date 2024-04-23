@@ -7,11 +7,14 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { grey } from '@mui/material/colors';
-//import { NestedDropdown } from 'mui-nested-menu';
-//import {Adb as NewIcon, Save as SaveIcon, SaveAs as SaveAsIcon, ImportExportRounded as ImportExportRoundedIcon } from "@mui/icons-material"
-//import BasicMenu from './nested-menu'
-import { NestedDropdown } from 'mui-nested-menu';
-import {Adb as NewIcon, Save as SaveIcon, SaveAs as SaveAsIcon, ImportExportRounded as ImportExportRoundedIcon, NewIc } from "@mui/icons-material"
+import { NestedMenuItem, NestedDropdown, IconMenuItem } from 'mui-nested-menu';
+import {
+  Adb as NewIcon,
+  Save as SaveIcon,
+  SaveAs as SaveAsIcon,
+  ImportExportRounded as ImportExportRoundedIcon,
+  ArrowDownward as ArrowDownwardIcon,
+} from '@mui/icons-material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
@@ -115,19 +118,79 @@ const menuItemsData2 = {
   };
 
 
+const referenceLinks = [
+  {
+    label: "MARS",
+    url: "https://uas.sec.usace.army.mil/",
+    "category": "usace-websites"
+  },
+  {
+    label: "NLD",
+    url: "https://levees.sec.usace.army.mil/#/",
+    "category": "usace-websites"
+  },
+  {
+    label: "Volusia Municipalities / Cities",
+    url: "https://google.com",
+    "category": "fl-county-webview"
+  },
+  {
+    label: "NOAA",
+    url: "https://www.noaa.gov/satellite-imagery-reports-launch-information",
+    "category": "local-federal-agencies"
+  },
+  {
+    label: "FEMA",
+    url: " https://gis.fema.gov/",
+    "category": "other"
+  },
+  {
+    label: "UFWS",
+    url: "https://gis-fws.opendata.arcgis.com/",
+    "category": "other"
+  },
+  {
+    label: "FWC",
+    url: "https://myfwc.com/research/gis/",
+    "category": "other"
+  },
+  {
+    label: "FLORIDA DISASTER",
+    url: "https://www.floridadisaster.org/weather/",
+    "category": "other"
+  }
+]
+
 export default function ButtonAppBar() {
+//   const [anchorEl, setAnchorEl] = useState(null);
+
+//   function handleClick(event) {
+//     if (anchorEl !== event.currentTarget) {
+//       setAnchorEl(event.currentTarget);
+//     }
+//   }
+
+// const handleClose = () => setAnchorEl(null);
+// const handlePopoverOpen = (event) => {
+//   setAnchorEl(event.currentTarget);
+// };
+
+// const handlePopoverClose = () => {
+//   setAnchorEl(null);
+// };
+
+// const open = Boolean(anchorEl);
+
+
 
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar  sx={{backgroundColor: grey[800]}} position="static">
         <Toolbar>
           <ThemeProvider theme={theme}>
-            <NestedDropdown
-              menuItemsData={menuItemsData2}
-              MenuProps={{elevation: 3}}
-              ButtonProps={{variant: 'text', sx:{ fontSize: '1.5rem', color: 'white'}}}
-              onClick={() => console.log('Clicked')}
-            />
+            <NavBarButtonLinks identifier="web-apps" label={"Web Applications"} menuItemsData={menuItemsDataWebApplications}/>
+            <NavBarButtonLinks identifier="gis-links" label={"GIS Links"} menuItemsData={menuItemsGisLinks}/>
+            <NavBarButtonLinks identifier="ref-links" label={"Reference Links"} menuItemsData={referenceLinks}/>
           </ThemeProvider>
         </Toolbar>
       </AppBar>
