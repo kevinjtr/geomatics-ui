@@ -7,7 +7,7 @@ import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 
 function MainFeaturedPost(props) {
-  const { post } = props;
+  const { post, animation_on } = props;
 
   return (
     <Paper
@@ -43,7 +43,7 @@ function MainFeaturedPost(props) {
               pr: { md: 0 },
             }}
           >
-            <Typography sx={{animationName: 'fade', animationDuration: '3s' }} component="h1" variant="h3" color="inherit" gutterBottom>
+            <Typography {...(animation_on && {sx:{animationName: 'fade', animationDuration: '3s' }})} component="h1" variant="h3" color="inherit" gutterBottom>
               {post.title}
             </Typography>
             <Typography variant="h5" color="inherit" paragraph>

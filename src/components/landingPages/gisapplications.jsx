@@ -9,7 +9,7 @@ export function GisApplications(){
 
     return(
         <>
-            <AppGallery data={projectPageData.GISApps}/>
+            <AppGallery data={projectPageData.Projects}/>
         </>
     )
 }

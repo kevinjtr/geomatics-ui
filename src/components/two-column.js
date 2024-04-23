@@ -13,7 +13,7 @@ const TwoColumnComponent = () => {
   return (
     <Box sx={{ margin: '50px auto', pl:'10%', pr: '10%' }}>
         <Typography variant="h2" sx={{pb: 2.5, textAlign: 'center'}} >
-            Explore how the Geomatics section teams contribute to mission success
+            Explore how our teams contribute to mission success
         </Typography>
       <Grid container spacing={3}>
         {/* GIS & Application Development Unit */}
@@ -93,8 +93,8 @@ const TwoColumnComponent = () => {
           </div>
         </Grid>
       </Grid>
-      <Typography variant="h4" sx={{pt: 1.5, textAlign: 'center'}} >
-      These components work together seamlessly: remote sensing identifies areas of interest, GIS analyzes and visualizes the data, applications/software aids in analysis, and survey data validates remote sensing information. Efficient data management integrates and makes information accessible across the organization. Together, GIS, remote sensing, data management, software development, and survey/contracting enable the Geomatics section (Engineering Design Branch) to provide engineering solutions supporting national security, environmental sustainability, and economic development for the US Army Corps of Engineers.
+      <Typography variant="h5" sx={{pt: 1.5, textAlign: 'center'}} >
+      These components work together seamlessly: remote sensing identifies areas of interest, GIS analyzes and visualizes the data, applications/software aids in analysis, and survey data validates remote sensing information. Efficient data management integrates and makes information accessible across the organization. Together, GIS, remote sensing, data management, software development, and survey/contracting enable the Geomatics section (EN-DG) to provide engineering solutions supporting national security, environmental sustainability, and economic development for the US Army Corps of Engineers.
         </Typography>
     </Box>
   );

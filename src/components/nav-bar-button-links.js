@@ -23,14 +23,14 @@ const theme = createTheme({
     MuiTypography: {
       styleOverrides: {
         root: {
-          fontSize: '1.25rem',
+          //fontSize: '1.25rem',
         },
       },
     },
     MuiMenuItem: {
       styleOverrides: {
         root: {
-          fontSize: '1.25rem',
+          //fontSize: '1.25rem',
         },
       },
     },
@@ -47,17 +47,38 @@ export default function NavBarButtonLinks(props) {
         }
       }
 
-    const handleClose = () => setAnchorEl(null);
-    const open = Boolean(anchorEl);
+    //const handleClose = () => setAnchorEl(null);
+    let timeoutId = null;
+
+  const handleClose = () => {
+    if (!!timeoutId) {
+      clearTimeout(timeoutId);
+    }
+    timeoutId = setTimeout(() => {
+      setAnchorEl(null);
+    }, 0);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+  };
+
+  const handleMenuEnter = () => {
+    if (!!timeoutId) {
+      clearTimeout(timeoutId);
+    }
+  };
 
   return (
           <ThemeProvider theme={theme}>
-          <Button sx={{fontSize: '1.5rem'}} color="inherit"
+          <Button color="inherit"
+          sx={{ zIndex: (theme) => theme.zIndex.modal + 1 }}
                 endIcon={<KeyboardArrowDownIcon />}
               aria-owns={anchorEl ? "simple-menu" : undefined}
               aria-haspopup="true"
               onClick={handleClick}
               onMouseOver={handleClick}
+              onMouseLeave={handleClose}
             >
               {label}
           </Button>
@@ -66,7 +87,11 @@ export default function NavBarButtonLinks(props) {
       anchorEl={anchorEl}
       open={Boolean(anchorEl)}
       onClose={handleClose}
-      MenuListProps={{ onMouseLeave: handleClose }}
+      disableRestoreFocus={true}
+      MenuListProps={{
+        onMouseLeave: handleMenuClose,
+        onMouseEnter: handleMenuEnter
+      }}
     >
       {menuItemsData?.map( item => (<MenuItem onClick={(e) => { handleClose(e); window.open(item.url, '_blank');}}>{item.label}</MenuItem>))}
           </Menu>

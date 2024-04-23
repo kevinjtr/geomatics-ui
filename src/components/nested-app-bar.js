@@ -215,14 +215,37 @@ export default function ButtonAppBar() {
     }
   }
 
-const handleClose = () => setAnchorEl(null);
-const handlePopoverOpen = (event) => {
-  setAnchorEl(event.currentTarget);
+//const handleClose = () => setAnchorEl(null);
+let timeoutId = null;
+
+const handleClose = () => {
+if (!!timeoutId) {
+  clearTimeout(timeoutId);
+}
+timeoutId = setTimeout(() => {
+  setAnchorEl(null);
+}, 0);
 };
 
-const handlePopoverClose = () => {
-  setAnchorEl(null);
+const handleMenuClose = () => {
+setAnchorEl(null);
 };
+
+const handleMenuEnter = () => {
+if (!!timeoutId) {
+  clearTimeout(timeoutId);
+}
+};
+
+const geoDir = 'geomatics/geospatial/'
+
+const menusArray = [
+  { label: 'GIS', top: geoDir + 'gis', projects: geoDir + 'remote-sensing/projects', apps: geoDir + 'remote-sensing/apps' },
+  { label: 'Remote Sensing', top: geoDir + 'remote-sensing', projects: geoDir + 'remote-sensing/projects', apps: geoDir + 'remote-sensing/apps' },
+  { label: 'Survey/Contracting', top: geoDir + 'survey-contracting', projects: geoDir + 'survey-contracting/projects' , apps: geoDir + 'survey-contracting/apps' },
+  { label: 'Data Management/Database Desgin', top: geoDir + 'data-management', projects: geoDir + 'data-management/projects', apps: geoDir + 'data-management/apps' },
+  { label: 'Application Development', top: geoDir + 'application-development', projects: geoDir + 'application-development/projects', apps: geoDir + 'application-development/apps' }
+]
 
 const open = Boolean(anchorEl);
 
@@ -231,12 +254,14 @@ const open = Boolean(anchorEl);
 
 
             <ThemeProvider theme={theme}>
-            <Button sx={{color: 'white', fontSize: '1.5rem', padding: '15px 0'}}
+            <Button sx={{color: 'white', zIndex: (theme) => theme.zIndex.modal + 1500}}
           endIcon={<KeyboardArrowDownIcon />}
         aria-owns={anchorEl ? "simple-menu" : undefined}
         aria-haspopup="true"
         onClick={handleClick}
         onMouseOver={handleClick}
+        onMouseLeave={handleClose}
+
       >
         Geospatial
       </Button>
@@ -245,30 +270,65 @@ const open = Boolean(anchorEl);
         anchorEl={anchorEl}
         open={Boolean(anchorEl)}
         onClose={handleClose}
-        MenuListProps={{ onMouseLeave: handleClose }}
+        disableRestoreFocus={true}
+      MenuListProps={{
+        onMouseLeave: handleMenuClose,
+        onMouseEnter: handleMenuEnter
+      }}
       >
-         <Link to='/geospatial'>
+         <Link to='/geomatics/geospatial'>
          <MenuItem sx={{color: 'blue', textDecoration:'underline'}}>
           View all
           </MenuItem>
            </Link>
           
+           {menusArray.map(item => <>
+            <NestedMenuItem
+                //leftIcon={<NewIcon />}
+                //rightIcon={<SaveAsIcon />}
+                label={item.label}
+                parentMenuOpen={open}
+                onClick={() => {
+                  navigate(item.top);
+                }}
+          >
           <NestedMenuItem
+                //leftIcon={<NewIcon />}
+                //rightIcon={<SaveAsIcon />}
+                label={item.label + " Projects"}
+                parentMenuOpen={open}
+                onClick={() => {
+                  navigate(item.projects);
+                }}
+        ></NestedMenuItem>
+        <NestedMenuItem
+                //leftIcon={<NewIcon />}
+                //rightIcon={<SaveAsIcon />}
+                label={item.label + " Apps"}
+                parentMenuOpen={open}
+                onClick={() => {
+                  navigate(item.apps);
+                }}
+        ></NestedMenuItem>
+        </NestedMenuItem>
+           </>)}
+
+          {/* <NestedMenuItem
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="GIS"
                 parentMenuOpen={open}
                 onClick={() => {
-                  navigate("/gis");
+                  navigate("geomatics/geospatial/gis");
                 }}
-        >
+          >
           <NestedMenuItem
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="GIS Projects"
                 parentMenuOpen={open}
                 onClick={() => {
-                  navigate("/gisprojects");
+                  navigate("geomatics/geospatial/gis/projects");
                 }}
         ></NestedMenuItem>
         <NestedMenuItem
@@ -277,7 +337,7 @@ const open = Boolean(anchorEl);
                 label="GIS Apps"
                 parentMenuOpen={open}
                 onClick={() => {
-                  navigate("/gisapplications");
+                  navigate("geomatics/geospatial/gis/apps");
                 }}
         ></NestedMenuItem>
         </NestedMenuItem>
@@ -286,7 +346,7 @@ const open = Boolean(anchorEl);
                 //rightIcon={<SaveAsIcon />}
                 label="Remote Sensing"
                 onClick={() => {
-                  navigate("/remote-sensing");
+                  navigate("geomatics/geospatial/remote-sensing");
                 }}
                 parentMenuOpen={open}
         >
@@ -294,27 +354,22 @@ const open = Boolean(anchorEl);
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="Remote Sensing Projects"
-                onClick={() => {
-                  navigate("/rsprojects");
-                }}
                 parentMenuOpen={open}
         ></NestedMenuItem>
         <NestedMenuItem
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="Remote Sensing Apps"
-                onClick={() => {
-                  navigate("/rsapplications");
-                }}
                 parentMenuOpen={open}
         ></NestedMenuItem>
         </NestedMenuItem>
+
         <NestedMenuItem
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="Survey/Contracting"
                 onClick={() => {
-                  navigate("/survey-contracting");
+                  navigate("geomatics/geospatial/survey-contracting");
                 }}
                 parentMenuOpen={open}
         >
@@ -322,18 +377,12 @@ const open = Boolean(anchorEl);
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="Survey/Contracting Projects"
-                onClick={() => {
-                  navigate("/scprojects");
-                }}
                 parentMenuOpen={open}
         ></NestedMenuItem>
         <NestedMenuItem
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="Survey/Contracting Apps"
-                onClick={() => {
-                  navigate("/scapplications");
-                }}
                 parentMenuOpen={open}
         ></NestedMenuItem>
         </NestedMenuItem>
@@ -343,7 +392,7 @@ const open = Boolean(anchorEl);
                 //rightIcon={<SaveAsIcon />}
                 label="Data Management/Database Design"
                 onClick={() => {
-                  navigate("/data-management");
+                  navigate("geomatics/geospatial/data-management");
                 }}
                 parentMenuOpen={open}
         >
@@ -351,18 +400,12 @@ const open = Boolean(anchorEl);
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="Data Management/Database Design Projects"
-                onClick={() => {
-                  navigate("/dmprojects");
-                }}
                 parentMenuOpen={open}
         ></NestedMenuItem>
         <NestedMenuItem
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="Data Management/Database Apps"
-                onClick={() => {
-                  navigate("/dmapplications");
-                }}
                 parentMenuOpen={open}
         ></NestedMenuItem>
         </NestedMenuItem>
@@ -372,7 +415,7 @@ const open = Boolean(anchorEl);
                 //rightIcon={<SaveAsIcon />}
                 label="Application Development"
                 onClick={() => {
-                  navigate("/application-development");
+                  navigate("geomatics/geospatial/application-development");
                 }}
                 parentMenuOpen={open}
         >
@@ -380,21 +423,15 @@ const open = Boolean(anchorEl);
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="Application Development Projects"
-                onClick={() => {
-                  navigate("/adprojects");
-                }}
                 parentMenuOpen={open}
         ></NestedMenuItem>
         <NestedMenuItem
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label="Application Development Apps"
-                onClick={() => {
-                  navigate("/adapplications");
-                }}
                 parentMenuOpen={open}
         ></NestedMenuItem>
-        </NestedMenuItem>
+        </NestedMenuItem> */}
       </Menu>
 {/*       <NestedDropdown
         menuItemsData={menuItemsData2}

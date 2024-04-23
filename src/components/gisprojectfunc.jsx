@@ -1,6 +1,6 @@
 import React from "react";
 import {  useParams } from "react-router-dom";
-import { NoMatch } from "./NoMatch";
+import { Stack } from "@mui/material"
 
 export const GisProjectFunc = (props) => {
     const {id} = useParams()
@@ -16,20 +16,22 @@ export const GisProjectFunc = (props) => {
                     <div >
                         {
                             id === d.largeImage ? 
-                            <div style={{paddingTop:"60px", marginBottom:"30px"}}>
-                            <a href={d.link} rel="noreferrer" target="_blank"> <img src={d.smallImage}  alt={d.title} style={{float:"left", width:"100%", paddingRight:"20px"}} /> </a>
+                            <Stack spacing={2} sx={{textAlign: 'center'}}>
+                            <a href={d.link} rel="noreferrer" target="_blank"> 
+                              <img src={d.smallImage}  alt={d.title} style={{ paddingTop: 25, maxWidth: '1200'}} /> 
+                            </a>
                             <h2>{d.title}</h2>
-                            <p>
+                            <p >
                                 {d.text}
                             </p>
-                            </div>
+                            </Stack>
                               
                             : null
                         }    
                     </div>
                   </div>
                 ))
-              : <NoMatch />}
+              : "Loading..."}
                 </div>
             </div>
         </div>
