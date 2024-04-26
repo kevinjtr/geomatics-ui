@@ -1,11 +1,10 @@
 import React from "react";
 import {  useParams } from "react-router-dom";
-import { Stack } from "@mui/material"
-
-export const GisProjectFunc = (props) => {
+import { Stack, Grid } from "@mui/material";
+export const ProjectView = (props) => {
     const {id} = useParams()
     return(
-        <div id="gis-projects" className="text-center">
+        <div id="gis-apps" className="text-center">
             <div className="container" >
                 <div>
                     {props.data
@@ -16,15 +15,16 @@ export const GisProjectFunc = (props) => {
                     <div >
                         {
                             id === d.largeImage ? 
-                            <Stack spacing={2} sx={{textAlign: 'center'}}>
-                            <a href={d.link} rel="noreferrer" target="_blank"> 
-                              <img src={d.smallImage}  alt={d.title} style={{ paddingTop: 25, maxWidth: '1200'}} /> 
-                            </a>
+                            <div style={{paddingTop:"60px", marginBottom:"30px"}}>
+                              <Stack sx={{textAlign: 'center'}}>
+                              <a href={d.link} rel="noreferrer" target="_blank"> <img src={d.smallImage}  alt={d.title} style={{maxWidth: "800px", paddingRight:"20px"}} /> </a>
                             <h2>{d.title}</h2>
-                            <p >
+                            <div style={{display: 'block', margin: 'auto', width: '1000px'}}>
                                 {d.text}
-                            </p>
-                            </Stack>
+                            </div>
+                              </Stack>
+
+                            </div>
                               
                             : null
                         }    

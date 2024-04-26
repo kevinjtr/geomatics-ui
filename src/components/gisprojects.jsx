@@ -1,4 +1,4 @@
-import { ProjectGallery } from "./projectgallery";
+import { ImageGallery } from "./image-gallery";
 import { useState, useEffect } from "react";
 import projectData from "../data/projects.json";
 export function GisProjects(){
@@ -10,7 +10,7 @@ export function GisProjects(){
 
     return(
         <>
-            <ProjectGallery data={projectPageData.Projects}/>
+            <ImageGallery data={projectPageData.Projects} name="Project"/>
         </>
     )
 }

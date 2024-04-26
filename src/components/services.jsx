@@ -1,11 +1,12 @@
 import React from "react";
+import { Typography } from "@mui/material";
 
 export const Services = (props) => {
   return (
     <>
-    <div className="text-center">
-          <h2>Support Services</h2>
-    </div>
+     <Typography variant="h4" sx={{py: 2.5, textAlign: 'center'}}>
+                Support Services
+            </Typography>
     <body style={{display:"flex", justifyContent:"center"}}>
       <div>
         <ul>

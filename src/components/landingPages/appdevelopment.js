@@ -68,7 +68,7 @@ export function AppDevelopment(){
             </Typography>
 
             <Typography variant="h4" sx={{pb: 1, textAlign: 'center'}} >
-            What Are the Most Common Programming Languages?
+            What web programming lamguages we use?
             </Typography>
 
             <List sx={{ listStyleType: 'disc' }}>
@@ -79,10 +79,16 @@ export function AppDevelopment(){
             CSS (Cascading Style Sheets)
             </ListItem>
             <ListItem sx={{ display: 'list-item' }}>
-            JavaScript
+            JavaScript (Dynamically updating content, control multimedia, animate images, and pretty much everything else)
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+            React (a JavaScript library/framework)
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+            R (Open-source statistical programming language that's used for data analysis, visualization, and modeling)
             </ListItem>
             </List>
-            <Box sx={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }}>
+            <Box sx={{ textAlign:'center' }}>
             <img style={{height: 100}} src="/img/html-css-javascript.png"/>
             <img style={{height: 60, marginBottom: 15}} src="/img/react-icon.PNG"/>
             </Box>

@@ -35,7 +35,7 @@ const Home = () => {
             <div className="bg-overlay"></div> 
 
             <div className="v-home-text">
-                <h1 className="v-h1">Welcome to the Geomatics Website.</h1>
+                <h1 className="v-h2">Welcome to the Geomatics Website.</h1>
                 {/* <p className="v-p">Come live out your ideal vacation with us</p> */}
             </div>
 

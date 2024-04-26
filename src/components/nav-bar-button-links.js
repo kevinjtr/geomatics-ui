@@ -23,14 +23,21 @@ const theme = createTheme({
     MuiTypography: {
       styleOverrides: {
         root: {
-          //fontSize: '1.25rem',
+          fontSize: '1rem',
         },
       },
     },
     MuiMenuItem: {
       styleOverrides: {
         root: {
-          //fontSize: '1.25rem',
+          fontSize: '1rem',
+        },
+      },
+    },
+    MuiModal: {
+      styleOverrides: {
+        root: {
+          zIndex: 1250
         },
       },
     },
@@ -72,7 +79,7 @@ export default function NavBarButtonLinks(props) {
   return (
           <ThemeProvider theme={theme}>
           <Button color="inherit"
-          sx={{ zIndex: (theme) => theme.zIndex.modal + 1 }}
+          sx={{ zIndex: 1275 }}
                 endIcon={<KeyboardArrowDownIcon />}
               aria-owns={anchorEl ? "simple-menu" : undefined}
               aria-haspopup="true"
@@ -93,7 +100,12 @@ export default function NavBarButtonLinks(props) {
         onMouseEnter: handleMenuEnter
       }}
     >
-      {menuItemsData?.map( item => (<MenuItem onClick={(e) => { handleClose(e); window.open(item.url, '_blank');}}>{item.label}</MenuItem>))}
+      {menuItemsData?.map( item => (
+      <a href={item.url} target="_blank" style={{textDecoration: 'none', color: theme.palette.text.primary}}>
+        <MenuItem onClick={(e) =>  handleClose(e)}>{item.label}
+        </MenuItem>
+      </a>
+      ))}
           </Menu>
           </ThemeProvider>
   );

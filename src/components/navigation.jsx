@@ -1,5 +1,5 @@
 // import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import ButtonAppBar from "./nested-app-bar";
 
 // export const Navigation = (props) => {
@@ -79,18 +79,31 @@ export const Navigation = (props) => {
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar position="static">
-        <Toolbar>
-          <img src="/img/saj_usace_logo.jpg" alt="title" style={{float:"left", width:"80px", paddingRight:"10px"}}/>
-          <NavLink className="navbar-brand page-scroll" to="/geomatics" reloadDocument style={{color:"white"}}>
+        <Toolbar sx={{justifyContent: 'space-evenly'}}>
+          <Box sx={{pl:5, display: 'flex'}}>
+          <Link to={"/geomatics"}>
+          <img src="/img/Army Star.png" alt="title" style={{float:"left", height:"50px", paddingRight:"10px"}}/>
+          <img src="/img/Castle.png" alt="title" style={{float:"left", width:"70px", paddingRight:"10px"}}/>
+          </Link>
+          
+          
+          <Box sx={{pt:1}}>
+          <NavLink className="navbar-brand page-scroll" to="/geomatics" reloadDocument style={{color:"white", textDecoration: 'none', fontSize: '1.5rem'}}>
             Geomatics
           </NavLink>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          </Box>
+
+          </Box>
+
+          <Box sx={{ display: { xs: 'none', sm: 'block' }, pr: 5 }}>
             <ButtonAppBar/>
             {navItems.map((item) => (
-              <Button variant="text" key={item.label} sx={{ color: '#fff' }}
-              onClick={() => navigate(item.url) }>
+              <NavLink to={item.url} style={{ textDecoration: 'none' }}>
+              <Button variant="text" key={item.label} sx={{color: '#fff', '&:hover': {color: 'text.primary'}}}//onClick={() => navigate(item.url) }
+              >
                 {item.label}
               </Button>
+              </NavLink>
             ))}
           </Box>
         </Toolbar>

@@ -12,6 +12,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link, useNavigate  } from "react-router-dom";
+import projectData from "../data/projects.json";
 
 const theme = createTheme({
   components: {
@@ -21,7 +22,7 @@ const theme = createTheme({
         // Name of the slot
         root: {
           // Some CSS
-          fontSize: '1.25rem',
+          fontSize: '1rem',
         },
       },
     },
@@ -30,10 +31,17 @@ const theme = createTheme({
         // Name of the slot
         root: {
           // Some CSS
-          fontSize: '1.25rem',
+          fontSize: '1rem',
         },
       },
     },
+    // MuiModal: {
+    //   styleOverrides: {
+    //     root: {
+    //       zIndex: (theme) => theme.zIndex.modal
+    //     },
+    //   },
+    // },
   },
 });
 
@@ -240,11 +248,11 @@ if (!!timeoutId) {
 const geoDir = 'geomatics/geospatial/'
 
 const menusArray = [
-  { label: 'GIS', top: geoDir + 'gis', projects: geoDir + 'remote-sensing/projects', apps: geoDir + 'remote-sensing/apps' },
-  { label: 'Remote Sensing', top: geoDir + 'remote-sensing', projects: geoDir + 'remote-sensing/projects', apps: geoDir + 'remote-sensing/apps' },
-  { label: 'Survey/Contracting', top: geoDir + 'survey-contracting', projects: geoDir + 'survey-contracting/projects' , apps: geoDir + 'survey-contracting/apps' },
-  { label: 'Data Management/Database Desgin', top: geoDir + 'data-management', projects: geoDir + 'data-management/projects', apps: geoDir + 'data-management/apps' },
-  { label: 'Application Development', top: geoDir + 'application-development', projects: geoDir + 'application-development/projects', apps: geoDir + 'application-development/apps' }
+  { discipline:'gis', label: 'GIS', top: geoDir + 'gis', projects: geoDir + 'gis/projects', apps: geoDir + 'gis/apps' },
+  { discipline:'remoteSensing', label: 'Remote Sensing', top: geoDir + 'remote-sensing', projects: geoDir + 'remote-sensing/projects', apps: geoDir + 'remote-sensing/apps' },
+  { discipline:'surveyContracting', label: 'Survey/Contracting', top: geoDir + 'survey-contracting', projects: geoDir + 'survey-contracting/projects' , apps: geoDir + 'survey-contracting/apps' },
+  { discipline:'dataManagement', label: 'Data Mgmt/Database Desgin', top: geoDir + 'data-management', projects: geoDir + 'data-management/projects', apps: geoDir + 'data-management/apps' },
+  { discipline:'applicationDevelopment', label: 'Application Development', top: geoDir + 'application-development', projects: geoDir + 'application-development/projects', apps: geoDir + 'application-development/apps' }
 ]
 
 const open = Boolean(anchorEl);
@@ -254,7 +262,8 @@ const open = Boolean(anchorEl);
 
 
             <ThemeProvider theme={theme}>
-            <Button sx={{color: 'white', zIndex: (theme) => theme.zIndex.modal + 1500}}
+              <Link to={"/geomatics/geospatial"}>
+              <Button sx={{color: 'white', zIndex: (theme) => theme.zIndex.modal + 1, '&:hover': {color: 'text.primary'}}}
           endIcon={<KeyboardArrowDownIcon />}
         aria-owns={anchorEl ? "simple-menu" : undefined}
         aria-haspopup="true"
@@ -265,6 +274,8 @@ const open = Boolean(anchorEl);
       >
         Geospatial
       </Button>
+              </Link>
+
       <Menu
         id="simple-menu"
         anchorEl={anchorEl}
@@ -283,34 +294,58 @@ const open = Boolean(anchorEl);
            </Link>
           
            {menusArray.map(item => <>
+           <Link to={item.top} style={{textDecoration: 'none', color: theme.palette.text.primary}}>
+
             <NestedMenuItem
                 //leftIcon={<NewIcon />}
                 //rightIcon={<SaveAsIcon />}
                 label={item.label}
                 parentMenuOpen={open}
-                onClick={() => {
-                  navigate(item.top);
-                }}
+                // onClick={() => {
+                //   navigate(item.top);
+                // }}
           >
-          <NestedMenuItem
-                //leftIcon={<NewIcon />}
-                //rightIcon={<SaveAsIcon />}
-                label={item.label + " Projects"}
-                parentMenuOpen={open}
-                onClick={() => {
-                  navigate(item.projects);
-                }}
-        ></NestedMenuItem>
-        <NestedMenuItem
-                //leftIcon={<NewIcon />}
-                //rightIcon={<SaveAsIcon />}
-                label={item.label + " Apps"}
-                parentMenuOpen={open}
-                onClick={() => {
-                  navigate(item.apps);
-                }}
-        ></NestedMenuItem>
+            <Link to={item.projects} style={{textDecoration: 'none', color: theme.palette.text.primary}}>
+                <NestedMenuItem
+                    //leftIcon={<NewIcon />}
+                    //rightIcon={<SaveAsIcon />}
+                    label={item.label + " Projects"}
+                    parentMenuOpen={open}
+                    // onClick={() => {
+                    //   navigate(item.projects);
+                    // }}
+            >
+              {projectData?.[item.discipline].Projects.map(proj => (
+              <Link to={`${item.projects}/${proj.largeImage}`} style={{textDecoration: 'none', color: theme.palette.text.primary}}>
+                  <MenuItem>
+                  {proj.largeImage}
+                  </MenuItem>
+                </Link>
+                ))}
+            </NestedMenuItem>
+            </Link>
+
+            <Link to={item.apps} style={{textDecoration: 'none', color: theme.palette.text.primary}}>
+                <NestedMenuItem
+                    //leftIcon={<NewIcon />}
+                    //rightIcon={<SaveAsIcon />}
+                    label={item.label + " Apps"}
+                    parentMenuOpen={open}
+                    // onClick={() => {
+                    //   navigate(item.apps);
+                    // }}
+            >
+              {projectData?.[item.discipline].Apps.map(app => (
+              <Link to={`${item.apps}/${app.largeImage}`} style={{textDecoration: 'none', color: theme.palette.text.primary}}>
+                  <MenuItem>
+                  {app.largeImage}
+                  </MenuItem>
+                </Link>
+                ))}
+            </NestedMenuItem>
+            </Link>
         </NestedMenuItem>
+        </Link>
            </>)}
 
           {/* <NestedMenuItem

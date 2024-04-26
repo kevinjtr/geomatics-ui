@@ -6,7 +6,7 @@ export default function RootLayout() {
     return(
         <div>
             <Navigation/>
-            {/* <NestedNavBar/> */}
+            <NestedNavBar/>
             <Outlet />
         </div>
         

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Typography, Button, Card, CardMedia } from '@mui/material';
-//import PortEvergladesImage from './gis.PNG';
+import { Link } from 'react-router-dom';
+//import PortEvergladesImage from '/img/project/port-everglades.PNG';
 
 const cardStyle = {
   marginBottom: '2rem',
@@ -16,7 +17,7 @@ const mediaStyle = {
 
 const HighlightedProjectSection = () => {
   return (
-    <Container maxWidth="md" sx={{py: 3}}>
+    <Container maxWidth="md" sx={{py: 5}}>
         <Typography variant="h2" align="center" gutterBottom>
         Project Spotlight
       </Typography>
@@ -25,32 +26,35 @@ const HighlightedProjectSection = () => {
         //height="250"
         //width="250"
           //style={mediaStyle}
-          src={'./img/project.PNG'}
+          src={'/img/projects/port-everglades.PNG'}
           //title="Port Everglades Harbor Navigation Improvement Project"
         /></div>
         
-      <Typography variant="h3" align="center" gutterBottom>
+      <Typography variant="h4" align="center" gutterBottom>
         Port Everglades Harbor Navigation Improvement Project
       </Typography>
-      <Typography variant="h5" align="center" paragraph>
+      <Typography  align="center" paragraph>
         The Port Everglades Harbor Navigation Improvement Project is a vital undertaking aimed at enhancing
         navigational infrastructure and capacity at Port Everglades, Florida.
       </Typography>
-      <Typography variant="h5" align="center" paragraph>
+      <Typography  align="center" paragraph>
         As one of the busiest cruise ports and container cargo ports in the United States, Port Everglades serves
         as a critical hub for international trade and tourism.
       </Typography>
-      <Typography variant="h5" align="center" paragraph>
+      <Typography  align="center" paragraph>
         The navigation improvement project includes dredging and deepening of channels, widening turning basins,
         and upgrading berths to accommodate larger vessels and increased traffic.
       </Typography>
-      <Typography variant="h5" align="center" paragraph>
+      <Typography  align="center" paragraph>
         With these enhancements, Port Everglades will be better equipped to handle the demands of modern maritime
         commerce, bolstering economic growth and facilitating global connectivity.
       </Typography>
-      <Button variant="contained" color="primary" size="large" fullWidth>
+      <Link to={"/geomatics/geospatial/gis/projects/port-everglades"}>
+      <Button variant="outlined" color="primary" size="large" fullWidth>
         Learn More
       </Button>
+      </Link>
+
     </Container>
   );
 };

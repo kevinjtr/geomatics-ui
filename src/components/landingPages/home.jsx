@@ -46,7 +46,7 @@ const Home = () => {
             <div className="bg-overlay"></div> 
 
             <div className="v-home-text">
-                <h1 className="v-h1">Welcome to the Geomatics Website.</h1>
+                <h2 className="v-h1" style={{fontSize: '4rem'}}>Welcome to the Geomatics Website.</h2>
                 {/* <p className="v-p">Come live out your ideal vacation with us</p> */}
             </div>
             <Link to='/geomatics/geospatial'>

@@ -1,11 +1,12 @@
+import { Typography } from "@mui/material";
 import React from "react";
 
 export const TrainingMaterial = (props) => {
   return (
     <>
-    <div className="text-center">
-          <h2>Training Materials</h2>
-    </div>
+     <Typography variant="h4" sx={{py: 2.5, textAlign: 'center'}}>
+                Training Materials
+            </Typography>
     <body style={{display:"flex", justifyContent:"center"}}>
       <div>
         <h1 style={{textAlign:"center"}}>Standard Operating Procedure</h1>

@@ -1,7 +1,15 @@
 import React, { FC, ReactElement, useState } from "react";
 import emailjs from "emailjs-com";
-import { Box, Container, Grid, Typography } from "@mui/material";
-
+import { Box, Container, Grid, Typography, Stack, IconButton } from "@mui/material";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
+import Divider from '@mui/material/Divider';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import XIcon from '@mui/icons-material/X';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Link } from "react-router-dom";
 
 const initialState = {
   name: "",
@@ -39,21 +47,75 @@ export const Contact = (props) => {
             width: "100%",
             height: "auto",
             backgroundColor: "primary.main",
+            color: '#fff',
             paddingTop: "1rem",
             paddingBottom: "1rem",
           }}
         >
-          <Container maxWidth="lg">
+          <Container maxWidth="lg" >
             <Grid container direction="column" alignItems="center">
               <Grid item xs={12}>
-                <Typography color="black" variant="h5">
-                  US Army Corps of Engineers
+                <Typography  variant="h5">
+                  Contact Info
                 </Typography>
               </Grid>
               <Grid item xs={12}>
-                <Typography color="textSecondary" variant="subtitle1">
-                  2024 | CESAJ-EN-DG | Jacksonville District | Geomatics Section
+              
+              <Stack direction="row" sx={{pt: 1.5}}>
+              <LocationOnIcon sx={{mr: 1}}/>
+              <Typography  variant="subtitle1">
+                  Address
                 </Typography>
+              </Stack>
+                <Typography variant="subtitle1">
+                  ATTN: EN-DG, 701 San Marco Blvd Jacksonville, FL 32207
+                </Typography>
+
+                <Stack direction="row" sx={{pt: 1.5}}>
+              <PhoneIcon sx={{mr: 1}}/>
+              <Typography  variant="subtitle1">
+                  Phone
+                </Typography>
+              </Stack>
+                <Typography variant="subtitle1">
+                  904-555-5555
+                </Typography>
+
+                <Stack direction="row" sx={{pt: 1.5}}>
+              <EmailIcon sx={{mr: 1}}/>
+              <Typography  variant="subtitle1">
+                  Email
+                </Typography>
+              </Stack>
+                <Typography  variant="subtitle1">
+                  @usace.army.mil
+                </Typography>
+              </Grid>
+              <Divider variant="middle" sx={{pt: 3.5, width: '100%'}}/>
+              <Grid item xs={12}>
+              
+          <Stack direction="row" sx={{pt: 3.5}}>
+            <a href={'https://www.facebook.com/JacksonvilleDistrict'} target="_blank" style={{textDecoration: 'none'}}>
+              <IconButton size="large" sx={{color: 'white', '&:hover':{ color: 'text.secondary'}}}>
+                <FacebookIcon />
+              </IconButton>
+            </a>
+          <a href={'https://www.youtube.com/@JaxStrong'} target="_blank" style={{textDecoration: 'none', marginLeft: '30px'}}>
+          <IconButton size="large" sx={{color: 'white', '&:hover':{ color: 'text.secondary'}}}>
+          <YouTubeIcon />
+          </IconButton>
+          </a>
+          <a href={'https://x.com/JaxStrong'} target="_blank" style={{textDecoration: 'none', marginLeft: '30px'}}>
+          <IconButton size="large" sx={{color: 'white', '&:hover':{ color: 'text.secondary'}}}>
+          <XIcon />
+          </IconButton>
+          </a>
+          <a href={'https://www.linkedin.com/company/u-s-army-corps-of-engineers-jacksonville-district'} target="_blank" style={{textDecoration: 'none', marginLeft: '30px'}}>
+          <IconButton size="large" sx={{color: 'white', '&:hover':{ color: 'text.secondary'}}}>
+          <LinkedInIcon />
+          </IconButton>
+          </a>
+          </Stack>
               </Grid>
             </Grid>
           </Container>
