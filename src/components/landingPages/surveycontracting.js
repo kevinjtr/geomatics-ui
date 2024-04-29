@@ -5,11 +5,11 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Main from '../../templates/landing/Main';
-import FeaturedPost from '../../templates/landing/FeaturedPost';
+import DisciplineFeaturedPost from '../../templates/landing/DisciplineFeaturedPost';
 import post1 from "../../templates/landing/blog-post.1.md";
 import post2 from "../../templates/landing/blog-post.2.md";
 import post3 from "../../templates/landing/blog-post.3.md";
-import MainFeaturedPost from '../../templates/landing/MainFeaturedPost';
+import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFeaturedPost';
 
 const mainFeaturedPost = {
   title: 'Survey/Contracting',
@@ -42,7 +42,16 @@ const featuredPosts = [
 ];
 
 const posts = [post1, post2, post3];
+const featuredProject = {
 
+  title: 'Featured Project',
+ // date: 'Nov 11',
+  description:
+    'This project has this description.Also a test idea of highlighting certain new projects when they are added.',
+  image: 'https://source.unsplash.com/random?wallpapers',
+  imageText: 'Image Text',
+  url: "/survey-contracting/apps/example404"
+};
 const defaultTheme = createTheme();
 
 
@@ -56,10 +65,11 @@ export function SurveyContracting(){
           
           <Grid sx={{py: 2.5}} container spacing={6}>
             {featuredPosts.map((post) => (
-              <FeaturedPost key={post.title} post={post} />
+              <DisciplineFeaturedPost key={post.title} post={post} />
             ))}
           </Grid>
-          <MainFeaturedPost post={mainFeaturedPost} />
+          <DisciplineMainFeaturedPost post={mainFeaturedPost} />
+          <DisciplineFeaturedPost post={featuredProject}/>
           {/* <Grid container spacing={5} sx={{ mt: 3 }}>
             <Main title="From the firehose" posts={posts} />
             

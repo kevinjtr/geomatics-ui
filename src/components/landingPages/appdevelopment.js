@@ -9,6 +9,10 @@ import post1 from "../../templates/landing/blog-post.1.md";
 import post2 from "../../templates/landing/blog-post.2.md";
 import post3 from "../../templates/landing/blog-post.3.md";
 import MainFeaturedPost from '../../templates/landing/MainFeaturedPost';
+import DisciplineFeaturedPost from '../../templates/landing/DisciplineFeaturedPost';
+import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFeaturedPost';
+
+
 
 const mainFeaturedPost = {
   title: 'Application Development',
@@ -39,6 +43,16 @@ const featuredPosts = [
     url: "application-development/apps"
   },
 ];
+const featuredProject = {
+  title: 'Featured Project',
+  //date: 'Nov 11',
+  description:
+    'This project has this description.Also a test idea of highlighting certain new projects when they are added.',
+  image: 'https://source.unsplash.com/random?wallpapers',
+  imageText: 'Image Text',
+  url: "/adapplications/example404"
+};
+
 
 const posts = [post1, post2, post3];
 
@@ -55,10 +69,11 @@ export function AppDevelopment(){
           
           <Grid sx={{py: 2.5}} container spacing={6}>
             {featuredPosts.map((post) => (
-              <FeaturedPost key={post.title} post={post} />
+              <DisciplineFeaturedPost key={post.title} post={post} />
             ))}
           </Grid>
-          <MainFeaturedPost post={mainFeaturedPost} />
+          <DisciplineMainFeaturedPost post={mainFeaturedPost} />
+          <DisciplineFeaturedPost post={featuredProject} />
           <Box sx={{ margin: '50px auto', pl:'10%', pr: '10%' }}>
             <Typography variant="h4" sx={{pb: 1, textAlign: 'center'}} >
             What is Web Development?

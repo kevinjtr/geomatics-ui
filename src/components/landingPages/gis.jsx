@@ -10,6 +10,8 @@ import post1 from "../../templates/landing/blog-post.1.md";
 import post2 from "../../templates/landing/blog-post.2.md";
 import post3 from "../../templates/landing/blog-post.3.md";
 import MainFeaturedPost from '../../templates/landing/MainFeaturedPost';
+import DisciplineFeaturedPost from '../../templates/landing/DisciplineFeaturedPost';
+import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFeaturedPost';
 
 const mainFeaturedPost = {
   title: 'GIS',
@@ -42,6 +44,17 @@ const featuredPosts = [
 ];
 
 const posts = [post1, post2, post3];
+const featuredProject = {
+  title: 'Featured Project Showcase',
+  //date: '',
+  description:
+    'Jacksonville District - Geomatics Section GIS Emergency Management Support',
+  image: '../../img/projects/fiona-ian storyboard.png',
+  imageText: 'geomatics-gis-emergency-support',
+  url: "gis/projects/geomatics-gis-emergency-support"
+};
+
+
 
 const defaultTheme = createTheme();
 
@@ -56,10 +69,11 @@ export function GIS(){
           
           <Grid sx={{py: 2.5}} container spacing={6}>
             {featuredPosts.map((post) => (
-              <FeaturedPost key={post.title} post={post} />
+              <DisciplineFeaturedPost key={post.title} post={post} />
             ))}
           </Grid>
-          <MainFeaturedPost post={mainFeaturedPost} />
+          <DisciplineMainFeaturedPost post={mainFeaturedPost} />
+          <DisciplineFeaturedPost post={featuredProject}/>
           {/* <Grid container spacing={5} sx={{ mt: 3 }}>
             <Main title="From the firehose" posts={posts} />
             
