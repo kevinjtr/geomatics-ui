@@ -45,15 +45,15 @@ const featuredPosts = [
 ];
 
 const posts = [post1, post2, post3];
-const featuredProject = {
-  title: 'Featured Project',
-//  date: 'Nov 11',
-  description:
-    'This project has this description.Also a test idea of highlighting certain new projects when they are added.',
-  image: 'https://source.unsplash.com/random?wallpapers',
-  imageText: 'Image Text',
-  url: "remote-sensing/app/example404"
-};
+// const featuredProject = {
+//   title: 'Featured Project',
+// //  date: 'Nov 11',
+//   description:
+//     'This project has this description.Also a test idea of highlighting certain new projects when they are added.',
+//   image: 'https://source.unsplash.com/random?wallpapers',
+//   imageText: 'Image Text',
+//   url: "remote-sensing/app/example404"
+// };
 
 
 
@@ -75,7 +75,7 @@ export function RemoteSensing(){
             ))}
           </Grid>
           <DisciplineMainFeaturedPost post={mainFeaturedPost} />
-          <DisciplineFeaturedPost post={featuredProject}/>
+          {/* <DisciplineFeaturedPost post={featuredProject}/> */}
           {/* <Grid container spacing={5} sx={{ mt: 3 }}>
             <Main title="From the firehose" posts={posts} />
             

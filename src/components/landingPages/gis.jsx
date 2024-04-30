@@ -44,15 +44,15 @@ const featuredPosts = [
 ];
 
 const posts = [post1, post2, post3];
-const featuredProject = {
-  title: 'Featured Project Showcase',
-  //date: '',
-  description:
-    'Jacksonville District - Geomatics Section GIS Emergency Management Support',
-  image: '../../img/projects/fiona-ian storyboard.png',
-  imageText: 'geomatics-gis-emergency-support',
-  url: "gis/projects/geomatics-gis-emergency-support"
-};
+// const featuredProject = {
+//   title: 'Featured Project Showcase',
+//   //date: '',
+//   description:
+//     'Jacksonville District - Geomatics Section GIS Emergency Management Support',
+//   image: '../../img/projects/fiona-ian storyboard.png',
+//   imageText: 'geomatics-gis-emergency-support',
+//   url: "gis/projects/geomatics-gis-emergency-support"
+// };
 
 
 
@@ -73,7 +73,7 @@ export function GIS(){
             ))}
           </Grid>
           <DisciplineMainFeaturedPost post={mainFeaturedPost} />
-          <DisciplineFeaturedPost post={featuredProject}/>
+          {/* <DisciplineFeaturedPost post={featuredProject}/> */}
           {/* <Grid container spacing={5} sx={{ mt: 3 }}>
             <Main title="From the firehose" posts={posts} />
             

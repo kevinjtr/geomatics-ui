@@ -20,7 +20,7 @@ import { Geospatial } from "./components/landingPages/geospatial";
 import { RemoteSensing } from "./components/landingPages/remotesensing";
 import { DataManagement } from "./components/landingPages/datamanagement";
 import { SurveyContracting } from "./components/landingPages/surveycontracting";
-import { AppDevelopment } from "./components/landingPages/appdevelopment";
+import { AppDevelopment } from "./components/landingPages/app-development";
 import { GIS } from "./components/landingPages/gis";
 import RootLayout from "./root-layout";
 //import './bootstrap.css';
