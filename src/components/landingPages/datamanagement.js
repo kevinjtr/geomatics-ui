@@ -44,15 +44,15 @@ const featuredPosts = [
 ];
 
 const posts = [post1, post2, post3];
-const featuredProject = {
-  title: 'Featured Project',
-//  date: '',
-  description:
-    'Jacksonville District - Data Dictionary Tool Generator for ASTM Testing',
-  image: '../../img/projects/datadictionarytool.png',
-  imageText: 'astm-data-dictionary-gen',
-  url: "/data-management/apps/astm-data-dictionary-gen"
-};
+// const featuredProject = {
+//   title: 'Featured Project',
+// //  date: '',
+//   description:
+//     'Jacksonville District - Data Dictionary Tool Generator for ASTM Testing',
+//   image: '../../img/projects/datadictionarytool.png',
+//   imageText: 'astm-data-dictionary-gen',
+//   url: "/data-management/apps/astm-data-dictionary-gen"
+// };
 
 const defaultTheme = createTheme();
 
@@ -71,7 +71,7 @@ export function DataManagement(){
             ))}
           </Grid>
           <DisciplineMainFeaturedPost post={mainFeaturedPost} />
-          <DisciplineFeaturedPost post={featuredProject}/>
+          {/* <DisciplineFeaturedPost post={featuredProject}/> */}
           {/* <Grid container spacing={5} sx={{ mt: 3 }}>
             <Main title="From the firehose" posts={posts} />
             

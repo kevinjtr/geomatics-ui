@@ -4,14 +4,19 @@ import {Grid} from '@mui/material'
 import './image-gallery.css'
 import { Link } from 'react-router-dom'
 
-const currDir = '/geomatics/geospatial/gis/projects'
+const currDir = '/geomatics/geospatial'
+
+const nameDictionary = {
+  project: 'projects',
+  application: 'apps'
+}
 
 const disciplineLabels = {
-  gis: "GIS",
-  remoteSensing: "Remote Sensing",
-  surveyContracting: "Survey/Contracting",
-  dataManagement: "Data Management/Database Design",
-  applicationDevelopment: "Application Development"
+  gis: {label: "GIS", url: (name) => `/gis/${nameDictionary?.[name.toLowerCase()]}/`},
+  remoteSensing: {label: "Remote Sensing", url: (name) => `/remote-sensing/${nameDictionary?.[name.toLowerCase()]}/`},
+  surveyContracting: {label: "Survey/Contracting", url: (name) => `/survey-contracting/${nameDictionary?.[name.toLowerCase()]}/`},
+  dataManagement: {label: "Data Management/Database Design", url: (name) => `/data-management/${nameDictionary?.[name.toLowerCase()]}/`},
+  applicationDevelopment: {label: "Application Development", url: (name) => `/application-development/${nameDictionary?.[name.toLowerCase()]}/`},
 }
 
 export const ImageGallery = (props) => {
@@ -20,7 +25,7 @@ export const ImageGallery = (props) => {
     <div id="gis-apps" className="text-center" style={{paddingBottom:"320px"}}>
       <div className="container">
         <div className="section-title" style={{textAlign:'center', fontSize: '1.25rem'}}>
-          <h2>{disciplineLabels?.[discipline]} {name}s</h2>
+          <h2>{disciplineLabels?.[discipline].label} {name}s</h2>
         </div>
         <div className="row">
           {/* <div className="gis-app-items"  style={{display: "flex", direction: "column", marginTop:"10px",marginBottom:"50px", marginLeft:"50px",marginRight:"50px", alignContent:"center"}}> */}
@@ -41,7 +46,7 @@ export const ImageGallery = (props) => {
                   <Grid item sx={{px: 1.5, py:1.5}}>
         <article className="pgcard">
             <header className="pgcard__thumb">
-                <Link to={currDir + '/' + d.largeImage}><img src={d.smallImage}/></Link>
+                <Link to={currDir + disciplineLabels?.[discipline]?.url(name) + d.largeImage}><img src={d.smallImage}/></Link>
             </header>
             {/* <date className="pgcard__date">
                 <span className="pgcard__date__day">11</span>
@@ -49,8 +54,8 @@ export const ImageGallery = (props) => {
                 <span className="pgcard__date__month">Jan</span>
             </date> */}
             <div className="pgcard__body">
-                <div className="pgcard__category"><Link to={currDir + '/' + d.largeImage}>{name}</Link></div>
-                <h2 className="pgcard__title"><Link to={currDir + '/' + d.largeImage}>{d.title}</Link></h2>
+                <div className="pgcard__category"><Link to={currDir + disciplineLabels?.[discipline]?.url(name) + d.largeImage}>{name}</Link></div>
+                <h2 className="pgcard__title"><Link to={currDir + disciplineLabels?.[discipline]?.url(name) + d.largeImage}>{d.title}</Link></h2>
                 {/* <div className="pgcard__subtitle">an ice cream sundae party！</div> */}
                 <p style={{overflowY: 'auto', height: 125}} className="pgcard__description">{d.text}</p>
             </div>

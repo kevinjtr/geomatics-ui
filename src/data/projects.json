@@ -54,23 +54,53 @@
   },
   "remoteSensing":  {
     "Projects": [
-      
+      {
+        "id": "1",
+        "title": "SRSP - Sample Remote Sensing Project",
+        "largeImage": "srsp-sample-1",
+        "smallImage": "/img/project.PNG",
+        "text": "Sample text."
+      }
     ],
     "Apps": [
-      
+      {
+        "id": "1",
+        "title": "SRSA - Sample Remote Sensing App",
+        "largeImage": "srsa-sample-1",
+        "smallImage": "/img/project.PNG",
+        "text": "Sample  text."
+      }
     ]
   },
   "surveyContracting":{
     "Projects": [
-      
+      {
+        "id": "1",
+        "title": "SCSP - Sample Survey/Contracting Project",
+        "largeImage": "scsp-sample-1",
+        "smallImage": "/img/project.PNG",
+        "text": "Sample  text."
+      }
     ],
     "Apps": [
-      
+      {
+        "id": "1",
+        "title": "SCSA - Sample Survey/Contracting App",
+        "largeImage": "scsa-sample-1",
+        "smallImage": "/img/project.PNG",
+        "text": "Sample text."
+      }
     ]
   },
   "dataManagement":{
     "Projects": [
-      
+      {
+        "id": "1",
+        "title": "DMDDSp - Sample Data Management Project",
+        "largeImage": "dmddsp-sample-1",
+        "smallImage": "/img/project.PNG",
+        "text": "Sample text."
+      }
     ],
     "Apps": [
       {
@@ -85,7 +115,13 @@
   },
   "applicationDevelopment":{
     "Projects": [
-      
+      {
+        "id": "1",
+        "title": "ADSP - Sample App Dev Project",
+        "largeImage": "adsp-sample-1",
+        "smallImage": "/img/project.PNG",
+        "text": "Sample text."
+      }
     ],
     "Apps": [
       {
@@ -93,7 +129,8 @@
         "title": "SAJ - Geomatics Section Project Contract Log Application (PCL)",
         "largeImage": "geomatics-pcl",
         "smallImage": "/img/projects/pcl storyboard - alt 2.png",
-        "text": "Project Contract Log (PCL) Application currently user interface is in development."
+        "text": "Project Contract Log (PCL) Application currently user interface is in development.",
+        "featured":true
       }
     ]
   }

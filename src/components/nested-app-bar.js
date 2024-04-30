@@ -2,7 +2,7 @@ import {useState} from 'react';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { grey } from '@mui/material/colors';
-import { NestedDropdown, NestedMenuItem } from 'mui-nested-menu';
+import { NestedDropdown, NestedMenuItem, IconMenuItem } from 'mui-nested-menu';
 import {Adb as NewIcon, Save as SaveIcon, SaveAs as SaveAsIcon, ImportExportRounded as ImportExportRoundedIcon, NewIc } from "@mui/icons-material"
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
@@ -305,6 +305,7 @@ const open = Boolean(anchorEl);
                 //   navigate(item.top);
                 // }}
           >
+
             <Link to={item.projects} style={{textDecoration: 'none', color: theme.palette.text.primary}}>
                 <NestedMenuItem
                     //leftIcon={<NewIcon />}
@@ -315,7 +316,11 @@ const open = Boolean(anchorEl);
                     //   navigate(item.projects);
                     // }}
             >
-              {projectData?.[item.discipline].Projects.map(proj => (
+              {projectData?.[item.discipline].Projects.length === 0 ?
+              <MenuItem disabled>
+              no projects were found.
+              </MenuItem> :
+              projectData?.[item.discipline].Projects.map(proj => (
               <Link to={`${item.projects}/${proj.largeImage}`} style={{textDecoration: 'none', color: theme.palette.text.primary}}>
                   <MenuItem>
                   {proj.largeImage}
@@ -335,7 +340,13 @@ const open = Boolean(anchorEl);
                     //   navigate(item.apps);
                     // }}
             >
-              {projectData?.[item.discipline].Apps.map(app => (
+              {projectData?.[item.discipline].Apps.length === 0 ?
+              <a>
+                            <MenuItem onClick={(e) => {e.preventDefault(); e.stopPropagation();}} disabled>
+              no apps were found.
+              </MenuItem>
+              </a> : 
+              projectData?.[item.discipline].Apps.map(app => (
               <Link to={`${item.apps}/${app.largeImage}`} style={{textDecoration: 'none', color: theme.palette.text.primary}}>
                   <MenuItem>
                   {app.largeImage}

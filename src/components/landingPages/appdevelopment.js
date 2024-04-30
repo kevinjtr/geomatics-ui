@@ -9,10 +9,6 @@ import post1 from "../../templates/landing/blog-post.1.md";
 import post2 from "../../templates/landing/blog-post.2.md";
 import post3 from "../../templates/landing/blog-post.3.md";
 import MainFeaturedPost from '../../templates/landing/MainFeaturedPost';
-import DisciplineFeaturedPost from '../../templates/landing/DisciplineFeaturedPost';
-import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFeaturedPost';
-
-
 
 const mainFeaturedPost = {
   title: 'Application Development',
@@ -43,16 +39,6 @@ const featuredPosts = [
     url: "application-development/apps"
   },
 ];
-const featuredProject = {
-  title: 'Featured Project',
-  //date: 'Nov 11',
-  description:
-    'This project has this description.Also a test idea of highlighting certain new projects when they are added.',
-  image: 'https://source.unsplash.com/random?wallpapers',
-  imageText: 'Image Text',
-  url: "/adapplications/example404"
-};
-
 
 const posts = [post1, post2, post3];
 
@@ -69,11 +55,10 @@ export function AppDevelopment(){
           
           <Grid sx={{py: 2.5}} container spacing={6}>
             {featuredPosts.map((post) => (
-              <DisciplineFeaturedPost key={post.title} post={post} />
+              <FeaturedPost key={post.title} post={post} />
             ))}
           </Grid>
-          <DisciplineMainFeaturedPost post={mainFeaturedPost} />
-          <DisciplineFeaturedPost post={featuredProject} />
+          <MainFeaturedPost post={mainFeaturedPost} />
           <Box sx={{ margin: '50px auto', pl:'10%', pr: '10%' }}>
             <Typography variant="h4" sx={{pb: 1, textAlign: 'center'}} >
             What is Web Development?
@@ -83,7 +68,7 @@ export function AppDevelopment(){
             </Typography>
 
             <Typography variant="h4" sx={{pb: 1, textAlign: 'center'}} >
-            What web programming lamguages we use?
+            What programming languages we use?
             </Typography>
 
             <List sx={{ listStyleType: 'disc' }}>
@@ -112,7 +97,7 @@ export function AppDevelopment(){
             What is a full stack Developer?
             </Typography>
             <Typography variant="h6" sx={{pb: 2.5, textAlign: 'left'}} >
-            A Full-Stack Developer is someone familiar with both front- and back-end development. Full Stack Developers usually understand a wide variety of programming languages and because of their versatility, they might be given more of a leadership role on projects than developers who specialize. They are generalists, adept at wearing both hats, and familiar with every layer of development. Obviously, employers want to hire Full-Stack Developers – according to an Indeed study, they are the fourth-most in-demand job in tech.
+            A Full-Stack Developer is someone familiar with both front- and back-end development. Full Stack Developers usually understand a wide variety of programming languages and because of their versatility, they might be given more of a leadership role on projects than developers who specialize. They are generalists, adept at wearing both hats, and familiar with every layer of development.
             </Typography>
          </Box>
         </main>
