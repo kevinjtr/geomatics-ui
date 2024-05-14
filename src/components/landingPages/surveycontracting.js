@@ -28,7 +28,7 @@ const featuredPosts = [
       //'Here is a collection of GIS related projects.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    url: "survey-contracting/projects",
+    url: "/geospatial/survey-contracting/projects",
     },
   {
     title: 'Survey/Contracting Apps',
@@ -37,7 +37,7 @@ const featuredPosts = [
       //'Here is a collection of GIS related apps.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    url: "survey-contracting/apps"
+    url: "/geospatial/survey-contracting/apps"
   },
 ];
 

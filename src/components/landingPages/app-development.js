@@ -31,7 +31,7 @@ const mainFeaturedPost = {
         //'Here is a collection of GIS related projects.',
       image: 'https://source.unsplash.com/random?wallpapers',
       imageLabel: 'Image Text',
-      url: "application-development/projects",
+      url: "/geospatial/application-development/projects",
       },
     {
       title: 'App Development Apps',
@@ -40,7 +40,7 @@ const mainFeaturedPost = {
         //'Here is a collection of GIS related apps.',
       image: 'https://source.unsplash.com/random?wallpapers',
       imageLabel: 'Image Text',
-      url: "application-development/apps"
+      url: "/geospatial/application-development/apps"
     },
   ];
 

@@ -24,6 +24,7 @@ import { AppDevelopment } from "./components/landingPages/app-development";
 import { GIS } from "./components/landingPages/gis";
 import RootLayout from "./root-layout";
 import useConfirm from "./components/useConfirm"
+import { CoronavirusOutlined } from "@mui/icons-material";
 //import './bootstrap.css';
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -34,9 +35,32 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 const App = () => {
   //const location = useLocation()
   //const href = useHref()
+
+  const verifyTimeStamp = (ts) => {
+    if(ts === undefined || ts === '' || ts === null){
+      return true
+    }
+    //24 * 60 * 
+    let twentyFourHoursAgo = new Date().getTime() - (60 * 1000);
+
+    if (new Date(ts).getTime() < twentyFourHoursAgo) {
+      console.log('here')
+      return true
+      // The yourDate time is more than 1 days from now
+  }
+
+    return false
+  }
+
   const [confirm, setConfirm] = useState( () => {
     const temp = localStorage.getItem('geo-confirm')
-    if(temp === undefined || temp === 'no')
+    const ts = localStorage.getItem('geo-timestamp')
+
+    console.log(ts)
+    if(temp === undefined || temp === 'no' || temp === null)
+      return 'refresh'
+
+    if(verifyTimeStamp(ts))
       return 'refresh'
     
       return temp
@@ -54,6 +78,7 @@ const App = () => {
     console.log(ans)
     setConfirm(ans)
     localStorage.setItem('geo-confirm', ans ? 'yes' : 'no')
+    localStorage.setItem('geo-timestamp', Number(new Date()))
   }
 
   const router = 
@@ -140,9 +165,10 @@ const App = () => {
   )
 
   useEffect(() => {
+    console.log(confirm)
     if(confirm !== 'yes')
       handleDialog()
-  },[])
+  },[confirm])
 
   //console.log(href)
   

@@ -300,8 +300,8 @@ const open = Boolean(anchorEl);
           </MenuItem>
            </Link>
           
-           {menusArray.map(item => <>
-           <Link to={item.top} style={{textDecoration: 'none', color: theme.palette.text.primary}}>
+           {menusArray.map((item, i) => <>
+           <Link key={`nab-link-${i}`} to={item.top} style={{textDecoration: 'none', color: theme.palette.text.primary}}>
 
             <NestedMenuItem
                 //leftIcon={<NewIcon />}
@@ -327,8 +327,8 @@ const open = Boolean(anchorEl);
               <MenuItem disabled>
               no projects were found.
               </MenuItem> :
-              projectData?.[item.discipline].Projects.map(proj => (
-              <Link to={`${item.projects}/${proj.largeImage}`} style={{textDecoration: 'none', color: theme.palette.text.primary}}>
+              projectData?.[item.discipline].Projects.map((proj, i) => (
+              <Link key={`nab-pmu-link-${i}`} to={`${item.projects}/${proj.largeImage}`} style={{textDecoration: 'none', color: theme.palette.text.primary}}>
                   <MenuItem>
                   {proj.largeImage}
                   </MenuItem>
@@ -353,8 +353,8 @@ const open = Boolean(anchorEl);
               no apps were found.
               </MenuItem>
               </a> : 
-              projectData?.[item.discipline].Apps.map(app => (
-              <Link to={`${item.apps}/${app.largeImage}`} style={{textDecoration: 'none', color: theme.palette.text.primary}}>
+              projectData?.[item.discipline].Apps.map((app, i) => (
+              <Link key={`nab-amu-link-${i}`} to={`${item.apps}/${app.largeImage}`} style={{textDecoration: 'none', color: theme.palette.text.primary}}>
                   <MenuItem>
                   {app.largeImage}
                   </MenuItem>

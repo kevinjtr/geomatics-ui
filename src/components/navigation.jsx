@@ -97,8 +97,8 @@ export const Navigation = (props) => {
 
           <Box sx={{ display: { xs: 'none', sm: 'block' }, pr: 5 }}>
             <ButtonAppBar/>
-            {navItems.map((item) => (
-              <NavLink to={item.url} style={{ textDecoration: 'none' }}>
+            {navItems.map((item, i) => (
+              <NavLink key={`nav-navlink-${i}`} to={item.url} style={{ textDecoration: 'none' }}>
               <Button variant="text" key={item.label} sx={{color: '#fff', '&:hover': {color: 'text.primary'}}}//onClick={() => navigate(item.url) }
               >
                 {item.label}

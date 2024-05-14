@@ -31,7 +31,7 @@ const Home = () => {
      <>
         <div className="v-landingpage">
 
-            <video style={{height: '100%', width: '100%'}} src={BgVideo} autoPlay muted loop class="video-bg" />
+            <video style={{height: '100%', width: '100%'}} src={BgVideo} autoPlay muted loop className="video-bg" />
             <div className="bg-overlay"></div> 
 
             <div className="v-home-text">

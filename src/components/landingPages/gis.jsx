@@ -30,7 +30,7 @@ const featuredPosts = [
       //'Here is a collection of GIS related projects.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    url: "gis/projects",
+    url: "/geospatial/gis/projects",
     },
   {
     title: 'GIS Apps',
@@ -39,7 +39,7 @@ const featuredPosts = [
       //'Here is a collection of GIS related apps.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    url: "gis/apps"
+    url: "/geospatial/gis/apps"
   },
 ];
 

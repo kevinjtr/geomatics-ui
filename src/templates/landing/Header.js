@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
+import { Link } from 'react-router-dom';
 
 function Header(props) {
   const { sections, title } = props;
@@ -42,7 +42,7 @@ function Header(props) {
             noWrap
             key={section.title}
             variant="body2"
-            href={section.url}
+            to={section.url}
             sx={{ p: 1, flexShrink: 0 }}
           >
             {section.title}

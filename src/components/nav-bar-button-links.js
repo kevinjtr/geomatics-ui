@@ -46,7 +46,7 @@ const theme = createTheme({
 
 export default function NavBarButtonLinks(props) {
     const [anchorEl, setAnchorEl] = useState(null);
-    const { label, menuItemsData } = props
+    const { label, menuItemsData, identifier } = props
 
     function handleClick(event) {
         if (anchorEl !== event.currentTarget) {
@@ -77,7 +77,7 @@ export default function NavBarButtonLinks(props) {
   };
 
   return (
-          <ThemeProvider theme={theme}>
+          <ThemeProvider key={`${identifier}-tp`} theme={theme}>
           <Button color="inherit"
           sx={{ zIndex: 1275 }}
                 endIcon={<KeyboardArrowDownIcon />}
@@ -100,8 +100,8 @@ export default function NavBarButtonLinks(props) {
         onMouseEnter: handleMenuEnter
       }}
     >
-      {menuItemsData?.map( item => (
-      <a href={item.url} target="_blank" style={{textDecoration: 'none', color: theme.palette.text.primary}}>
+      {menuItemsData?.map( (item, i) => (
+      <a key={`nbl-mi-${identifier}-${i}`} href={item.url} target="_blank" style={{textDecoration: 'none', color: theme.palette.text.primary}}>
         <MenuItem onClick={(e) =>  handleClose(e)}>{item.label}
         </MenuItem>
       </a>

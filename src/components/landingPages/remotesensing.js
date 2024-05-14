@@ -31,7 +31,7 @@ const featuredPosts = [
       //'Here is a collection of GIS related projects.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    url: "remote-sensing/projects",
+    url: "/geospatial/remote-sensing/projects",
     },
   {
     title: 'Remote Sensing Apps',
@@ -40,7 +40,7 @@ const featuredPosts = [
       //'Here is a collection of GIS related apps.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    url: "remote-sensing/apps"
+    url: "/geospatial/remote-sensing/apps"
   },
 ];
 

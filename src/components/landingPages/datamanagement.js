@@ -30,7 +30,7 @@ const featuredPosts = [
       //'Here is a collection of GIS related projects.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    url: "data-management/projects",
+    url: "/geospatial/data-management/projects",
     },
   {
     title: 'Data Management/Database Design Apps',
@@ -39,7 +39,7 @@ const featuredPosts = [
       //'Here is a collection of GIS related apps.',
     image: 'https://source.unsplash.com/random?wallpapers',
     imageLabel: 'Image Text',
-    url: "data-management/apps"
+    url: "/geospatial/data-management/apps"
   },
 ];
 

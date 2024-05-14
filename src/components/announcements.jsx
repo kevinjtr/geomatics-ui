@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Box } from '@mui/material';
+import { Container } from "@mui/material";
 export const  Announcements = (props) =>
 {
     
@@ -26,7 +27,7 @@ function Item(props)
     return (
         
             <article style={{height:'100%', position:"relative", display:"flex", justifyContent:"center", flexFlow:"nowrap", boxShadow:'0px 0px 12px lightgray'}}>
-                <container>
+                <Container>
                 <div style={{ float:"left", position:"relative" , flexBasis:"auto", width:"50%"}}>
                     <a href={props.item.link}>
                     <img style={{ height:"500px", width:"100%"}} src={props.item.image} alt='announcement'/>
@@ -40,7 +41,7 @@ function Item(props)
                     {props.item.agenda2 ? <p style={{paddingTop:"15px"}}>{props.item.agenda2}</p> : null}
                     {props.item.agenda3 ? <p style={{paddingTop:"15px"}}>{props.item.agenda3}</p> : null}
                 </div>
-                </container>    
+                </Container>    
             </article>
     )
 }
