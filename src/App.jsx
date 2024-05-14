@@ -156,7 +156,7 @@ const App = () => {
         </Route>
         <Route path="supportservices" element= {<SupportServices />} />
           <Route path="training" element= {<Training />}/>
-          <Route path="requestwork" element= {<RequestWork />}/>
+          {/* <Route path="requestwork" element= {<RequestWork />}/> */}
           <Route path="aboutus" element= {<AboutUs />}/>
       </Route>
     ), {

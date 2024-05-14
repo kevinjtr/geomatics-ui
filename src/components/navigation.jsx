@@ -69,7 +69,9 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { useNavigate  } from "react-router-dom";
 const drawerWidth = 240;
-const navItems = [{label: 'Training', url: '/training'}, {label: 'Support Services', url: '/supportservices'}, {label: 'Request Work', url: '/requestwork'}, {label: 'About Us', url: '/aboutus'}];
+const navItems = [{label: 'Training', url: '/training'}, {label: 'Support Services', url: '/supportservices'},
+ //{label: 'Request Work', url: '/requestwork'},
+  {label: 'About Us', url: '/aboutus'}];
 
 
 export const Navigation = (props) => {

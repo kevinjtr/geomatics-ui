@@ -1,17 +1,6 @@
 {
     "Announcements":[
         {
-            "name": "Intro to Geomatics Video",
-            "image": "../img/IntroGeomatics.png",
-            "link": "../training/17 Geomatics Section (EN-DG) 2023-04-12.mp4",
-            "description": "I can't believe we lived without this information before.",
-            "date": "Intro to Geomatics",
-            "agenda1": "",
-            "agenda2": "",
-            "agenda3": "",
-            "host": "Dave Robar"
-        },
-        {
             "name": "Geospatial Technical Exchange",
             "image": "img/portfolio/01-large.jpg",
             "link": "",
