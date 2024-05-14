@@ -11,7 +11,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { Link, useNavigate  } from "react-router-dom";
+import { Link, useNavigate, useHref  } from "react-router-dom";
 import projectData from "../data/projects.json";
 
 const theme = createTheme({
@@ -32,6 +32,13 @@ const theme = createTheme({
         root: {
           // Some CSS
           fontSize: '1rem',
+        },
+      },
+    },
+    MuiModal: {
+      styleOverrides: {
+        root: {
+          zIndex: 1285
         },
       },
     },
@@ -245,7 +252,7 @@ if (!!timeoutId) {
 }
 };
 
-const geoDir = 'geomatics/geospatial/'
+const geoDir = '/geospatial/'
 
 const menusArray = [
   { discipline:'gis', label: 'GIS', top: geoDir + 'gis', projects: geoDir + 'gis/projects', apps: geoDir + 'gis/apps' },
@@ -262,8 +269,8 @@ const open = Boolean(anchorEl);
 
 
             <ThemeProvider theme={theme}>
-              <Link to={"/geomatics/geospatial"}>
-              <Button sx={{color: 'white', zIndex: (theme) => theme.zIndex.modal + 1, '&:hover': {color: 'text.primary'}}}
+              <Link to={"/geospatial"}>
+              <Button sx={{color: 'white', zIndex: 1295, '&:hover': {color: 'text.primary'}}}
           endIcon={<KeyboardArrowDownIcon />}
         aria-owns={anchorEl ? "simple-menu" : undefined}
         aria-haspopup="true"
@@ -287,7 +294,7 @@ const open = Boolean(anchorEl);
         onMouseEnter: handleMenuEnter
       }}
       >
-         <Link to='/geomatics/geospatial'>
+         <Link to='/geospatial'>
          <MenuItem sx={{color: 'blue', textDecoration:'underline'}}>
           View all
           </MenuItem>

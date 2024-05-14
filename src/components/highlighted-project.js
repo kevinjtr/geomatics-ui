@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Typography, Button, Card, CardMedia } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, useHref } from 'react-router-dom';
 //import PortEvergladesImage from '/img/project/port-everglades.PNG';
 
 const cardStyle = {
@@ -49,7 +49,7 @@ const HighlightedProjectSection = () => {
         With these enhancements, Port Everglades will be better equipped to handle the demands of modern maritime
         commerce, bolstering economic growth and facilitating global connectivity.
       </Typography>
-      <Link to={"/geomatics/geospatial/gis/projects/port-everglades"}>
+      <Link to={"/geospatial/gis/projects/port-everglades"}>
       <Button variant="outlined" color="primary" size="large" fullWidth>
         Learn More
       </Button>

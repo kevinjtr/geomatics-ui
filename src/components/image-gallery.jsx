@@ -4,7 +4,7 @@ import {Grid} from '@mui/material'
 import './image-gallery.css'
 import { Link } from 'react-router-dom'
 
-const currDir = '/geomatics/geospatial'
+const currDir = '/geospatial'
 
 const nameDictionary = {
   project: 'projects',

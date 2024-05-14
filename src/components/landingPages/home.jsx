@@ -18,12 +18,13 @@ import { BasicList } from "../linklist";
 import { Contact } from "../contact";
 import { Socials } from "../socials";
 import TwoColumnComponent from "../two-column";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useHref } from "react-router-dom";
 import HighlightedProjectSection from '../highlighted-project'
 
 const Home = () => {
   
-
+const location = useLocation()
+  const href = useHref()
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
     setLandingPageData(JsonData);
@@ -38,6 +39,8 @@ const Home = () => {
   setLinkListPageData(linkData);
   }, []);
     
+
+  console.log(location, href)
     return (
      <>
         <div className="v-landingpage">
@@ -49,7 +52,7 @@ const Home = () => {
                 <h2 className="v-h1" style={{fontSize: '4rem'}}>Welcome to the Geomatics Website.</h2>
                 {/* <p className="v-p">Come live out your ideal vacation with us</p> */}
             </div>
-            <Link to='/geomatics/geospatial'>
+            <Link to='/geospatial'>
             <Button variant="outlined" sx={{color: 'white', borderColor: 'white', height: '4em', width: '15em', fontSize: '1.25rem'}}//className="v-home-btn"
             >Explore Our Services</Button>
            </Link>

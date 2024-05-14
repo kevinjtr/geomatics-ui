@@ -6,7 +6,7 @@ import { DisplayProjects } from "./components/display-projects";
 import Home from "./components/landingPages/home"
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Navigate } from "react-router-dom";
+import { createHashRouter, createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Navigate, useLocation, useHref } from "react-router-dom";
 import { SupportServices } from "./components/supportservices";
 import { Training } from "./components/training";
 import { useState, useEffect } from "react";
@@ -23,6 +23,7 @@ import { SurveyContracting } from "./components/landingPages/surveycontracting";
 import { AppDevelopment } from "./components/landingPages/app-development";
 import { GIS } from "./components/landingPages/gis";
 import RootLayout from "./root-layout";
+import useConfirm from "./components/useConfirm"
 //import './bootstrap.css';
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -31,12 +32,37 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 const App = () => {
+  //const location = useLocation()
+  //const href = useHref()
+  const [confirm, setConfirm] = useState( () => {
+    const temp = localStorage.getItem('geo-confirm')
+    if(temp === undefined || temp === 'no')
+      return 'refresh'
+    
+      return temp
+  })
+    //() => {
+    //return JSON.parse(localStorage.getItem('geo-confirm'))
+  //})
+  const [Dialog, confirmDelete] = useConfirm(
+    'Disclaimer and terms of use',
+    "The maps, graphics, and data presented on this website are being displayed for informational purposes only.\n\nData on this website is provided as-is without any warranty or representation that the data is accurate, timely, or complete.\n\nThe Geomatics Section makes no warranty the data, graphics, and maps presented in this website are up to date or that the information shown on the website is reliable for the viewer’s intended purposes or uses.\n\nThe viewer acknowledges and accepts the above limitations on the data portrayed and acknowledges the data is dynamic and in a current updated status.\n\nCaution: By clicking the Accept button below, the viewer is acknowledging they have read the Disclaimer and Terms of Use and have a full understanding of its contents.",
+  )
 
-  const router = createBrowserRouter(
+  const handleDialog = async () => {
+    const ans = await confirmDelete()
+    console.log(ans)
+    setConfirm(ans)
+    localStorage.setItem('geo-confirm', ans ? 'yes' : 'no')
+  }
+
+  const router = 
+  //createBrowserRouter(
+  createHashRouter(
     createRoutesFromElements(
-      <Route element={<RootLayout/>}>
-        <Route path="/" element={<Navigate to="/geomatics" replace/>}/>
-        <Route path="geomatics">
+      <Route path="/" element={<RootLayout/>}>
+        {/* <Route path="/" element={<Navigate to="/" replace/>}/> */}
+   
           <Route index element={ <Home /> }/>
           <Route path="geospatial">
 
@@ -107,15 +133,24 @@ const App = () => {
           <Route path="training" element= {<Training />}/>
           <Route path="requestwork" element= {<RequestWork />}/>
           <Route path="aboutus" element= {<AboutUs />}/>
-        </Route>
       </Route>
     ), {
       basename: process.env.REACT_APP_BASENAME
     }
   )
+
+  useEffect(() => {
+    if(confirm !== 'yes')
+      handleDialog()
+  },[])
+
+  //console.log(href)
   
-  return (
+  return (<>
+  <Dialog />
    <RouterProvider router={router} />
+  </>
+    
   );
 };
 

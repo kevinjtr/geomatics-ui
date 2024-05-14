@@ -69,7 +69,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { useNavigate  } from "react-router-dom";
 const drawerWidth = 240;
-const navItems = [{label: 'Training', url: '/geomatics/training'}, {label: 'Support Services', url: '/geomatics/supportservices'}, {label: 'Request Work', url: '/geomatics/requestwork'}, {label: 'About Us', url: '/geomatics/aboutus'}];
+const navItems = [{label: 'Training', url: '/training'}, {label: 'Support Services', url: '/supportservices'}, {label: 'Request Work', url: '/requestwork'}, {label: 'About Us', url: '/aboutus'}];
 
 
 export const Navigation = (props) => {
@@ -81,14 +81,14 @@ export const Navigation = (props) => {
       <AppBar position="static">
         <Toolbar sx={{justifyContent: 'space-evenly'}}>
           <Box sx={{pl:5, display: 'flex'}}>
-          <Link to={"/geomatics"}>
+          <Link to={"/"}>
           <img src="/img/Army Star.png" alt="title" style={{float:"left", height:"50px", paddingRight:"10px"}}/>
           <img src="/img/Castle.png" alt="title" style={{float:"left", width:"70px", paddingRight:"10px"}}/>
           </Link>
           
           
           <Box sx={{pt:1}}>
-          <NavLink className="navbar-brand page-scroll" to="/geomatics" reloadDocument style={{color:"white", textDecoration: 'none', fontSize: '1.5rem'}}>
+          <NavLink className="navbar-brand page-scroll" to="/" reloadDocument style={{color:"white", textDecoration: 'none', fontSize: '1.5rem'}}>
             Geomatics
           </NavLink>
           </Box>
