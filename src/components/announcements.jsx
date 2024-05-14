@@ -34,11 +34,15 @@ function Item(props)
                     <h4 style={{ fontSize:"40px", color:"white", textAlign:"center", paddingRight:"inherit", width:"20%", position:"absolute", top:"0",bottom:"0",left:"0", right:"0", height:"fit-content", margin:"auto", textShadow:"0 0 25px black"}}>{props.item.name}</h4>
                     </a>
                 </div>
-                <div style={{ float:"right", textAlign:"center", position:"relative", paddingLeft:"20px", flexBasis:"50%", height:"auto", width:"auto"}}>                    {props.item.date ? <h1 style={{paddingTop:"50px",}}>{props.item.date}</h1> : null}
+                <div style={{ float:"right", textAlign:"center", position:"relative", paddingLeft:"20px", flexBasis:"50%", height:"auto", width:"auto"}}>
+                    {props.item.date ? <h1 style={{paddingTop:"50px",}}>{props.item.date}</h1> : null}
                     {props.item.host ? <h5 style={{paddingTop:"50px"}}>{props.item.host}</h5> : null}
                     {props.item.agenda1 ? <p style={{paddingTop:"15px"}}>{props.item.agenda1}</p> : null}
                     {props.item.agenda2 ? <p style={{paddingTop:"15px"}}>{props.item.agenda2}</p> : null}
                     {props.item.agenda3 ? <p style={{paddingTop:"15px"}}>{props.item.agenda3}</p> : null}
+                    {props.item.agenda4 ? <p style={{paddingTop:"15px"}}>{props.item.agenda4}</p> : null}
+                    {props.item.agenda5 ? <p style={{paddingTop:"15px"}}>{props.item.agenda5}</p> : null}
+                    {props.item.agenda6 ? <p style={{paddingTop:"15px"}}>{props.item.agenda6}</p> : null}
                 </div>
                 </container>    
             </article>

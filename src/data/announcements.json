@@ -1,7 +1,7 @@
 {
     "Announcements":[
         {
-            "name": " ",
+            "name": "Intro to Geomatics Video",
             "image": "../img/IntroGeomatics.png",
             "link": "../training/17 Geomatics Section (EN-DG) 2023-04-12.mp4",
             "description": "I can't believe we lived without this information before.",
@@ -12,48 +12,68 @@
             "host": "Dave Robar"
         },
         {
-            "name": "Geospatial Technical Exchange Webinar",
+            "name": "Geospatial Technical Exchange",
             "image": "img/portfolio/01-large.jpg",
-            "link": "img/portfolio/01-large.jpg",
+            "link": "",
             "description": "I can't believe we lived without this information before.",
-            "date": "16 FEB 2023 1330ET",
-            "agenda1": "1330-1350 Improved Survey and Dredge Management Application (SANDMAN)",
-            "agenda2": "1350-1410 Visualization Tips for Evaluating Levee Centerline Surveys",
-            "agenda3": "1410-1430 National Sediment Management Framework (NSMF)",
-            "host": "Hosted by John Smith, Jane Kay, Another Name"
+            "date": "15 May 2024 1300-1400 EST",
+            "agenda1": "Foundation Mapping using Field Maps and Experience Builder - Natlee M. Hernandez-Guevara",
+            "agenda2": "National Hurricane Program: Hurricane Evacuation Study Data Model - Charlie Kaufman",
+            "agenda3": "A Custom Web Application for Managing Contract Tasks, with Geospatial Capabilities - Jon Freed",
+            "agenda4": "Minimizing Credit Usage Through Strategic Maangement of AGOL Services - Jay Yearwood",
+            "host": "Presenters:"
         },
         {
             "name": "GIS CoP",
             "image": "img/portfolio/02-large.jpg",
-            "link": "img/portfolio/02-large.jpg",
-            "description": "I can't believe we lived without this information before.",
-            "date": "Tentative 06-07 MAR 2024",
+            "link": "https://usace.dps.mil/sites/KMP-GIS/Shared Documents/Forms/AllItems.aspx?csf=1&web=1&e=Rlohb2&cid=0c08bbc0%2D179b%2D440e%2D9bae%2Df565c5ee2c3e&FolderCTID=0x0120001158B65CDB719C4991DB7FB7D3EC29FA&id=%2Fsites%2FKMP%2DGIS%2FShared%20Documents%2FCoP%20Meetings%2F2024%20GIS%20CoP%20Meeting%2FPresentations&viewid=cda76d11%2D032b%2D446e%2Db765%2D36182668a2e3",
+            "description": "",
+            "date": "Click the image for a link to all presentations for 2024's GIS CoP!",
             "agenda1": "",
             "agenda2": "",
             "agenda3": "",
-            "host": "Location TBD"
+            "agenda4":"",
+            "host": ""
         },
         {
-            "name": "Hydro-Survey CoP",
+            "name":"",
+            "image": "img/SavetheDate.png",
+            "link":"",
+            "description":"",
+            "date":"June 14th, 2024",
+            "agenda1": "Dive into Summer Fun! Corps Day 2024!",
+            "agenda2": "Grab your sunscreen",
+            "agenda3": "and your sense of adventure!",
+            "agenda4": "Corps Day 2024 is going ",
+            "agenda5":"to be an epic celebration! 🏖️",
+
+            "host": ""
+        },
+        {
+            "name":"SHARP TRAINING",
             "image": "img/portfolio/03-large.jpg",
-            "link": "img/portfolio/03-large.jpg",
-            "description": "I can't believe we lived without this information before.",
-            "date": "Tentative 24-26 OCT 2024",
-            "agenda1": "",
-            "agenda2": "",
-            "agenda3": "",
-            "host": "Virtual"
+            "link":"",
+            "description":"",
+            "date":"Week of May 20th to May 24th",
+            "agenda1": "ALl employees are required to attend ONE session of the SHARP Training",
+            "agenda2": "20th, 0930-1030 Boneyard, 1100-1200 Boneyard, 1300-1400 Boneyard",
+            "agenda3": "21st, 0930-1030 Boneyard, 1100-1200 Boneyard, 1300-1400 Boneyard, 1700-1830 Virtual",
+            "agenda4":"22nd, 0930-1030 Boneyard, 1100-1200 Boneyard",
+            "agenda5":"23rd, 0930-1030 Boneyard, 1100-1200 Boneyard, 1300-1400 Boneyard, 1700-1830 Virtual",
+            "agenda6":"24th, 0830-0930 Virtual",
+            "host": ""
         },
         {
-            "name": "Topo-Survey CoP",
-            "image": "img/portfolio/04-large.jpg",
-            "link": "img/portfolio/04-large.jpg",
-            "description": "I can't believe we lived without this information before.",
-            "date": "20-21 FEB 2024",
-            "agenda1": "",
-            "agenda2": "",
-            "agenda3": "",
-            "host": "In-Person at SPA"
+            "name":"Anti Harassment No Fear Training",
+            "image": "img/portfolio/02-large.jpg",
+            "link":"",
+            "description":"",
+            "date":"30 May 2024",
+            "agenda1": "In-Person in the Boneyard",
+            "agenda2": "Non-Supervisors will attend at 1330",
+            "agenda3": "Supervisors will attend at 1430",
+            "agenda4":"",
+            "host": ""
         }
       ]
 }
