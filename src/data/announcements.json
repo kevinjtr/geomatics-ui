@@ -17,9 +17,9 @@
             "image": "img/portfolio/02-large.jpg",
             "link": "https://usace.dps.mil/sites/KMP-GIS/Shared Documents/Forms/AllItems.aspx?csf=1&web=1&e=Rlohb2&cid=0c08bbc0%2D179b%2D440e%2D9bae%2Df565c5ee2c3e&FolderCTID=0x0120001158B65CDB719C4991DB7FB7D3EC29FA&id=%2Fsites%2FKMP%2DGIS%2FShared%20Documents%2FCoP%20Meetings%2F2024%20GIS%20CoP%20Meeting%2FPresentations&viewid=cda76d11%2D032b%2D446e%2Db765%2D36182668a2e3",
             "description": "",
-            "date": "Click the image for a link to all presentations for 2024's GIS CoP!",
-            "agenda1": "",
-            "agenda2": "",
+            "date": "GIS CoP",
+            "agenda1": "Click the image to access",
+            "agenda2": "all presentations for 2024's GIS CoP!",
             "agenda3": "",
             "agenda4":"",
             "host": ""
@@ -35,7 +35,7 @@
             "agenda3": "and your sense of adventure!",
             "agenda4": "Corps Day 2024 is going ",
             "agenda5":"to be an epic celebration! 🏖️",
-
+            "agenda6":"",
             "host": ""
         },
         {
