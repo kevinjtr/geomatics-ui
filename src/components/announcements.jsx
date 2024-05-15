@@ -36,8 +36,8 @@ function Item(props)
                     </a>
                 </div>
                 <div style={{ float:"right", textAlign:"center", position:"relative", paddingLeft:"20%", flexBasis:"50%", textWrap:"wrap", width:"50%"}}>
-                    {props.item.date ? <h1 style={{paddingTop:"50px"}}>{props.item.date}</h1> : null}
-                    {props.item.host ? <h5 style={{paddingTop:"50px"}}>{props.item.host}</h5> : null}
+                    {props.item.date ? <h1 style={{paddingTop:"25px"}}>{props.item.date}</h1> : null}
+                    {props.item.host ? <h5 style={{paddingTop:"25px"}}>{props.item.host}</h5> : null}
                     {props.item.agenda1 ? <p style={{paddingTop:"10px", fontSize:"14px"}}>{props.item.agenda1}</p> : null}
                     {props.item.agenda2 ? <p style={{paddingTop:"10px", fontSize:"14px"}}>{props.item.agenda2}</p> : null}
                     {props.item.agenda3 ? <p style={{paddingTop:"10px", fontSize:"14px"}}>{props.item.agenda3}</p> : null}
