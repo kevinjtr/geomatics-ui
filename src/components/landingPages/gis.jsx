@@ -16,7 +16,7 @@ import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFe
 const mainFeaturedPost = {
   title: 'GIS',
   description:
-    "Whether it's spatial analysis, cartography, remote sensing, or custom GIS application development, we are committed to delivering precise, actionable insights that drive informed decision-making. From urban planning and environmental management to infrastructure development and natural resource exploration, we empower organizations across various sectors to optimize their operations, mitigate risks, and achieve sustainable growth.",
+    "Geographic Information Systems are computer-based software tools that allow users the ability to analyze, store, map, model, and display data (whether in vector or raster format) related to geographic positions on the Earth’s surface.",
   image: 'https://source.unsplash.com/random?wallpapers',
   imageText: 'main image description',
   linkText: '',
