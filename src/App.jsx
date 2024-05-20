@@ -37,13 +37,14 @@ const App = () => {
   //const href = useHref()
 
   const verifyTimeStamp = (ts) => {
-    if(ts === undefined || ts === '' || ts === null){
+    console.log(ts,'time-stampt')
+    if(ts === undefined || ts === '' || ts === null || !isFinite(ts)){
       return true
     }
-    //24 * 60 * 
-    let twentyFourHoursAgo = new Date().getTime() - (60 * 1000);
+    // 
+    let expDate = new Date().getTime() - (30 * 24 * 60 * 60 * 1000);
 
-    if (new Date(ts).getTime() < twentyFourHoursAgo) {
+    if (new Date(Number(ts)).getTime() < expDate) {
       console.log('here')
       return true
       // The yourDate time is more than 1 days from now
@@ -74,11 +75,11 @@ const App = () => {
   )
 
   const handleDialog = async () => {
-    const ans = await confirmDelete()
-    console.log(ans)
-    setConfirm(ans)
-    localStorage.setItem('geo-confirm', ans ? 'yes' : 'no')
+    let ans = await confirmDelete()
+    ans = ans ? 'yes' : 'no'
+    localStorage.setItem('geo-confirm', ans)
     localStorage.setItem('geo-timestamp', Number(new Date()))
+    setConfirm(ans)
   }
 
   const router = 

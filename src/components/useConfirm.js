@@ -1,5 +1,5 @@
 import {
-    Button, Dialog, DialogActions,
+    Button, Dialog, DialogActions, Box, 
     DialogContent, DialogContentText, DialogTitle,
   } from '@mui/material';
   import { useState } from 'react';
@@ -33,9 +33,9 @@ import {
         <DialogContent>
           <DialogContentText sx={{whiteSpace: "pre-wrap"}}>{message}</DialogContentText>
         </DialogContent>
-        <DialogActions>
-          <Button onClick={handleConfirm}>Agree</Button>
-          <Button onClick={handleCancel}>Cancel</Button>
+        <DialogActions sx={{justifyContent: 'center', py: 1.5}}>
+          <Button sx={{ width: 200, height: 45 }} variant="contained" onClick={handleConfirm}>Agree/Confirm</Button>
+          {/* <Button onClick={handleCancel}>Cancel</Button> */}
         </DialogActions>
       </Dialog>
     );

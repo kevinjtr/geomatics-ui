@@ -11,7 +11,7 @@ export const TrainingMaterial = (props) => {
     {field:"fileType", headerName:"File Type", width:140},
     {field:"dateCreated", headerName:"Date Created", sortable: false, width:200},
     {field:"link", headerName:"Download Link", width:505, sortable: false, renderCell: (params) =>(
-      <a download href={(params.value)}>{params.value}</a>
+      <a download href={(params.value)}>{params.value.includes('/') ? params.value.split('/').slice(-1) : params.value}</a>
     )}
   ]
   const rows = 
