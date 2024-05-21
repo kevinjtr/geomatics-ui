@@ -14,8 +14,8 @@
         "id": "2",
         "title": "SAJ - Modeling, Mapping, & Consequences (MMC) Production Center",
         "largeImage": "mmc-production-center",
-        "smallImage": "/img/projects/mmc storyboard - alt 2.png",
-        "text": "As part of the national MMC Production Center, Geomatics Engineering Section is finalizing inundation maps this week (7 March) for Pomona Dam in Kansas (potential downstream flooding of Ottawa Kansas shown at right) and initiating inundation maps for Mount St. Helens Dam in Washington. These inundation maps are prepared in accordance with Federal Guidelines for Dam Safety (FEMA Publication 64, FEMA 2004) to support the dam owner and emergency management officials in facilitating timely notification and evacuation of areas affected by a dam breach or flood condition."
+        "smallImage": "/img/projects/mmc.png",
+        "text": "The Modeling, Mapping, and Consequence (MMC) Production Center was recertified as a Mandatory Center of Expertise (MCX) in July 2020. The MMC mission includes producing hydraulic models, inundation maps, consequences estimates, and technical reports for USACE watersheds, dams, and levees in support of Critical Infrastructure Protection and Resilience (CIPR), Water Management (WM), and Dam and Levee Safety Programs. All products are developed in accordance with MMC standard operation procedures (SOP). MMC products support a risk-based assessment, prioritization and management framework for the USACE CIPR, WM, Dam Safety and Levee Safety Programs.  MMC Production Center efforts also provide the Risk Management Center (RMC) with critical feedback for refining and updating USACE guidance and policy within the MMC functional areas. The Jacksonville District Geomatics MMC team has been involved with the MMC Mapping Program since 2010 and continues to lead the mapping production effort."
       },
       
        {
@@ -96,10 +96,10 @@
     "Projects": [
       {
         "id": "1",
-        "title": "DMDDSp - Sample Data Management Project",
-        "largeImage": "dmddsp-sample-1",
+        "title": "Port Everglades Coral and Sea Life Database",
+        "largeImage": "port-everglades-database",
         "smallImage": "/img/project.PNG",
-        "text": "Sample text."
+        "text": "This project is currently being created and is planned to encompass coral health from nurseries back to their relocated reefs while also tracking metrics regarding reefs as a whole as well as fish and other marine life."
       }
     ],
     "Apps": [

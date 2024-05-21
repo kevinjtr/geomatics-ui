@@ -16,7 +16,7 @@ import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFe
 const mainFeaturedPost = {
   title: 'Data Management/Database Design',
   description:
-    "Sample text for data management.",
+    "Data management is the practice of collecting, keeping, and using data securely, efficiently, and cost-effectively. The primary purpose of designing a database is to produce physical and logical models of designs for the proposed database system.",
   image: 'https://source.unsplash.com/random?wallpapers',
   imageText: 'main image description',
   linkText: '',
