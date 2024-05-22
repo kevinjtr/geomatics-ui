@@ -52,19 +52,23 @@ const menuItemsDataWebApplications = [
     url: 'https://sajgis.saj.usace.army.mil/inventory',
   },
   {
-    label: 'Calculator Tool',
-    url: 'https://sajgis.saj.usace.army.mil/pcl',
+    label: 'Data Dictionary Tool',
+    url: 'https://sajgis.saj.usace.army.mil/dictionary',
   },
 ]
 
 const menuItemsGisLinks = [
   {
-    label: 'USGS',
-    url: 'https://www.usgs.gov/',
+    label: 'AGOL Experience Builder App',
+    url: 'https://experience.arcgis.com/experience/06bb9c98d9184bd9a374a244f6d27474',
   },
   {
-    label: 'NOAA',
-    url: 'https://www.noaa.gov/',
+    label: 'AGOL WMV',
+    url: 'https://cesaj.maps.arcgis.com/home/item.html?id=e5806e66f6244d24ac616462577fa60c',
+  },
+  {
+    label: 'ArcGIS Portal WMV',
+    url: 'https://coe-sajgsp01jax.saj.ds.usace.army.mil/k3portal/apps/webappviewer/index.html?id=78590a96cc124751a452666c6773ad66',
   },
 ]
 
