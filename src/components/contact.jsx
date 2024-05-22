@@ -78,7 +78,7 @@ export const Contact = (props) => {
                 </Typography>
               </Stack>
                 <Typography variant="subtitle1">
-                  904-555-5555
+                (904) 232-1603 | Section Chief
                 </Typography>
 
                 <Stack direction="row" sx={{pt: 1.5}}>
@@ -88,7 +88,9 @@ export const Contact = (props) => {
                 </Typography>
               </Stack>
                 <Typography  variant="subtitle1">
-                  @usace.army.mil
+                <span><a style={{color: 'white'}} href="mailto:sajgeomatics@usace.army.mil">
+																				SAJGeomatics@usace.army.mil
+																				</a></span>
                 </Typography>
               </Grid>
               <Divider variant="middle" sx={{pt: 3.5, width: '100%'}}/>

@@ -12,6 +12,7 @@ import post3 from "../../templates/landing/blog-post.3.md";
 import MainFeaturedPost from '../../templates/landing/MainFeaturedPost';
 import DisciplineFeaturedPost from '../../templates/landing/DisciplineFeaturedPost';
 import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFeaturedPost';
+import { Box, Typography, List, ListItem } from '@mui/material';
 
 const mainFeaturedPost = {
   title: 'GIS',
@@ -73,6 +74,46 @@ export function GIS(){
             ))}
           </Grid>
           <DisciplineMainFeaturedPost post={mainFeaturedPost} />
+          <Box sx={{ margin: '50px auto', pl: '10%', pr: '10%' }}>
+            <Typography variant="h4" sx={{ pb: 1.5 }}>
+              What is GIS?
+            </Typography>
+            <Typography variant="p" sx={{  }}>
+              Geographic Information Systems (GIS) are systems designed to capture, store, manipulate, analyze, manage, and present spatial or geographic data. GIS applications are tools that allow users to create interactive queries, analyze spatial information, and edit data in maps.
+            </Typography>
+
+            <Typography variant="h4" sx={{ py: 2.5 }}>
+              Key Technologies We Use
+            </Typography>
+            <List sx={{ listStyleType: 'disc', pl: 4 }}>
+              <ListItem sx={{ display: 'list-item' }}>
+                GIS Software (ArcGIS, ArcPro)
+              </ListItem>
+              <ListItem sx={{ display: 'list-item' }}>
+                Remote Sensing
+              </ListItem>
+              <ListItem sx={{ display: 'list-item' }}>
+                Spatial Databases
+              </ListItem>
+              <ListItem sx={{ display: 'list-item' }}>
+                GPS Technology
+              </ListItem>
+              <ListItem sx={{ display: 'list-item' }}>
+                Data Visualization Tools
+              </ListItem>
+            </List>
+            <Box sx={{ textAlign: 'center' }}>
+              <img style={{ height: 100 }} src="/img/arc-gis.png" alt="GIS Software"/>
+              {/* <img style={{ height: 60, marginBottom: 15 }} src="/img/remote-sensing.png" alt="Remote Sensing"/> */}
+            </Box>
+
+            <Typography variant="h4" sx={{ py: 2.5 }}>
+              What is a GIS Specialist?
+            </Typography>
+            <Typography variant="p" sx={{ pb: 2.5 }}>
+              A GIS Specialist is an expert in spatial data and technologies, capable of creating and analyzing maps and models to support decision-making in various fields, such as urban planning, environmental science, and transportation.
+            </Typography>
+          </Box>
           {/* <DisciplineFeaturedPost post={featuredProject}/> */}
           {/* <Grid container spacing={5} sx={{ mt: 3 }}>
             <Main title="From the firehose" posts={posts} />

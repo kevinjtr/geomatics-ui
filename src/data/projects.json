@@ -98,7 +98,7 @@
         "id": "1",
         "title": "Port Everglades Coral and Sea Life Database",
         "largeImage": "port-everglades-database",
-        "smallImage": "/img/project.PNG",
+        "smallImage": "/img/projects/database.PNG",
         "text": "This project is currently being created and is planned to encompass coral health from nurseries back to their relocated reefs while also tracking metrics regarding reefs as a whole as well as fish and other marine life."
       }
     ],
@@ -107,8 +107,8 @@
         "id": "1",
         "title": "SAJ - Data Dictionary Tool Generator for ASTM Testing",
         "largeImage": "astm-data-dictionary-gen",
-        "smallImage": "/img/projects/datadictionary.png",
-        "text": "Project Contract Log (PCL) Application currently user interface is in development."
+        "smallImage": "/img/projects/dictionary.PNG",
+        "text": "Data dictionary."
       }
       
     ]
@@ -117,20 +117,33 @@
     "Projects": [
       {
         "id": "1",
-        "title": "ADSP - Sample App Dev Project",
-        "largeImage": "adsp-sample-1",
-        "smallImage": "/img/project.PNG",
-        "text": "Sample text."
+        "title": "Jax Harbor Deepening - R Script",
+        "largeImage": "jax-harbor-deep",
+        "smallImage": "/img/projects/r-script-jax-harbor.PNG",
+        "text": "The Jacksonville District is increasing the depth of the existing federal channel along the St. Johns River from its current depth of 40 feet to a maximum depth of 50 feet. Deepening the channel will allow larger vessels to access it. This R script provides the Jacksonville Engineering Coastal Section with tools to download and generate statistics for the salinity levels in the Jacksonville Harbor. This script saves the engineers time each year in creating an annual report to monitor the water's salinity levels."
       }
     ],
     "Apps": [
       {
         "id": "1",
-        "title": "SAJ - Geomatics Section Project Contract Log Application (PCL)",
-        "largeImage": "geomatics-pcl",
+        "title": "Project Contract Log Application (PCL)",
+        "largeImage": "pcl",
         "smallImage": "/img/projects/pcl storyboard - alt 2.png",
-        "text": "Project Contract Log (PCL) Application currently user interface is in development.",
-        "featured":true
+        "text": "Project Contract Log (PCL) Application currently user interface is in development."
+      },
+      {
+        "id": "2",
+        "title": "Engineering Budget App (EBA)",
+        "largeImage": "eba",
+        "smallImage": "/img/projects/eba.PNG",
+        "text": "The Engineering Budget App (EBA) was created to facilitate project management by providing an overview of future fiscal years' budget estimates. This tool allows multiple technical leads to input their budget estimations simultaneously. In addition, it can generate daily reports to overview the total budget. This application is currently being used in the Engineering Division with the intention of expanding its use to other sections in the near future."
+      },
+      {
+        "id": "2",
+        "title": "Inventory App",
+        "largeImage": "inventory",
+        "smallImage": "/img/projects/inventory.PNG",
+        "text": "The Engineering Budget App (EBA) was created to facilitate annual equipment inventory tracking and transferring documentation. It has the ability to create documentation for issuing, transferring, and repairing equipment. Supervisors with HRA accounts can easily manage their equipment to facilitate annual inventory."
       }
     ]
   }

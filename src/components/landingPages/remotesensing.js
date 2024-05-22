@@ -12,7 +12,7 @@ import post3 from "../../templates/landing/blog-post.3.md";
 import MainFeaturedPost from '../../templates/landing/MainFeaturedPost';
 import DisciplineFeaturedPost from '../../templates/landing/DisciplineFeaturedPost';
 import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFeaturedPost';
-
+import { Box, Typography, List, ListItem } from '@mui/material';
 
 const mainFeaturedPost = {
   title: 'Remote Sensing',
@@ -61,25 +61,59 @@ const posts = [post1, post2, post3];
 const defaultTheme = createTheme();
 
 
-export function RemoteSensing(){
+export function RemoteSensing() {
   return (
     <ThemeProvider theme={defaultTheme} >
       <CssBaseline />
       <Container maxWidth="lg">
- 
         <main>
-          
           <Grid sx={{py: 2.5}} container spacing={6}>
             {featuredPosts.map((post) => (
               <DisciplineFeaturedPost key={post.title} post={post} />
             ))}
           </Grid>
           <DisciplineMainFeaturedPost post={mainFeaturedPost} />
-          {/* <DisciplineFeaturedPost post={featuredProject}/> */}
-          {/* <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main title="From the firehose" posts={posts} />
+          <Box sx={{ margin: '50px auto', pl:'10%', pr: '10%' }}>
+            <Typography variant="h4" sx={{pb: 1.5, textAlign: 'center'}} >
+            What is Remote Sensing?
+            </Typography>
+            <Typography variant="p" sx={{ textAlign: 'left' }} >
+            Remote sensing is the science of obtaining information about objects or areas from a distance, typically from aircraft or satellites. It involves the detection and measurement of radiation reflected or emitted by objects on Earth’s surface.
+            </Typography>
+
+            <Typography variant="h4" sx={{pt: 2.5, textAlign: 'center'}} >
+            What technologies do we use?
+            </Typography>
+
+            <List sx={{ listStyleType: 'disc' }}>
+            <ListItem sx={{ display: 'list-item' }}>
+            Satellite Imagery
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+            Aerial Photography
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+            Lidar (Light Detection and Ranging)
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+            Radar (Radio Detection and Ranging)
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+            GIS (Geographic Information Systems)
+            </ListItem>
+            </List>
+            <Box sx={{ textAlign:'center' }}>
+            <img style={{height: 100}} src="/img/satellite.PNG"/>
+            <img style={{height: 60, marginBottom: 15}} src="/img/lidar-icon.PNG"/>
+            </Box>
             
-          </Grid> */}
+            <Typography variant="h4" sx={{py: 1.5, textAlign: 'center'}} >
+            What is a Remote Sensing Specialist?
+            </Typography>
+            <Typography variant="p" sx={{ textAlign: 'left' }} >
+            A Remote Sensing Specialist uses sensors to analyze data and create detailed maps and models. They often work with satellite imagery, aerial photography, and Lidar data to monitor and assess various environmental and man-made conditions.
+            </Typography>
+         </Box>
         </main>
       </Container>
     </ThemeProvider>

@@ -83,8 +83,8 @@ const App = () => {
   }
 
   const router = 
-  //createBrowserRouter(
-  createHashRouter(
+  createBrowserRouter(
+  //createHashRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout/>}>
         {/* <Route path="/" element={<Navigate to="/" replace/>}/> */}
