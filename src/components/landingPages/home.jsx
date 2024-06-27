@@ -69,7 +69,7 @@ const location = useLocation()
 
 
         <TwoColumnComponent/>
-        <Socials data={landingPageData.Contact}/>
+        {/*<Socials data={landingPageData.Contact}/>*/}
         <Announcements data={announcementPageData.Announcements}/>
         <HighlightedProjectSection/>
         {/* <About data={landingPageData.About} /> */}

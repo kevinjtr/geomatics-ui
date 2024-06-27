@@ -8,7 +8,7 @@ export const  Announcements = (props) =>
 
     return (
         <Box sx={{marginLeft:"2.5%", marginRight:"2.5%"}}>
-            <Carousel  navButtonsAlwaysVisible animation='slide' duration='1200' height="500px" interval={10000}>
+            <Carousel  navButtonsAlwaysVisible animation='slide' duration='1200' height="500px" autoPlay='false' interval={10000}>
             {
                 props.data?
                 props.data.map( (item, i) => <Item key={i} item={item} /> )
