@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Typography, Grid, Card, CardContent } from '@mui/material';
-import geomaticsImg from './geomatics.PNG'
+import Image from './Image'
 
 const AboutUsPage = () => {
     return (
         <div style={{paddingLeft: "20%", paddingRight: '20%', paddingTop: "10px", paddingBottom: "10px", minWidth: "700px"}}>
           <div style={{textAlign: 'center'}}>
-          <img style={{height: "250px"}} src={geomaticsImg}></img>
+          <Image style={{height: "250px"}} src={'/img/geomatics.PNG'}/>
             </div>
           <div style={{ marginBottom: '5pt', clear: 'both' }}>
             
@@ -22,10 +22,10 @@ const AboutUsPage = () => {
           </div>
           <div style={{ marginLeft: '12.25pt', clear: 'both' }}>
             <ul type="disc" style={{ margin: '0pt', paddingLeft: '0pt' }}>
-              <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>Jay Yearwood - GIS Specialist:</span></strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>&nbsp;Bringing a wealth of experience in spatial analysis and mapping, Jay ensures our GIS solutions are tailored to meet the unique needs of each project.</span></li>
-              <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>Tim Schall - Remote Sensing:</span></strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>&nbsp;Leveraging expertise in remote sensing technologies, Darin leads our efforts in analyzing aerial and satellite imagery to extract valuable insights and support decision-making processes.</span></li>
-              <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>Rob Swilley - Survey/Contracting:</span></strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>&nbsp;Spearheading our web application development initiatives, Rob crafts intuitive and powerful applications that streamline processes and enhance user experiences.</span></li>
-              <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>Jon Hall - Data Management/Data Management Expert:</span></strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>&nbsp;With a keen eye for data quality and integration, Jon leads our efforts in managing and harnessing the power of vast datasets.</span></li>
+              <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>Jay Yearwood - Lead GIS Specialist:</span></strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>&nbsp;Bringing a wealth of experience in spatial analysis and mapping, Jay ensures our GIS solutions are tailored to meet the unique needs of each project.</span></li>
+              <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>Tim Schall - Lead Remote Sensing:</span></strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>&nbsp;Leveraging expertise in remote sensing technologies, Darin leads our efforts in analyzing aerial and satellite imagery to extract valuable insights and support decision-making processes.</span></li>
+              <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>Rob Swilley - Lead Survey/Contracting:</span></strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>&nbsp;Spearheading our web application development initiatives, Rob crafts intuitive and powerful applications that streamline processes and enhance user experiences.</span></li>
+              <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>Jon Hall - Lead Data Management/Database Design:</span></strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>&nbsp;With a keen eye for data quality and integration, Jon leads our efforts in managing and harnessing the power of vast datasets.</span></li>
               <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>Kevin Alemany - Application Developer:</span></strong><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>&nbsp;Spearheading our web application development initiatives, Kevin crafts intuitive and powerful applications that streamline processes and enhance user experiences.</span></li>
             </ul>
           </div>

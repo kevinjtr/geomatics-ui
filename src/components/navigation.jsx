@@ -68,6 +68,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { useNavigate  } from "react-router-dom";
+import Image from './Image'
+
 const drawerWidth = 240;
 const navItems = [{label: 'Training', url: '/training'}, {label: 'Support Services', url: '/supportservices'},
  //{label: 'Request Work', url: '/requestwork'},
@@ -84,8 +86,8 @@ export const Navigation = (props) => {
         <Toolbar sx={{justifyContent: 'space-evenly'}}>
           <Box sx={{pl:5, display: 'flex'}}>
           <Link to={"/"}>
-          <img src="/img/Army Star.png" alt="title" style={{float:"left", height:"50px", paddingRight:"10px"}}/>
-          <img src="/img/Castle.png" alt="title" style={{float:"left", width:"70px", paddingRight:"10px"}}/>
+          <Image src={"/img/Army Star.png"} alt="title" style={{float:"left", height:"50px", paddingRight:"10px"}}/>
+          <Image src="/img/Castle.png" alt="title" style={{float:"left", width:"70px", paddingRight:"10px"}}/>
           </Link>
           
           

@@ -15,7 +15,7 @@ const mainFeaturedPost = {
   title: 'Survey/Contracting',
   description:
     "Survey services include the collection, analysis, and interpretation of topographic/hydrographic, boundary, geodetic, subsurface utilities, construction, and aerial surveys. Field work is largely accomplished via architect-engineer (A-E) services in accordance with the Brooks Architect-Engineer Act and acquisition regulations.",
-  image: 'https://source.unsplash.com/random?wallpapers',
+  image: '/img/survey-landing.JPG',
   imageText: 'main image description',
   linkText: '',
 };
@@ -26,7 +26,7 @@ const featuredPosts = [
     //date: 'Nov 12',
     //description:
       //'Here is a collection of GIS related projects.',
-    image: 'https://source.unsplash.com/random?wallpapers',
+    image: '/img/survey-landing.JPG',
     imageLabel: 'Image Text',
     url: "/geospatial/survey-contracting/projects",
     },
@@ -35,7 +35,7 @@ const featuredPosts = [
     //date: 'Nov 11',
     //description:
       //'Here is a collection of GIS related apps.',
-    image: 'https://source.unsplash.com/random?wallpapers',
+    image: '/img/survey-landing.JPG',
     imageLabel: 'Image Text',
     url: "/geospatial/survey-contracting/apps"
   },

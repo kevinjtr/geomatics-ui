@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Typography, Button, Card, CardMedia } from '@mui/material';
 import { Link, useHref } from 'react-router-dom';
 //import PortEvergladesImage from '/img/project/port-everglades.PNG';
+import Image from './Image'
 
 const cardStyle = {
   marginBottom: '2rem',
@@ -21,7 +22,7 @@ const HighlightedProjectSection = () => {
         <Typography variant="h2" align="center" gutterBottom>
         Project Spotlight
       </Typography>
-        <div style={{textAlign:'center', paddingBottom: 5}}><img
+        <div style={{textAlign:'center', paddingBottom: 5}}><Image
         style={{borderRadius:13, height: 200}}
         //height="250"
         //width="250"

@@ -13,12 +13,13 @@ import MainFeaturedPost from '../../templates/landing/MainFeaturedPost';
 import DisciplineFeaturedPost from '../../templates/landing/DisciplineFeaturedPost';
 import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFeaturedPost';
 import { Box, Typography, List, ListItem } from '@mui/material';
+import Image from '../Image'
 
 const mainFeaturedPost = {
   title: 'GIS',
   description:
     "Geographic Information Systems are computer-based software tools that allow users the ability to analyze, store, map, model, and display data (whether in vector or raster format) related to geographic positions on the Earth’s surface.",
-  image: 'https://source.unsplash.com/random?wallpapers',
+  image: '/img/gis-landing.JPG',
   imageText: 'main image description',
   linkText: '',
 };
@@ -29,7 +30,7 @@ const featuredPosts = [
     //date: 'Nov 12',
     //description:
       //'Here is a collection of GIS related projects.',
-    image: 'https://source.unsplash.com/random?wallpapers',
+    image: '/img/gis-landing.JPG',
     imageLabel: 'Image Text',
     url: "/geospatial/gis/projects",
     },
@@ -38,7 +39,7 @@ const featuredPosts = [
     //date: 'Nov 11',
     //description:
       //'Here is a collection of GIS related apps.',
-    image: 'https://source.unsplash.com/random?wallpapers',
+    image: '/img/gis-landing.JPG',
     imageLabel: 'Image Text',
     url: "/geospatial/gis/apps"
   },
@@ -103,7 +104,7 @@ export function GIS(){
               </ListItem>
             </List>
             <Box sx={{ textAlign: 'center' }}>
-              <img style={{ height: 100 }} src="/img/arc-gis.png" alt="GIS Software"/>
+              <Image style={{ height: 100 }} src="/img/arc-gis.png" alt="GIS Software"/>
               {/* <img style={{ height: 60, marginBottom: 15 }} src="/img/remote-sensing.png" alt="Remote Sensing"/> */}
             </Box>
 

@@ -13,12 +13,12 @@ import MainFeaturedPost from '../../templates/landing/MainFeaturedPost';
 import DisciplineFeaturedPost from '../../templates/landing/DisciplineFeaturedPost';
 import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFeaturedPost';
 import { Box, Typography, List, ListItem } from '@mui/material';
-
+import Image from '../Image'
 const mainFeaturedPost = {
   title: 'Remote Sensing',
   description:
     "Sample text for remote sensing...",
-  image: 'https://source.unsplash.com/random?wallpapers',
+  image: '/img/remote-sensing-landing.JPG',
   imageText: 'main image description',
   linkText: '',
 };
@@ -29,7 +29,7 @@ const featuredPosts = [
     //date: 'Nov 12',
     //description:
       //'Here is a collection of GIS related projects.',
-    image: 'https://source.unsplash.com/random?wallpapers',
+    image: '/img/remote-sensing-landing.JPG',
     imageLabel: 'Image Text',
     url: "/geospatial/remote-sensing/projects",
     },
@@ -38,7 +38,7 @@ const featuredPosts = [
     //date: 'Nov 11',
     //description:
       //'Here is a collection of GIS related apps.',
-    image: 'https://source.unsplash.com/random?wallpapers',
+    image: '/img/remote-sensing-landing.JPG',
     imageLabel: 'Image Text',
     url: "/geospatial/remote-sensing/apps"
   },
@@ -103,8 +103,8 @@ export function RemoteSensing() {
             </ListItem>
             </List>
             <Box sx={{ textAlign:'center' }}>
-            <img style={{height: 100}} src="/img/satellite.PNG"/>
-            <img style={{height: 60, marginBottom: 15}} src="/img/lidar-icon.PNG"/>
+            <Image style={{height: 100}} src="/img/satellite.PNG"/>
+            <Image style={{height: 60, marginBottom: 15}} src="/img/lidar-icon.PNG"/>
             </Box>
             
             <Typography variant="h4" sx={{py: 1.5, textAlign: 'center'}} >

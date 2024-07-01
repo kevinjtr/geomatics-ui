@@ -1,4 +1,4 @@
-import { Image } from "./image";
+import Image from "./Image";
 import React from "react";
 import {Grid} from '@mui/material'
 import './image-gallery.css'
@@ -46,7 +46,7 @@ export const ImageGallery = (props) => {
                   <Grid item sx={{px: 1.5, py:1.5}}>
         <article className="pgcard">
             <header className="pgcard__thumb">
-                <Link to={currDir + disciplineLabels?.[discipline]?.url(name) + d.largeImage}><img src={d.smallImage}/></Link>
+                <Link to={currDir + disciplineLabels?.[discipline]?.url(name) + d.largeImage}><Image src={d.smallImage}/></Link>
             </header>
             {/* <date className="pgcard__date">
                 <span className="pgcard__date__day">11</span>

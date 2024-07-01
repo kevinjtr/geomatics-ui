@@ -17,7 +17,7 @@ const mainFeaturedPost = {
   title: 'Data Management/Database Design',
   description:
     "Data management is the practice of collecting, keeping, and using data securely, efficiently, and cost-effectively. The primary purpose of designing a database is to produce physical and logical models of designs for the proposed database system.",
-  image: 'https://source.unsplash.com/random?wallpapers',
+  image: '/img/database-landing.JPG',
   imageText: 'main image description',
   linkText: '',
 };
@@ -28,7 +28,7 @@ const featuredPosts = [
     //date: 'Nov 12',
     //description:
       //'Here is a collection of GIS related projects.',
-    image: 'https://source.unsplash.com/random?wallpapers',
+    image: '/img/database-landing.JPG',
     imageLabel: 'Image Text',
     url: "/geospatial/data-management/projects",
     },
@@ -37,7 +37,7 @@ const featuredPosts = [
     //date: 'Nov 11',
     //description:
       //'Here is a collection of GIS related apps.',
-    image: 'https://source.unsplash.com/random?wallpapers',
+    image: '/img/database-landing.JPG',
     imageLabel: 'Image Text',
     url: "/geospatial/data-management/apps"
   },

@@ -13,12 +13,13 @@ import MainFeaturedPost from '../../templates/landing/MainFeaturedPost';
 import DisciplineFeaturedPost from '../../templates/landing/DisciplineFeaturedPost';
 import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFeaturedPost';
 import { Box, Typography, List, ListItem } from '@mui/material';
+import Image from '../Image'
 
 const mainFeaturedPost = {
     title: 'Application Development',
     description:
       "From front-end design to back-end functionality, our team of skilled developers harness their expertise to deliver robust, scalable, and user-centric applications that propel businesses forward in the digital landscape.",
-    image: 'https://source.unsplash.com/random?wallpapers',
+    image: '/img/app-dev-landing.JPG',
     imageText: 'main image description',
     linkText: '',
   };
@@ -29,7 +30,7 @@ const mainFeaturedPost = {
       //date: 'Nov 12',
       //description:
         //'Here is a collection of GIS related projects.',
-      image: 'https://source.unsplash.com/random?wallpapers',
+        image: '/img/app-dev-landing.JPG',
       imageLabel: 'Image Text',
       url: "/geospatial/application-development/projects",
       },
@@ -38,7 +39,7 @@ const mainFeaturedPost = {
       //date: 'Nov 11',
       //description:
         //'Here is a collection of GIS related apps.',
-      image: 'https://source.unsplash.com/random?wallpapers',
+        image: '/img/app-dev-landing.JPG',
       imageLabel: 'Image Text',
       url: "/geospatial/application-development/apps"
     },
@@ -103,8 +104,8 @@ export function AppDevelopment(){
             </ListItem>
             </List>
             <Box sx={{ textAlign:'center' }}>
-            <img style={{height: 100}} src="/img/html-css-javascript.png"/>
-            <img style={{height: 60, marginBottom: 15}} src="/img/react-icon.PNG"/>
+            <Image style={{height: 100}} src="/img/html-css-javascript.png"/>
+            <Image style={{height: 60, marginBottom: 15}} src="/img/react-icon.PNG"/>
             </Box>
             
             <Typography variant="h4" sx={{pb: 1, textAlign: 'center'}} >

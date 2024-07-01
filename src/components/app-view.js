@@ -1,6 +1,8 @@
 import React from "react";
 import {  useParams } from "react-router-dom";
 import { Stack, Grid } from "@mui/material";
+import Image from './Image'
+
 export const AppView = (props) => {
     const {id} = useParams()
     return(
@@ -17,7 +19,7 @@ export const AppView = (props) => {
                             id === d.largeImage ? 
                             <div style={{paddingTop:"60px", marginBottom:"30px"}}>
                               <Stack sx={{textAlign: 'center'}}>
-                              <a href={d.link} rel="noreferrer" target="_blank"> <img src={d.smallImage}  alt={d.title} style={{maxWidth: "800px", paddingRight:"20px"}} /> </a>
+                              <a href={d.link} rel="noreferrer" target="_blank"> <Image src={d.smallImage}  alt={d.title} style={{maxWidth: "800px", paddingRight:"20px"}} /> </a>
                             <h2>{d.title}</h2>
                             <div style={{display: 'block', margin: 'auto', width: '1000px'}}>
                                 {d.text}

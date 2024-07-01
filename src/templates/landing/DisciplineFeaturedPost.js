@@ -6,6 +6,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { Link } from 'react-router-dom';
+import Image from '../../components/Image'
 
 function DisciplineFeaturedPost(props) {
   const { post } = props;
@@ -29,11 +30,10 @@ function DisciplineFeaturedPost(props) {
             </Typography>
           </CardContent>
           <CardMedia
-            component="img"
-            sx={{ width: 225, display: { xs: 'none', sm: 'block' } }}
-            image={post.image}
             alt={post.imageLabel}
-          />
+          >
+            {<Image src={post.image} style={{ width: 225, height: '100%' }}/>}
+          </CardMedia>
         </Card>
       </Link>
     </Grid>

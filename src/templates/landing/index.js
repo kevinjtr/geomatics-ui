@@ -15,12 +15,6 @@ import Footer from './Footer';
 import post1 from './blog-post.1.md';
 import post2 from './blog-post.2.md';
 import post3 from './blog-post.3.md';
-import geoImage from '../../img/gis-banner-web.jpg'
-import gisImage from '../../img/gis.PNG'
-import remoteSenImage from '../../img/remote-sensing.PNG'
-import surveyImage from '../../img/surveying.PNG'
-import dataManImage from '../../img/database-management.PNG'
-import appDevImage from '../../img/app-development.PNG'
 
 const sections = [
   { title: 'Technology', url: '#' },
@@ -39,7 +33,7 @@ const mainFeaturedPost = {
   title: 'Geospatial',
   description:
      "Explore the world of geospatial technology and data management through our diverse range of work. Whether you're a GIS enthusiast, a surveying professional, a remote sensing expert, or an application developer, we have something for everyone.",
-  image: geoImage,
+  image: '/img/gis-banner-web.jpg',
   imageText: 'main image description',
   //linkText: 'Continue reading…',
 };
@@ -49,7 +43,7 @@ const featuredPosts = [
     title: 'GIS',
     description:
       'Discover the power of Geographic Information Systems (GIS) in analyzing and visualizing spatial data for informed decision-making.',
-    image: gisImage,
+    image: '/img/gis.PNG',
     imageLabel: 'GIS Image',
     url:'/geospatial/gis'
   },
@@ -57,7 +51,7 @@ const featuredPosts = [
     title: 'Remote Sensing',
     description:
       'Explore Remote Sensing and unlock insights from aerial and satellite imagery for various applications including environmental monitoring and urban planning.',
-    image: remoteSenImage,
+    image: '/img/remote-sensing.PNG',
     imageLabel: 'Remote Sensing Image',
     url:'/geospatial/remote-sensing'
   },
@@ -65,7 +59,7 @@ const featuredPosts = [
     title: 'Survey/Contracting',
     description:
       'Gain insights into Surveying and Contracting services tailored to meet your project requirements with precision and efficiency.',
-    image: surveyImage,
+    image: '/img/surveying.PNG',
     imageLabel: 'Survey/Contracting Image',
     url:'/geospatial/survey-contracting'
   },
@@ -73,7 +67,7 @@ const featuredPosts = [
     title: 'Data Management',
     description:
       'Efficiently manage your spatial data assets with our Data Management solutions, ensuring accessibility, integrity, and security.',
-    image: dataManImage,
+    image: '/img/database-management.PNG',
     imageLabel: 'Data Management Image',
     url:'/geospatial/data-management'
   },
@@ -81,7 +75,7 @@ const featuredPosts = [
     title: 'Application Development',
     description:
       'Empower your operations with custom Application Development services, leveraging GIS technologies to create tailored solutions for your unique needs.',
-    image: appDevImage,
+    image: '/img/app-development.PNG',
     imageLabel: 'Application Development Image',
     url:'/geospatial/application-development'
   },

@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
+import Image from './Image'
 
 function MainFeaturedPost(props) {
   const { post } = props;
@@ -23,7 +24,7 @@ function MainFeaturedPost(props) {
       }}
     >
       {/* Increase the priority of the hero background image */}
-      {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
+      {/* {<Image src={post.image} alt={post.imageText} />} */}
       <Box
         sx={{
           position: 'absolute',

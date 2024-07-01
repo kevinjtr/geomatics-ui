@@ -6,7 +6,7 @@ import Card from '@mui/material/Card';
 import { Link } from 'react-router-dom';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-
+import Image from '../../components/Image'
 function FeaturedPost(props) {
   const { post } = props;
 
@@ -29,11 +29,10 @@ function FeaturedPost(props) {
             </Typography>
           </CardContent>
           <CardMedia
-            component="img"
-            sx={{ width: 225, display: { xs: 'none', sm: 'block' } }}
-            image={post.image}
             alt={post.imageLabel}
-          />
+          >
+            {<Image src={post.image} style={{ width: 225, height: '100%' }}/>}
+          </CardMedia>
         </Card>
       </Link>
     </Grid>
