@@ -10,7 +10,7 @@ export const  Announcements = (props) =>
 
     return (
         <Box sx={{marginLeft:"2.5%", marginRight:"2.5%"}}>
-            <Carousel  navButtonsAlwaysVisible animation='slide' duration='1200' height="500px" autoPlay='false' interval={10000}>
+            <Carousel  navButtonsAlwaysVisible animation='slide' duration='1200' height="500px" autoPlay='false' interval={900000}>
             {
                 props.data?
                 props.data.map( (item, i) => <Item key={i} item={item} /> )
@@ -27,7 +27,7 @@ export const  Announcements = (props) =>
 function Item(props)
 {
     return (
-        
+            props.item.template == "standard" ?
             <article style={{height:'100%', position:"relative", display:"flex", justifyContent:"center", boxShadow:'0px 0px 12px lightgray',}}>
                 <Container>
                 <div style={{ float:"left", position:"relative" , flexBasis:"auto", width:"50%"}}>
@@ -52,5 +52,27 @@ function Item(props)
                 </div>
                 </Container>    
             </article>
+            : 
+            props.item.template == "link-only" ?
+            <article style={{height:'100%', position:"relative", display:"flex", justifyContent:"center", boxShadow:'0px 0px 12px lightgray',}}>
+            <Container>
+            <div style={{ float:"left", position:"relative" , flexBasis:"auto", width:"50%"}}>
+                <a href={props.item.link}>
+                <Image style={{ height:"500px", width:"100%"}} src={props.item.image} alt='announcement'/>
+                
+                <h4 style={{ fontSize:"40px", color:"white", textAlign:"center", paddingRight:"inherit", width:"20%", position:"absolute", top:"0",bottom:"0",left:"0", right:"0", height:"fit-content", margin:"auto", textShadow:"0 0 25px black"}}>{props.item.imageText}</h4>
+                </a>
+            </div>
+            <div style={{ float:"right", textAlign:"center",  position:"relative", paddingLeft:"20%", flexBasis:"50%", textWrap:"wrap", width:"50%"}}>
+               
+                {props.item.name ? <h1 style={{paddingTop:"25px"}}>{props.item.name}</h1> : null}
+                <p style={{ paddingTop:"50px", fontSize:"20px", overflowY:"auto", lineHeight: '150%' }}>
+                    {props.item.instruction ? props.item.instruction : null}
+                </p>
+            </div>
+            </Container>    
+        </article>
+        : "loading"
+
     )
 }
