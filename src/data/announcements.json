@@ -20,6 +20,28 @@
             "link": "",
             "name": "",
             "instruction": "Click the image to access the link!"
+        },
+        {
+            "template": "event",
+            "name":"",
+            "image": "",
+            "date":"",
+            "details": ""
+        },
+        {
+            "template":"multi-schedule",
+            "name": "",
+            "image": "",
+            "link": "",
+            "description": "",
+            "date": "",
+            "day1": "",
+            "time1": "",
+            "day2": "",
+            "time2": "",
+            "day3": "",
+            "time3": "",
+            "host": ""
         }
     ],
     "Announcements":[
@@ -33,7 +55,7 @@
             "agenda1": "Foundation Mapping using Field Maps and Experience Builder - Natlee M. Hernandez-Guevara",
             "agenda2": "National Hurricane Program: Hurricane Evacuation Study Data Model - Charlie Kaufman",
             "agenda3": "A Custom Web Application for Managing Contract Tasks, with Geospatial Capabilities - Jon Freed",
-            "agenda4": "Minimizing Credit Usage Through Strategic Maangement of AGOL Services - Jay Yearwood",
+            "agenda4": "Minimizing Credit Usage Through Strategic Management of AGOL Services - Jay Yearwood",
             "host": "Presenters:"
         },
         {
@@ -54,25 +76,26 @@
             "instruction": "Click the image to access all presentations for 2024's GIS CoP!"
         },
         {
-            "template": "standard",
+            "template": "event",
             "name":"Corps Day",
             "image": "/img/portfolio/corps-day.jpg",
             "date":"June 14th, 2024",
-            "agenda1": "Dive into Summer Fun! Corps Day 2024! Grab your sunscreen and your sense of adventure! Corps Day 2024 is going to be an epic celebration! 🏖️"
+            "details": "Dive into Summer Fun! Corps Day 2024! Grab your sunscreen and your sense of adventure! Corps Day 2024 is going to be an epic celebration! 🏖️"
         },
         {
-            "template": "standard",
-            "name":"SHARP TRAINING",
+            "template":"multi-schedule",
+            "name": "SHARP TRAINING",
             "image": "/img/portfolio/03-large.jpg",
-            "link":"",
-            "description":"",
-            "date":"Week of May 20th to May 24th",
-            "agenda1": "ALl employees are required to attend ONE session of the SHARP Training",
-            "agenda2": "20th, 0930-1030 Boneyard, 1100-1200 Boneyard, 1300-1400 Boneyard",
-            "agenda3": "21st, 0930-1030 Boneyard, 1100-1200 Boneyard, 1300-1400 Boneyard, 1700-1830 Virtual",
-            "agenda4":"22nd, 0930-1030 Boneyard, 1100-1200 Boneyard",
-            "agenda5":"23rd, 0930-1030 Boneyard, 1100-1200 Boneyard, 1300-1400 Boneyard, 1700-1830 Virtual",
-            "agenda6":"24th, 0830-0930 Virtual",
+            "day1": "May 20th, 2024",
+            "time1": "0930-1030 Boneyard, 1100-1200 Boneyard, 1300-1400 Boneyard",
+            "day2": "May 21st, 2024",
+            "time2": "0930-1030 Boneyard, 1100-1200 Boneyard, 1300-1400 Boneyard, 1700-1830 Virtual",
+            "day3": "May 22nd, 2024",
+            "time3": "0930-1030 Boneyard, 1100-1200 Boneyard",
+            "day4": "May 23rd, 2024",
+            "time4": "0930-1030 Boneyard, 1100-1200 Boneyard, 1300-1400 Boneyard, 1700-1830 Virtual",
+            "day5":"May 24th, 2024",
+            "time5":"0830-0930 Virtual",
             "host": ""
         }
       ]

@@ -51,26 +51,30 @@ const location = useLocation()
             <div className="v-home-text">
                 <h2 className="v-h1" style={{fontSize: '4rem'}}>Welcome to the Geomatics Website.</h2>
                 {/* <p className="v-p">Come live out your ideal vacation with us</p> */}
+                
+        <Typography variant="h5" sx={{pb: 2.5, textAlign: 'center'}} >
+        Professional responsibility for acquisition, modeling, analysis and management of spatial data for planning, design, construction and emergencies within the Jacksonville District area of responsibility. We contract spatial data acquisitions to the private sector using indefinite delivery contracts. We use the latest technology in remote sensing for performing aerial, hydrographic and topographic surveys.
+        </Typography>
             </div>
             <Link to='/geospatial'>
             <Button variant="outlined" sx={{color: 'white', borderColor: 'white', height: '4em', width: '15em', fontSize: '1.25rem'}}//className="v-home-btn"
             >Explore Our Services</Button>
            </Link>
-            
+           {/*<Typography variant="h5" sx={{pb: 2.5, textAlign: 'center'}} >
+            View more information below
+            </Typography> */}
         </div>
         <Box sx={{ margin: '50px auto', pl:'10%', pr: '10%' }}>
-        <Typography variant="h3" sx={{pb: 1, textAlign: 'center'}} >
-        Mission Statement
-        </Typography>
-        <Typography variant="h5" sx={{pb: 2.5, textAlign: 'left'}} >
-        Professional responsibility for acquisition, modeling, analysis and management of spatial data for planning, design, construction and emergencies within the Jacksonville District area of responsibility. We contract spatial data acquisitions to the private sector using indefinite delivery contracts. We use the latest technology in remote sensing for performing aerial, hydrographic and topographic surveys.
-        </Typography>
+        <Announcements data={announcementPageData.Announcements}/>
+        </Box>
+        <Box sx={{ margin: '50px auto', pl:'10%', pr: '10%' }}>
+        
         </Box>
 
 
         <TwoColumnComponent/>
         {/*<Socials data={landingPageData.Contact}/>*/}
-        <Announcements data={announcementPageData.Announcements}/>
+        
         <HighlightedProjectSection/>
         {/* <About data={landingPageData.About} /> */}
         {/* <BasicList data ={linkListPageData.Links}/> */}
