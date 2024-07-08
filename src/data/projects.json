@@ -56,10 +56,10 @@
     "Projects": [
       {
         "id": "1",
-        "title": "SRSP - Sample Remote Sensing Project",
-        "largeImage": "srsp-sample-1",
-        "smallImage": "/img/project.PNG",
-        "text": "Sample text."
+        "title": "Dredge Material Management Area (DMMA)",
+        "largeImage": "dmma-lidar",
+        "smallImage": "/img/DMMA Examples combined.PNG",
+        "text": "This is one example of a Dredge Material Management Area (DMMA). Utilizing LiDAR and aerial imagery data, surfaces models are created. These surface models can be used to calculate volume of the DMMA’s, used to compare material quantities comparisons through time. Above an example of a contour and point cloud files for one site. "
       }
     ],
     "Apps": [
