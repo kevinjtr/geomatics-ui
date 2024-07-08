@@ -88,7 +88,7 @@ export function GIS(){
             </Typography>
             <List sx={{ listStyleType: 'disc', pl: 4 }}>
               <ListItem sx={{ display: 'list-item' }}>
-                GIS Software (ArcGIS, ArcPro)
+                GIS Software (ArcGIS, ArcPro, Blue Marble, QGIS)
               </ListItem>
               <ListItem sx={{ display: 'list-item' }}>
                 Remote Sensing

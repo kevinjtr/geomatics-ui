@@ -12,6 +12,8 @@ import post3 from "../../templates/landing/blog-post.3.md";
 import MainFeaturedPost from '../../templates/landing/MainFeaturedPost';
 import DisciplineFeaturedPost from '../../templates/landing/DisciplineFeaturedPost';
 import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFeaturedPost';
+import { Box, Typography, List, ListItem } from '@mui/material';
+import Image from '../Image';
 
 const mainFeaturedPost = {
   title: 'Data Management/Database Design',
@@ -71,6 +73,52 @@ export function DataManagement(){
             ))}
           </Grid>
           <DisciplineMainFeaturedPost post={mainFeaturedPost} />
+          <Box sx={{ margin: '50px auto', pl: '10%', pr: '10%' }}>
+            <Typography variant="h4" sx={{ pb: 1.5 }}>
+              What is Data Management?
+            </Typography>
+            <Typography variant="p" sx={{  }}>
+            The architecture, policies, technical processes, and workflows that efficiently manage the identification, definition, collection, organization, verification, correction, storage, protection, processing, communication, and transfer of data and information for the duration of the project activities.
+            </Typography>
+            <Typography variant="h4" sx={{ pb: 1.5 }}>
+              What is a Database?
+            </Typography>
+            <Typography variant="p" sx={{  }}>
+            A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS). Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system, often shortened to just database.
+            </Typography>
+
+            <Typography variant="h4" sx={{ py: 2.5 }}>
+              Enterprise Databases
+            </Typography>
+            <List sx={{ listStyleType: 'disc', pl: 4 }}>
+              <ListItem sx={{ display: 'list-item' }}>
+                Oracle
+              </ListItem>
+              <ListItem sx={{ display: 'list-item' }}>
+                Postgres
+              </ListItem>
+              <ListItem sx={{ display: 'list-item' }}>
+                MSSQL
+              </ListItem>
+              <ListItem sx={{ display: 'list-item' }}>
+                DB2
+              </ListItem>
+            </List>
+            <Box sx={{ textAlign: 'center' }}>
+              <Image style={{ height: 100 }} src="/img/oracle.png" alt="Oracle"/>
+              <Image style={{ height: 100 }} src="/img/postgres.png" alt="Postgres"/>
+              <Image style={{ height: 100 }} src="/img/mssql.png" alt="Microsoft SQL Server"/>
+              <Image style={{ height: 100 }} src="/img/DB2.png" alt="IBM DB2"/>
+              {/* <img style={{ height: 60, marginBottom: 15 }} src="/img/remote-sensing.png" alt="Remote Sensing"/> */}
+            </Box>
+
+            <Typography variant="h4" sx={{ py: 2.5 }}>
+              What does a data manager / database developer do?
+            </Typography>
+            <Typography variant="p" sx={{ pb: 2.5 }}>
+            Create, maintains, and updates databases, schemas, and datasets. 
+            </Typography>
+          </Box>
           {/* <DisciplineFeaturedPost post={featuredProject}/> */}
           {/* <Grid container spacing={5} sx={{ mt: 3 }}>
             <Main title="From the firehose" posts={posts} />
