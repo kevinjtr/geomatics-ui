@@ -47,6 +47,22 @@ export const TrainingMaterial = (props) => {
       link: "../training/How to Build a Data Dictionary.pdf",
       dateCreated: "",
       discipline: "Database Design"
+    },
+    {
+      id: 5,
+      fileType: "PowerPoint",
+      title: "Database Design Basics Training Oracle",
+      link:"../training/DB_Design_Basics_Training_ORACLE.pptx",
+      dateCreated: "",
+      discipline: "Database Design"
+    },
+    {
+      id: 6,
+      fileType: "PowerPoint",
+      title: "Database Design Basics Training MSSQL",
+      link:"../training/DB_Design_Basics_Training_MSSQL.pptx",
+      dateCreated: "",
+      discipline: "Database Design"
     }
 ]
   return (

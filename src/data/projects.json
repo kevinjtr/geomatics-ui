@@ -3,7 +3,7 @@
     "Projects": [
       {
         "id": "1",
-        "title": "SAJ - Constrution Division Web Application Map",
+        "title": "SAJ - Construction Division Web Application Map",
         "largeImage": "construction-division-webapp-map", 
         "smallImage": "/img/projects/cd site web map storyboard - alt 2.png",
         "text": "Geomatics Engineering Section currently supports Construction Division in providing and maintaining an interactive project site web application of all Construction Division's project sites and office locations available to all SAJ employees. This application provides project detail information to include Program Type, Stage, and Contract Number/ID, as well as situational awareness for personnel and office location planning. Additionally, this web application may be utilized by Regulatory Division to assist in their permitting process in the near future.",
