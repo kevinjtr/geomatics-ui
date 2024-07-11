@@ -30,7 +30,7 @@ const mainFeaturedPost = {
       //date: 'Nov 12',
       //description:
         //'Here is a collection of GIS related projects.',
-        image: '/img/app-dev-landing.JPG',
+      image: '/img/app-dev-landing.JPG',
       imageLabel: 'Image Text',
       url: "/geospatial/application-development/projects",
       },
@@ -39,7 +39,7 @@ const mainFeaturedPost = {
       //date: 'Nov 11',
       //description:
         //'Here is a collection of GIS related apps.',
-        image: '/img/app-dev-landing.JPG',
+      image: '/img/app-dev-landing.JPG',
       imageLabel: 'Image Text',
       url: "/geospatial/application-development/apps"
     },
@@ -75,13 +75,21 @@ export function AppDevelopment(){
           <DisciplineMainFeaturedPost post={mainFeaturedPost} />
           {/* <DisciplineFeaturedPost post={featuredProject}/> */}
           <Box sx={{ margin: '50px auto', pl:'10%', pr: '10%' }}>
+          <Typography variant="h4" sx={{pb: 3.5, textAlign: 'center'}} >
+            We consider ourself's a Web Development or Full Stack Web Developers Unit
+            </Typography>
             <Typography variant="h4" sx={{pb: 1, textAlign: 'center'}} >
             What is Web Development?
             </Typography>
-            <Typography variant="h6" sx={{pb: 2.5, textAlign: 'left'}} >
+            <Typography variant="p" sx={{pb: 2.5, textAlign: 'left'}} >
             Web development is closely related to the job of designing the features and functionality of websites and apps (often called “web design”), but the “web development” term is usually reserved for the actual construction and programming of websites and apps. Think of all the web pages you have used over the years – Web Developers built those sites, making sure they functioned properly and performed in ways that allowed for a great user experience. Web Developers do this by writing lines of code, using a variety of programming languages, which vary depending on the tasks they are performing and the platforms they are working on.
             </Typography>
-
+            <Typography variant="h4" sx={{pb: 1, textAlign: 'center'}} >
+            What is a full stack Developer?
+            </Typography>
+            <Typography variant="p" sx={{pb: 2.5, textAlign: 'left'}} >
+            A Full-Stack Developer is someone familiar with both front-end and back-end development. Full Stack Developers usually understand a wide variety of programming languages and because of their versatility, they might be given more of a leadership role on projects than developers who specialize. They are generalists, adept at wearing both hats, and familiar with every layer of development.
+            </Typography>
             <Typography variant="h4" sx={{pb: 1, textAlign: 'center'}} >
             What programming languages we use?
             </Typography>
@@ -107,13 +115,6 @@ export function AppDevelopment(){
             <Image style={{height: 100}} src="/img/html-css-javascript.png"/>
             <Image style={{height: 60, marginBottom: 15}} src="/img/react-icon.PNG"/>
             </Box>
-            
-            <Typography variant="h4" sx={{pb: 1, textAlign: 'center'}} >
-            What is a full stack Developer?
-            </Typography>
-            <Typography variant="h6" sx={{pb: 2.5, textAlign: 'left'}} >
-            A Full-Stack Developer is someone familiar with both front- and back-end development. Full Stack Developers usually understand a wide variety of programming languages and because of their versatility, they might be given more of a leadership role on projects than developers who specialize. They are generalists, adept at wearing both hats, and familiar with every layer of development.
-            </Typography>
          </Box>
           {/* <DisciplineFeaturedPost post={featuredProject}/> */}
           {/* <Grid container spacing={5} sx={{ mt: 3 }}>

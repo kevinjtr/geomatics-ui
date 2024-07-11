@@ -4,7 +4,7 @@
       {
         "id": "1",
         "title": "SAJ - Construction Division Web Application Map",
-        "largeImage": "construction-division-webapp-map", 
+        "largeImage": "Construction Division Webapp-map", 
         "smallImage": "/img/projects/cd site web map storyboard - alt 2.png",
         "text": "Geomatics Engineering Section currently supports Construction Division in providing and maintaining an interactive project site web application of all Construction Division's project sites and office locations available to all SAJ employees. This application provides project detail information to include Program Type, Stage, and Contract Number/ID, as well as situational awareness for personnel and office location planning. Additionally, this web application may be utilized by Regulatory Division to assist in their permitting process in the near future.",
         "smallText": "Geomatics Engineering Section currently supports Construction Division in providing and maintaining an interactive project site web application of all Construction Division's project sites and office locations available to all SAJ employees."
@@ -13,7 +13,7 @@
       {
         "id": "2",
         "title": "SAJ - Modeling, Mapping, & Consequences (MMC) Production Center",
-        "largeImage": "mmc-production-center",
+        "largeImage": "MMC Production Center",
         "smallImage": "/img/projects/mmc.png",
         "text": "The Modeling, Mapping, and Consequence (MMC) Production Center was recertified as a Mandatory Center of Expertise (MCX) in July 2020. The MMC mission includes producing hydraulic models, inundation maps, consequences estimates, and technical reports for USACE watersheds, dams, and levees in support of Critical Infrastructure Protection and Resilience (CIPR), Water Management (WM), and Dam and Levee Safety Programs. All products are developed in accordance with MMC standard operation procedures (SOP). MMC products support a risk-based assessment, prioritization and management framework for the USACE CIPR, WM, Dam Safety and Levee Safety Programs.  MMC Production Center efforts also provide the Risk Management Center (RMC) with critical feedback for refining and updating USACE guidance and policy within the MMC functional areas. The Jacksonville District Geomatics MMC team has been involved with the MMC Mapping Program since 2010 and continues to lead the mapping production effort."
       },
@@ -21,7 +21,7 @@
        {
         "id":"3",
         "title":"Modernizing Foundation Mapping",
-        "largeImage":"modernizing-foundation-mapping",
+        "largeImage":"Modernizing Foundation Mapping",
         "smallImage":"/img/projects/modernizing foundation mapping.PNG",
         "text":"Work done for C23/24 STA  in developing a process for our geologists to collect field data digitally.",
         "link":"https://storymaps.arcgis.com/stories/7269c1140700470f9c92cb40e91d370c"
@@ -29,16 +29,44 @@
        {
         "id": 4,
         "title": "Port Everglades Harbor Navigation Improvement Project",
-        "largeImage": "port-everglades", 
+        "largeImage": "Port Everglades", 
         "smallImage": "/img/projects/port-everglades.PNG",
         "text": "The Port Everglades Harbor Navigation Improvement Project is a vital undertaking aimed at enhancing navigational infrastructure and capacity at Port Everglades, Florida. As one of the busiest cruise ports and container cargo ports in the United States, Port Everglades serves as a critical hub for international trade and tourism. The navigation improvement project includes dredging and deepening of channels, widening turning basins, and upgrading berths to accommodate larger vessels and increased traffic. With these enhancements, Port Everglades will be better equipped to handle the demands of modern maritime commerce, bolstering economic growth and facilitating global connectivity."
+      },
+      {
+        "id": 5,
+        "title": "South Atlantic Regional Biological Opinion for Dredging",
+        "largeImage": "SA Regional Biological Opinion for Dredging", 
+        "smallImage": "/img/projects/sarb.png",
+        "text": "The 2020 SARBO and GRBO are a programmatic Biological Opinion that covers a large geographical area and an increased scope of species throughout the geographic boundary.  Active processes have been built into the Opinion that requires pre and post construction reporting, pre and post project reviews, take analyses, and annual program reviews to ensure the project design criteria are protective of the species. Geomatics in collaboration with SAD and other USACE Districts (SAJ, SAS, SAW and SAC) have actively provided support via the Web Map Services tools with the compilation of data such as Endangered Species, Critical Habitats, Navigation Projects, Federal Beach Projects, Sand Disposal Areas, Placement impact areas and others."
+      },
+      {
+        "id": 6,
+        "title": "Western Everglades Restoration Project",
+        "largeImage": "Western Everglades restoration", 
+        "smallImage": "/img/projects/werp.png",
+        "text": "The Western Everglades Restoration Plan (WERP) seeks to use a series of active and passive water management features and water quality features, and make alterations to existing canals and levees. The goals of the project are to improve the quantity, quality, timing and distribution of water in the Western Everglades in the effort to re-establish ecological connectivity, reduce the severity and frequency of wildfires, and restore low nutrient conditions. Geomatics have provided support to Office of Counsel, Real Estate Division and Engineering H&H and Modeling sections via it’s GIS and Mapping capabilities. The WMV have helped on the process of identifying takings analysis and appraisals with the use of the Property Appraisal Data, water management features and structures, and the display of information such as the Regional Simulation Models Results for South Florida with Ponding, Hydroperiod and Stage data."
+      },
+      {
+        "id": 7,
+        "title": "Rio de La Plata Flood Damage Reduction Project",
+        "largeImage": "Rio de La Plata Flood Damage Reduction", 
+        "smallImage": "/img/projects/rdlpfdrp.png",
+        "text": "The Río de la Plata basin is located about 11 miles west of San Juan and drains approximately 240 square miles. Heavy rainfall combined with the steep headwater slopes causes frequent flooding in the towns of Dorado, Toa Baja, and Toa Alta. The recommended plan provides 100 year protection upstream of PR Highway 2 and SPF protection downstream. Project features consist of 7.0 miles of channel improvements, 7.6 miles of levees, the replacement of 3 bridges, recreation facilities, and mitigation for the loss of environmental habitats. The Water Resources Development Act of 1990 authorized this project. RDLP Inundation Scenarios WMV compiles various storm flooding scenarios developed by EN-WH Hydraulic and Hydrology section in which shows flooding results for existing and with project completed conditions for a 100 year storm and Standard Project Flood (SPF). The flooding scenarios are used by various divisions under USACE JAX and other Districts to identify affected properties under the existing and with project conditions."
+      },
+      {
+        "id": 8,
+        "title": "Anodyne Superfund",
+        "largeImage": "Anodyne Superfund", 
+        "smallImage": "/img/projects/anodyne-superfund.png",
+        "text": "The Anodyne project is a collaboration between USACE (Jacksonville and Savannah Districts) and the United States Environmental Protection Agency (EPA) in a effort of monitoring and conducting clean up activities for the area affected by the use of a variety of industrial processes. EPA placed the site on the Superfund program’s National Priorities List (NPL) in 1990 because of contaminated groundwater and soil resulting from facility operations. By conducting studies to identify the best way to clean up contaminated groundwater and negotiating with the site’s potentially responsible parties (PRPs) to design and implement the site’s cleanup plan, EPA and the Florida Department of Environmental Protection (FDEP) continue to protect people and the environment from site contamination. Geomatics have been tasked to provide support to USACE EN-GE Environmental and HTRW Sections, Real Estate Division and EPA via the use of GIS and WMV tools developing graphical contaminant Plumes from monitoring sampling results information, Monitoring Wells Sampling data displays, Property Appraisal parcels and ROW ownerships coordination statuses by RE Specialist and others."
       }
     ],
     "Apps": [
       {
         "id": "1",
         "title": "SAJ - Geomatics Section GIS Emergency Management Support",
-        "largeImage": "geomatics-gis-emergency-support",
+        "largeImage": "Geomatics Gis Emergency Support",
         "smallImage": "/img/projects/fiona-ian storyboard.png",
         "text": "Geomatics has been providing GIS(Geographic Information Systems) support to Emergency Management for the Fiona and Ian hurricane missions. The Commander’s Update Brief has been displayed in a web application, where GIS data has been incorporated as interactive dashboards, enhancing the information displayed and providing easy and fast access to details. This web application has been useful along these two missions providing an interactive format for the Commander as well as other emergency responders within USACE.",
         "smallText": "This web application has been useful along these two missions providing an interactive format for the Commander as well as other emergency responders within USACE."
@@ -46,7 +74,7 @@
       {
         "id": "2",
         "title": "SAJ - High Water Application",
-        "largeImage": "high-water-app",
+        "largeImage": "High Water App",
         "smallImage": "/img/projects/highWaterApp storyboard - alt 2.png",
         "text": "Geomatics has created a High Water Mobile Application that can be downloaded on any government cell phone and utilized for field collection. This survey was designed for high water inspections and provides near real-time data ensuring all required data is entered before a user can submit the information collected in the field. The associated reporting template allows the DSPM (Dam Safety Program Manager) to generate reports with the push of a button. This greatly reduces the amount of time it takes from a user collecting information in the field to reporting up to the appropriate parties."
       }
@@ -57,7 +85,7 @@
       {
         "id": "1",
         "title": "Dredge Material Management Area (DMMA)",
-        "largeImage": "dmma-lidar",
+        "largeImage": "Dmma Lidar",
         "smallImage": "/img/DMMA Examples combined.PNG",
         "text": "This is one example of a Dredge Material Management Area (DMMA). Utilizing LiDAR and aerial imagery data, surfaces models are created. These surface models can be used to calculate volume of the DMMA’s, used to compare material quantities comparisons through time. Above an example of a contour and point cloud files for one site. "
       }
@@ -97,7 +125,7 @@
       {
         "id": "1",
         "title": "Port Everglades Coral and Sea Life Database",
-        "largeImage": "port-everglades-database",
+        "largeImage": "Port Everglades Database",
         "smallImage": "/img/projects/database.PNG",
         "text": "This project is currently being created and is planned to encompass coral health from nurseries back to their relocated reefs while also tracking metrics regarding reefs as a whole as well as fish and other marine life."
       }
@@ -106,7 +134,7 @@
       {
         "id": "1",
         "title": "SAJ - Data Dictionary Tool Generator for ASTM Testing",
-        "largeImage": "astm-data-dictionary-gen",
+        "largeImage": "ASTM Data Dictionary",
         "smallImage": "/img/projects/dictionary.PNG",
         "text": "Data dictionary."
       }
@@ -118,7 +146,7 @@
       {
         "id": "1",
         "title": "Jax Harbor Deepening - R Script",
-        "largeImage": "jax-harbor-deep",
+        "largeImage": "Jacksonville Harbor Deepening Script",
         "smallImage": "/img/projects/r-script-jax-harbor.PNG",
         "text": "The Jacksonville District is increasing the depth of the existing federal channel along the St. Johns River from its current depth of 40 feet to a maximum depth of 50 feet. Deepening the channel will allow larger vessels to access it. This R script provides the Jacksonville Engineering Coastal Section with tools to download and generate statistics for the salinity levels in the Jacksonville Harbor. This script saves the engineers time each year in creating an annual report to monitor the water's salinity levels."
       }
@@ -127,21 +155,21 @@
       {
         "id": "1",
         "title": "Project Contract Log Application (PCL)",
-        "largeImage": "pcl",
+        "largeImage": "Project Contract Log (PCL)",
         "smallImage": "/img/projects/pcl storyboard - alt 2.png",
         "text": "Project Contract Log (PCL) Application currently user interface is in development."
       },
       {
         "id": "2",
         "title": "Engineering Budget App (EBA)",
-        "largeImage": "eba",
+        "largeImage": "Engineering Budget App",
         "smallImage": "/img/projects/eba.PNG",
         "text": "The Engineering Budget App (EBA) was created to facilitate project management by providing an overview of future fiscal years' budget estimates. This tool allows multiple technical leads to input their budget estimations simultaneously. In addition, it can generate daily reports to overview the total budget. This application is currently being used in the Engineering Division with the intention of expanding its use to other sections in the near future."
       },
       {
         "id": "2",
-        "title": "Inventory App",
-        "largeImage": "inventory",
+        "title": "SAJ Inventory App",
+        "largeImage": "SAJ Inventory App",
         "smallImage": "/img/projects/inventory.PNG",
         "text": "The Engineering Budget App (EBA) was created to facilitate annual equipment inventory tracking and transferring documentation. It has the ability to create documentation for issuing, transferring, and repairing equipment. Supervisors with HRA accounts can easily manage their equipment to facilitate annual inventory."
       }

@@ -17,7 +17,7 @@ import Image from '../Image'
 const mainFeaturedPost = {
   title: 'Remote Sensing',
   description:
-    "Sample text for remote sensing...",
+    "Remote sensing is a vital technology used by the U.S. Army Corps of Engineers to collect and analyze data about the Earth's surface from a distance. By employing advanced sensors on satellites, aircraft, and unmanned aerial systems, we can obtain detailed imagery and information crucial for infrastructure planning, environmental management, and disaster response.",
   image: '/img/remote-sensing-landing.JPG',
   imageText: 'main image description',
   linkText: '',

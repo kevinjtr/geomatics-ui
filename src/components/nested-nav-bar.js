@@ -73,6 +73,46 @@ const menuItemsGisLinks = [
   {
     label: 'St. Augustine Back Bay Coastal Storm Risk Management',
     url: 'https://experience.arcgis.com/experience/06bb9c98d9184bd9a374a244f6d27474',
+  },
+  {
+    label: 'Central and South Florida Resiliency 2022',
+    url: 'https://coe-sajgsp01jax.saj.ds.usace.army.mil/k3portal/apps/webappviewer/index.html?id=71a767f124f442fa9f5e13ffaf106791',
+  },
+  {
+    label: 'Fort Buchanan PFAS 2023 Drinking Water Study',
+    url: 'https://coe-sajgsp01jax.saj.ds.usace.army.mil/k3portal/apps/webappviewer/index.html?id=5bd2f884c99b48cca1534c7416d50583',
+  },
+  {
+    label: 'Rio de La Plata Supplemental Project Max Inundation WMV',
+    url: 'https://coe-sajgsp01jax.saj.ds.usace.army.mil/k3portal/apps/webappviewer/index.html?id=c5a256c468794bd0a06f3a72d2648d6c',
+  },
+  {
+    label: 'Anodyne Superfund Remedial Design',
+    url: 'https://coe-sajgsp01jax.saj.ds.usace.army.mil/k3portal/apps/webappviewer/index.html?id=efda83f3ae7f422e973804014bf2cda8',
+  },
+  {
+    label: 'West Everglades Restoration Project RE Analysis with RAS 2024',
+    url: 'https://coe-sajgsp01jax.saj.ds.usace.army.mil/k3portal/apps/webappviewer/index.html?id=d883fc9153f54a34adb0812d00ca4c0c',
+  },
+  {
+    label: 'West Everglades Restoration Project RE Analysis with RAS 2023 Lardcan Canal and Wingate Mill',
+    url: 'https://coe-sajgsp01jax.saj.ds.usace.army.mil/k3portal/apps/webappviewer/index.html?id=0cd5a857b60c4d989d781b7dabda8e4b',
+  },
+  {
+    label: 'West Everglades Restoration Project RE Analysis with RAS 2022',
+    url: 'http://coe-sajgsp01jax.saj.ds.usace.army.mil/k3portal/home/webmap/viewer.html?webmap=0e395a22e4d24b70b605807e92d74714',
+  },
+  {
+    label: 'West Everglades Restoration Project Savings Clause and Takings Analysis',
+    url: 'http://coe-sajgsp01jax.saj.ds.usace.army.mil/k3portal/home/webmap/viewer.html?webmap=3690162c066641c08aaf48b062568018',
+  },
+  {
+    label: 'Gulf Regional and Biological Opinion GRBO 2020',
+    url: 'https://coe-sajgsp01jax.saj.ds.usace.army.mil/k3portal/home/webmap/viewer.html?webmap=c1cae175ed9f46bba2db310d00b766f5',
+  },
+  {
+    label: 'South Atlantic Regional Biological Opinion SARBA 2017',
+    url: 'http://coe-sajgsp01jax.saj.ds.usace.army.mil/k3portal/home/webmap/viewer.html?webmap=5e86229d522448ca91567eba578388da',
   }
 ]
 

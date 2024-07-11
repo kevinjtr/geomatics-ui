@@ -80,7 +80,7 @@ export function DataManagement(){
             <Typography variant="p" sx={{  }}>
             The architecture, policies, technical processes, and workflows that efficiently manage the identification, definition, collection, organization, verification, correction, storage, protection, processing, communication, and transfer of data and information for the duration of the project activities.
             </Typography>
-            <Typography variant="h4" sx={{ pb: 1.5 }}>
+            <Typography variant="h4" sx={{ py: 1.5 }}>
               What is a Database?
             </Typography>
             <Typography variant="p" sx={{  }}>
