@@ -108,7 +108,7 @@ export function DataManagement(){
               <Image style={{ height: 100 }} src="/img/oracle.png" alt="Oracle"/>
               <Image style={{ height: 100 }} src="/img/postgres.png" alt="Postgres"/>
               <Image style={{ height: 100 }} src="/img/mssql.png" alt="Microsoft SQL Server"/>
-              <Image style={{ height: 100 }} src="/img/DB2.png" alt="IBM DB2"/>
+              <Image style={{ height: 100 }} src="/img/ibmdb2.png" alt="IBM DB2"/>
               {/* <img style={{ height: 60, marginBottom: 15 }} src="/img/remote-sensing.png" alt="Remote Sensing"/> */}
             </Box>
 

@@ -50,7 +50,7 @@ const HighlightedProjectSection = () => {
         With these enhancements, Port Everglades will be better equipped to handle the demands of modern maritime
         commerce, bolstering economic growth and facilitating global connectivity.
       </Typography>
-      <Link to={"/geospatial/gis/projects/port-everglades"}>
+      <Link to={"/geospatial/gis/projects/Port Everglades"}>
       <Button variant="outlined" color="primary" size="large" fullWidth>
         Learn More
       </Button>

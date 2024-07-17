@@ -104,7 +104,7 @@ export function GIS(){
               </ListItem>
             </List>
             <Box sx={{ textAlign: 'center' }}>
-              <Image style={{ height: 100 }} src="/img/arc-gis.png" alt="GIS Software"/>
+              <Image style={{ height: 100 }} src="/img/arcgis.PNG" alt="GIS Software"/>
               <Image style={{ height: 75 }} src="/img/bmgs.png" alt="Blue Marble Geographics Software"/>
               <Image style={{ height: 75 }} src="/img/esri.png" alt="ESRI"/>
               <Image style={{ height: 75 }} src="/img/qgis.png" alt="QGIS"/>
