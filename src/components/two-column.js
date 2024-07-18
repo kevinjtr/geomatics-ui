@@ -6,6 +6,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 
 //
 
@@ -13,7 +14,7 @@ const TwoColumnComponent = () => {
   return (
     <Box sx={{ margin: '50px auto', pl:'10%', pr: '10%' }}>
         <Typography variant="h2" sx={{pb: 2.5, textAlign: 'center'}} >
-            Explore how our teams contribute to mission success
+            Explore how our Geomatics Team contribute to mission success
         </Typography>
       <Grid container spacing={3}>
         {/* GIS & Application Development Unit */}
@@ -22,6 +23,7 @@ const TwoColumnComponent = () => {
             <Typography variant="h4" sx={{pb: 1.5}} >
                 Survey/Contracting and Remote Sensing Unit
             </Typography>
+
           <Accordion >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -33,6 +35,7 @@ const TwoColumnComponent = () => {
         <AccordionDetails>
         Our Survey/Contracting team specializes in conducting various types of surveys including land surveys, environmental assessments, and geological surveys. We offer comprehensive services for both public and private sector projects, ensuring accurate data collection and analysis to support decision-making processes. Our team of experienced surveyors and contractors utilize state-of-the-art equipment and techniques to deliver high-quality results on time and within budget.
         </AccordionDetails>
+        <AccordionDetails><Link to="/geospatial/survey-contracting">Learn more... </Link></AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -45,6 +48,7 @@ const TwoColumnComponent = () => {
         <AccordionDetails>
         Our Remote Sensing team specializes in the acquisition, processing, and analysis of satellite and aerial imagery data for various applications including environmental monitoring, urban planning, agriculture, and natural resource management. We utilize advanced remote sensing techniques and algorithms to extract valuable information from satellite images, providing insights into land cover, vegetation health, and environmental changes. Our team of remote sensing experts works closely with clients to tailor solutions that meet their specific needs and objectives.
         </AccordionDetails>
+        <AccordionDetails><Link to="/geospatial/remote-sensing">Learn more... </Link></AccordionDetails>
       </Accordion>
           </div>
         </Grid>
@@ -65,6 +69,7 @@ const TwoColumnComponent = () => {
         <AccordionDetails>
         Our GIS team specializes in spatial data analysis, cartography, and geographic information systems development. We leverage GIS technology to help organizations make informed decisions, optimize resource allocation, and visualize complex spatial patterns.
         </AccordionDetails>
+        <AccordionDetails><Link to="/geospatial/gis">Learn more... </Link></AccordionDetails>
       </Accordion>
           <Accordion >
         <AccordionSummary
@@ -77,6 +82,7 @@ const TwoColumnComponent = () => {
         <AccordionDetails>
         Our Data Management/Database Development experts design and implement robust database solutions to efficiently store, retrieve, and manage large volumes of spatial and non-spatial data. We ensure data integrity, security, and accessibility to support informed decision-making and streamline business processes.
         </AccordionDetails>
+        <AccordionDetails><Link to="/geospatial/data-management">Learn more... </Link></AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -89,6 +95,7 @@ const TwoColumnComponent = () => {
         <AccordionDetails>
         Our Software Development team specializes in creating custom GIS applications, spatial analysis tools, and data visualization software tailored to the specific needs of our clients. We use agile development methodologies to deliver high-quality solutions that empower users to leverage geospatial data effectively.
         </AccordionDetails>
+        <AccordionDetails><Link to="/geospatial/application-development">Learn more... </Link></AccordionDetails>
       </Accordion>
           </div>
         </Grid>

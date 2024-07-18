@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Typography, Grid, Card, CardContent } from '@mui/material';
 
 const AboutUsPage = () => {
@@ -24,7 +25,7 @@ const AboutUsPage = () => {
           </div>
           <div style={{ marginTop: '5pt', marginBottom: '15pt', border: '0.75pt solid #e3e3e3', clear: 'both' }}>
             <p style={{ marginTop: '0pt', marginBottom: '0pt', lineHeight: 'normal', paddingBottom: '5pt', fontSize: '18pt', backgroundColor: '#ffffff' }}><strong><span style={{ fontFamily: 'Segoe UI', color: '#4472c4' }}>Expertise</span></strong></p>
-            <p style={{ marginTop: '0pt', marginBottom: '0pt', lineHeight: 'normal', paddingBottom: '5pt', fontSize: '15pt', backgroundColor: '#ffffff' }}><strong><span style={{ fontFamily: 'Segoe UI', color: '#4472c4' }}>GIS Excellence</span></strong></p>
+            <p style={{ marginTop: '0pt', marginBottom: '0pt', lineHeight: 'normal', paddingBottom: '5pt', fontSize: '15pt', backgroundColor: '#ffffff' }}><strong><span style={{ fontFamily: 'Segoe UI', color: '#4472c4' }}><Link to="/geospatial/gis">GIS Excellence</Link></span></strong></p>
             <p style={{ marginTop: '0pt', marginBottom: '0pt', lineHeight: 'normal', paddingBottom: '15pt', fontSize: '12pt', backgroundColor: '#ffffff' }}><span style={{ fontFamily: 'Segoe UI', color: '#0d0d0d' }}>Our GIS specialists utilize state-of-the-art technology to create detailed maps, perform spatial analysis, and provide invaluable insights for strategic decision-making.</span></p>
             <p style={{ marginTop: '0pt', marginBottom: '0pt', lineHeight: 'normal', paddingBottom: '5pt', fontSize: '15pt', backgroundColor: '#ffffff' }}><strong><span style={{ fontFamily: 'Segoe UI', color: '#4472c4' }}>Data Management Mastery</span></strong></p>
             <p style={{ marginTop: '0pt', marginBottom: '0pt', lineHeight: 'normal', paddingBottom: '15pt', fontSize: '12pt', backgroundColor: '#ffffff' }}><span style={{ fontFamily: 'Segoe UI', color: '#0d0d0d' }}>We excel in managing complex datasets, ensuring data integrity, and implementing effective data governance practices to support informed decision-making.</span></p>
