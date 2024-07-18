@@ -1,6 +1,7 @@
 // import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link,} from "react-router-dom";
 import ButtonAppBar from "./nested-app-bar";
+import NavBarButtonLinks from './nav-bar-button-links';
 
 // export const Navigation = (props) => {
 //   return (
@@ -70,6 +71,48 @@ import Button from '@mui/material/Button';
 import { useNavigate  } from "react-router-dom";
 import Image from './Image'
 
+const referenceLinks = [
+  {
+    label: "MARS",
+    url: "https://uas.sec.usace.army.mil/",
+    "category": "usace-websites"
+  },
+  {
+    label: "NLD",
+    url: "https://levees.sec.usace.army.mil/#/",
+    "category": "usace-websites"
+  },
+  {
+    label: "Volusia Municipalities / Cities",
+    url: "https://google.com",
+    "category": "fl-county-webview"
+  },
+  {
+    label: "NOAA",
+    url: "https://www.noaa.gov/satellite-imagery-reports-launch-information",
+    "category": "local-federal-agencies"
+  },
+  {
+    label: "FEMA",
+    url: " https://gis.fema.gov/",
+    "category": "other"
+  },
+  {
+    label: "UFWS",
+    url: "https://gis-fws.opendata.arcgis.com/",
+    "category": "other"
+  },
+  {
+    label: "FWC",
+    url: "https://myfwc.com/research/gis/",
+    "category": "other"
+  },
+  {
+    label: "FLORIDA DISASTER",
+    url: "https://www.floridadisaster.org/weather/",
+    "category": "other"
+  }
+]
 const drawerWidth = 240;
 const navItems = [{label: 'Training', url: '/training'}, {label: 'Support Services', url: '/supportservices'},
  //{label: 'Request Work', url: '/requestwork'},
@@ -109,6 +152,7 @@ export const Navigation = (props) => {
               </Button>
               </NavLink>
             ))}
+            <NavBarButtonLinks identifier="ref-links" label={"Reference Links"} menuItemsData={referenceLinks}/>
           </Box>
         </Toolbar>
       </AppBar>

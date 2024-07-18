@@ -258,7 +258,7 @@ const menusArray = [
   { discipline:'gis', label: 'GIS', top: geoDir + 'gis', projects: geoDir + 'gis/projects', apps: geoDir + 'gis/apps' },
   { discipline:'remoteSensing', label: 'Remote Sensing', top: geoDir + 'remote-sensing', projects: geoDir + 'remote-sensing/projects', apps: geoDir + 'remote-sensing/apps' },
   { discipline:'surveyContracting', label: 'Survey/Contracting', top: geoDir + 'survey-contracting', projects: geoDir + 'survey-contracting/projects' , apps: geoDir + 'survey-contracting/apps' },
-  { discipline:'dataManagement', label: 'Data Mgmt/Database Desgin', top: geoDir + 'data-management', projects: geoDir + 'data-management/projects', apps: geoDir + 'data-management/apps' },
+  { discipline:'dataManagement', label: 'Data Mgmt/Database Design', top: geoDir + 'data-management', projects: geoDir + 'data-management/projects', apps: geoDir + 'data-management/apps' },
   { discipline:'applicationDevelopment', label: 'Application Development', top: geoDir + 'application-development', projects: geoDir + 'application-development/projects', apps: geoDir + 'application-development/apps' }
 ]
 
