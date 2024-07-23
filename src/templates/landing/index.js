@@ -40,45 +40,45 @@ const mainFeaturedPost = {
 
 const featuredPosts = [
   {
-    title: 'GIS',
+    title: 'Projects',
     description:
-      'Discover the power of Geographic Information Systems (GIS) in analyzing and visualizing spatial data for informed decision-making.',
+      'Explore Geomatics Projects.',
     image: '/img/gis.PNG',
     imageLabel: 'GIS Image',
-    url:'/geospatial/gis'
+    url:'/geospatial/projects'
   },
   {
-    title: 'Remote Sensing',
+    title: 'Applications',
     description:
-      'Explore Remote Sensing and unlock insights from aerial and satellite imagery for various applications including environmental monitoring and urban planning.',
+      'Explore Geomatics Applications.',
     image: '/img/remote-sensing.PNG',
     imageLabel: 'Remote Sensing Image',
-    url:'/geospatial/remote-sensing'
+    url:'/geospatial/apps'
   },
-  {
-    title: 'Survey/Contracting',
-    description:
-      'Gain insights into Surveying and Contracting services tailored to meet your project requirements with precision and efficiency.',
-    image: '/img/surveying.PNG',
-    imageLabel: 'Survey/Contracting Image',
-    url:'/geospatial/survey-contracting'
-  },
-  {
-    title: 'Data Management',
-    description:
-      'Efficiently manage your spatial data assets with our Data Management solutions, ensuring accessibility, integrity, and security.',
-    image: '/img/database-management.PNG',
-    imageLabel: 'Data Management Image',
-    url:'/geospatial/data-management'
-  },
-  {
-    title: 'Application Development',
-    description:
-      'Empower your operations with custom Application Development services, leveraging GIS technologies to create tailored solutions for your unique needs.',
-    image: '/img/app-development.PNG',
-    imageLabel: 'Application Development Image',
-    url:'/geospatial/application-development'
-  },
+  // {
+  //   title: 'Survey/Contracting',
+  //   description:
+  //     'Gain insights into Surveying and Contracting services tailored to meet your project requirements with precision and efficiency.',
+  //   image: '/img/surveying.PNG',
+  //   imageLabel: 'Survey/Contracting Image',
+  //   url:'/geospatial/survey-contracting'
+  // },
+  // {
+  //   title: 'Data Management',
+  //   description:
+  //     'Efficiently manage your spatial data assets with our Data Management solutions, ensuring accessibility, integrity, and security.',
+  //   image: '/img/database-management.PNG',
+  //   imageLabel: 'Data Management Image',
+  //   url:'/geospatial/data-management'
+  // },
+  // {
+  //   title: 'Application Development',
+  //   description:
+  //     'Empower your operations with custom Application Development services, leveraging GIS technologies to create tailored solutions for your unique needs.',
+  //   image: '/img/app-development.PNG',
+  //   imageLabel: 'Application Development Image',
+  //   url:'/geospatial/application-development'
+  // },
 ];
 
 const posts = [post1, post2, post3];

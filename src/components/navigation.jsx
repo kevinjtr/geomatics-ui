@@ -152,7 +152,7 @@ export const Navigation = (props) => {
               </Button>
               </NavLink>
             ))}
-            <NavBarButtonLinks identifier="ref-links" label={"Reference Links"} menuItemsData={referenceLinks}/>
+            <NavBarButtonLinks variant="outlined" identifier="ref-links" label={"External Links"} sx={{ml: 1}} menuItemsData={referenceLinks}/>
           </Box>
         </Toolbar>
       </AppBar>

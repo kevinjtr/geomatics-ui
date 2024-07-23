@@ -67,16 +67,16 @@ export function AppDevelopment(){
  
         <main>
           
-        <Grid sx={{py: 5}} container spacing={6}>{/*
+          {/* <Grid sx={{py: 2.5}} container spacing={6}>
             {featuredPosts.map((post) => (
               <DisciplineFeaturedPost key={post.title} post={post} />
-            ))}*/}
-            </Grid>
+            ))}
+          </Grid> */}
           <DisciplineMainFeaturedPost post={mainFeaturedPost} />
           {/* <DisciplineFeaturedPost post={featuredProject}/> */}
           <Box sx={{ margin: '50px auto', pl:'10%', pr: '10%' }}>
           <Typography variant="h4" sx={{pb: 3.5, textAlign: 'center'}} >
-            We consider ourself's a Web Development or Full Stack Web Developers Unit
+            We consider Ourselves a Full Stack Web Developers Unit
             </Typography>
             <Typography variant="h4" sx={{pb: 1, textAlign: 'center'}} >
             What is Web Development?

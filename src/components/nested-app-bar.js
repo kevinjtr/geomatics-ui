@@ -255,11 +255,13 @@ if (!!timeoutId) {
 const geoDir = '/geospatial/'
 
 const menusArray = [
-  { discipline:'gis', label: 'GIS', top: geoDir + 'gis', projects: geoDir + 'gis/projects', apps: geoDir + 'gis/apps' },
-  { discipline:'remoteSensing', label: 'Remote Sensing', top: geoDir + 'remote-sensing', projects: geoDir + 'remote-sensing/projects', apps: geoDir + 'remote-sensing/apps' },
-  { discipline:'surveyContracting', label: 'Survey/Contracting', top: geoDir + 'survey-contracting', projects: geoDir + 'survey-contracting/projects' , apps: geoDir + 'survey-contracting/apps' },
-  { discipline:'dataManagement', label: 'Data Mgmt/Database Design', top: geoDir + 'data-management', projects: geoDir + 'data-management/projects', apps: geoDir + 'data-management/apps' },
-  { discipline:'applicationDevelopment', label: 'Application Development', top: geoDir + 'application-development', projects: geoDir + 'application-development/projects', apps: geoDir + 'application-development/apps' }
+  { discipline:'gis', label: 'Projects', top: geoDir, url: geoDir + '/projects' },
+  { discipline:'remoteSensing', label: 'Applications', top: geoDir, url: geoDir + '/apps' },
+  // { discipline:'gis', label: 'GIS', top: geoDir + 'gis', projects: geoDir + 'gis/projects', apps: geoDir + 'gis/apps' },
+  // { discipline:'remoteSensing', label: 'Remote Sensing', top: geoDir + 'remote-sensing', projects: geoDir + 'remote-sensing/projects', apps: geoDir + 'remote-sensing/apps' },
+  // { discipline:'surveyContracting', label: 'Survey/Contracting', top: geoDir + 'survey-contracting', projects: geoDir + 'survey-contracting/projects' , apps: geoDir + 'survey-contracting/apps' },
+  // { discipline:'dataManagement', label: 'Data Mgmt/Database Desgin', top: geoDir + 'data-management', projects: geoDir + 'data-management/projects', apps: geoDir + 'data-management/apps' },
+  // { discipline:'applicationDevelopment', label: 'Application Development', top: geoDir + 'application-development', projects: geoDir + 'application-development/projects', apps: geoDir + 'application-development/apps' }
 ]
 
 const open = Boolean(anchorEl);
@@ -296,11 +298,22 @@ const open = Boolean(anchorEl);
       >
          <Link to='/geospatial'>
          <MenuItem sx={{color: 'blue', textDecoration:'underline'}}>
-          View all
+          Explore all
           </MenuItem>
            </Link>
-          
-           {menusArray.map((item, i) => <>
+                        <Link key={`nab-pmu-link`} to={geoDir + 'projects'} style={{textDecoration: 'none', color: theme.palette.text.primary}}>
+                  <MenuItem>
+                  Projects
+                  </MenuItem>
+                </Link>
+                <Link key={`nab-amu-link`} to={geoDir + 'apps'} style={{textDecoration: 'none', color: theme.palette.text.primary}}>
+                  <MenuItem>
+                  Applications
+                  </MenuItem>
+                </Link>
+            
+            
+           {/* {menusArray.map((item, i) => <>
            <Link key={`nab-link-${i}`} to={item.top} style={{textDecoration: 'none', color: theme.palette.text.primary}}>
 
             <NestedMenuItem
@@ -364,7 +377,7 @@ const open = Boolean(anchorEl);
             </Link>
         </NestedMenuItem>
         </Link>
-           </>)}
+           </>)} */}
 
           {/* <NestedMenuItem
                 //leftIcon={<NewIcon />}

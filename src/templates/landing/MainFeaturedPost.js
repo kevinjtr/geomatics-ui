@@ -10,6 +10,7 @@ import Image from '../../components/Image'
 function MainFeaturedPost(props) {
   const { post, animation_on } = props;
 
+  console.log(post)
   return (
     <Paper
       sx={{
@@ -50,9 +51,9 @@ function MainFeaturedPost(props) {
             <Typography variant="h5" color="inherit" paragraph>
               {post.description}
             </Typography>
-            <Link variant="subtitle1" href="#">
+              {post?.linkText && <Link variant="subtitle1" href="#">
               {post.linkText}
-            </Link>
+            </Link>}
           </Box>
         </Grid>
       </Grid>
@@ -65,7 +66,6 @@ MainFeaturedPost.propTypes = {
     description: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     imageText: PropTypes.string.isRequired,
-    linkText: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
   }).isRequired,
 };

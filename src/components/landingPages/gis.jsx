@@ -69,13 +69,13 @@ export function GIS(){
  
         <main>
           
-          <Grid sx={{py: 5}} container spacing={6}>{/*
+          {/* <Grid sx={{py: 2.5}} container spacing={6}>
             {featuredPosts.map((post) => (
               <DisciplineFeaturedPost key={post.title} post={post} />
-            ))}*/}
-            </Grid>
-          <DisciplineMainFeaturedPost post={mainFeaturedPost} />
-          <Box sx={{ margin: '50px auto', pl: '10%', pr: '10%'}}>
+            ))}
+          </Grid> */}
+          <DisciplineMainFeaturedPost sx={{py: 2.5}} post={mainFeaturedPost} />
+          <Box sx={{ margin: '50px auto', pl: '10%', pr: '10%' }}>
             <Typography variant="h4" sx={{ pb: 1.5 }}>
               What is GIS?
             </Typography>

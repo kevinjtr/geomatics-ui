@@ -6,7 +6,7 @@ export function DisplayProjects({data, discipline}){
 
     return(
         <>
-            {Object.keys(data).length > 0 && <ImageGallery data={data?.[discipline].Projects} discipline={discipline} name="Project"/>}
+            {Object.keys(data).length > 0 && <ImageGallery data={data?.Projects} name="Project"/>}
         </>
     )
 }

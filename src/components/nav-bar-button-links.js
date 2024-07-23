@@ -46,8 +46,9 @@ const theme = createTheme({
 
 export default function NavBarButtonLinks(props) {
     const [anchorEl, setAnchorEl] = useState(null);
-    const { label, menuItemsData, identifier } = props
+    const { label, menuItemsData, identifier, variant, sx } = props
 
+    console.log(variant)
     function handleClick(event) {
         if (anchorEl !== event.currentTarget) {
           setAnchorEl(event.currentTarget);
@@ -79,7 +80,8 @@ export default function NavBarButtonLinks(props) {
   return (
           <ThemeProvider key={`${identifier}-tp`} theme={theme}>
           <Button color="inherit"
-          sx={{ zIndex: 1275 }}
+          {...(variant && {variant: variant})}
+          sx={{ zIndex: 1275, ...sx }}
                 endIcon={<KeyboardArrowDownIcon />}
               aria-owns={anchorEl ? "simple-menu" : undefined}
               aria-haspopup="true"

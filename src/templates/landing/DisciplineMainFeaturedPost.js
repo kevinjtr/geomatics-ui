@@ -21,7 +21,8 @@ function DisciplineMainFeaturedPost(props) {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundImage: `url(${process.env.PUBLIC_URL + post.image})`,
-        borderRadius:"50px"
+        borderRadius:"50px",
+        mt: 4
       }}
     >
       {/* Increase the priority of the hero background image */}

@@ -90,68 +90,39 @@ const App = () => {
         {/* <Route path="/" element={<Navigate to="/" replace/>}/> */}
    
           <Route index element={ <Home /> }/>
+
           <Route path="geospatial">
 
             <Route index element={<Geospatial/> } />
 
+              <Route path="projects">
+                <Route index element= {<DisplayProjects data={projectData} />}/>
+                <Route path=":id" element={<ProjectView data={projectData.Projects}/>}/>
+              </Route>
+
+              <Route path="apps">
+                <Route index element= {<DisplayApplications data={projectData}  />}/>
+                <Route path=":id" element={<AppView data={projectData.Apps}/>}/>
+              </Route>
+
               <Route path="gis" >
                 <Route index element={<GIS />}/>
-                <Route path="apps">
-                  <Route index element= {<DisplayApplications discipline="gis" data={projectData}  />}/>
-                  <Route path=":id" element={<AppView data={projectData.gis.Apps}/>}/>
-                </Route>
-                <Route path="projects">
-                  <Route index element= {<DisplayProjects discipline="gis" data={projectData} />}/>
-                  <Route path=":id" element={<ProjectView data={projectData.gis.Projects}/>}/>
-                </Route>
               </Route>
 
               <Route path="remote-sensing" >
                 <Route index element={<RemoteSensing />}/>
-                <Route path="apps">
-                  <Route index element= {<DisplayApplications discipline="remoteSensing" data={projectData}  />}/>
-                  <Route path=":id" element={<AppView data={projectData.remoteSensing.Apps}/>}/>
-                </Route>
-                <Route path="projects">
-                  <Route index element= {<DisplayProjects discipline="remoteSensing" data={projectData} />}/>
-                  <Route path=":id" element={<ProjectView data={projectData.remoteSensing.Projects}/>}/>
-                </Route>
               </Route>
 
               <Route path="data-management" >
                 <Route index element={<DataManagement />}/>
-                <Route path="apps">
-                  <Route index element= {<DisplayApplications discipline="dataManagement" data={projectData}  />}/>
-                  <Route path=":id" element={<AppView data={projectData.dataManagement.Apps}/>}/>
-                </Route>
-                <Route path="projects">
-                  <Route index element= {<DisplayProjects discipline="dataManagement" data={projectData} />}/>
-                  <Route path=":id" element={<ProjectView data={projectData.dataManagement.Projects}/>}/>
-                </Route>
               </Route>
 
               <Route path="survey-contracting" >
                 <Route index element={<SurveyContracting />}/>
-                <Route path="apps">
-                  <Route index element= {<DisplayApplications discipline="surveyContracting" data={projectData} />}/>
-                  <Route path=":id" element={<AppView data={projectData.surveyContracting.Apps}/>}/>
-                </Route>
-                <Route path="projects">
-                  <Route index element= {<DisplayProjects discipline="surveyContracting" data={projectData} />}/>
-                  <Route path=":id" element={<ProjectView data={projectData.surveyContracting.Projects}/>}/>
-                </Route>
               </Route>
 
               <Route path="application-development" >
                 <Route index element={<AppDevelopment />}/>
-                <Route path="apps">
-                  <Route index element= {<DisplayApplications discipline="applicationDevelopment" data={projectData}  />}/>
-                  <Route path=":id" element={<AppView data={projectData.applicationDevelopment.Apps}/>}/>
-                </Route>
-                <Route path="projects">
-                  <Route index element= {<DisplayProjects discipline="applicationDevelopment" data={projectData} />}/>
-                  <Route path=":id" element={<ProjectView data={projectData.applicationDevelopment.Projects}/>}/>
-                </Route>
               </Route>
 
         </Route>

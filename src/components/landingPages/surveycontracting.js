@@ -62,11 +62,11 @@ export function SurveyContracting() {
       <CssBaseline />
       <Container maxWidth="lg">
         <main>
-        <Grid sx={{py: 5}} container spacing={6}>{/*
+        {/* <Grid sx={{py: 2.5}} container spacing={6}>
             {featuredPosts.map((post) => (
               <DisciplineFeaturedPost key={post.title} post={post} />
-            ))}*/}
-            </Grid>
+            ))}
+          </Grid> */}
           <DisciplineMainFeaturedPost post={mainFeaturedPost} />
 
           <Box sx={{ margin: '50px auto', pl: '10%', pr: '10%' }}>

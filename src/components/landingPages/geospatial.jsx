@@ -9,11 +9,4 @@ export function Geospatial(){
    return(
     <Landing/>
    )
-
-    //return(
-      
-            //<Landing 
-            //data={projectPageData.Apps}
-            ///>
-    //)
 }

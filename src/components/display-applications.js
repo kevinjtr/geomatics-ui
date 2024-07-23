@@ -6,7 +6,7 @@ export function DisplayApplications({data, discipline}){
 
     return(
         <>
-            {Object.keys(data).length > 0 && <ImageGallery data={data?.[discipline].Apps} discipline={discipline} name="Application"/>}
+            {Object.keys(data).length > 0 && <ImageGallery data={data?.Apps} name="Application"/>}
         </>
     )
 }
