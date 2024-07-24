@@ -40,7 +40,7 @@ const Home = () => {
             </div>
 
             <Button variant="outlined" sx={{color: 'white', borderColor: 'white', height: '5em', width: '15em', fontSize: '2rem'}}//className="v-home-btn"
-            >Explore Our Services</Button>
+            >Explore Our Work</Button>
         </div>
 
         <Socials data={landingPageData.Contact}/>

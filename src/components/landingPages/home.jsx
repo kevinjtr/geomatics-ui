@@ -58,7 +58,7 @@ const location = useLocation()
             </div>
             <Link to='/geospatial'>
             <Button variant="outlined" sx={{color: 'white', borderColor: 'white', height: '4em', width: '15em', fontSize: '1.25rem'}}//className="v-home-btn"
-            >Explore Our Services</Button>
+            >Explore Our Work</Button>
            </Link>
            {/*<Typography variant="h5" sx={{pb: 2.5, textAlign: 'center'}} >
             View more information below

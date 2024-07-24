@@ -43,16 +43,16 @@ const featuredPosts = [
     title: 'Projects',
     description:
       'Explore Geomatics Projects.',
-    image: '/img/gis.PNG',
-    imageLabel: 'GIS Image',
+    image: '/img/projects.png',
+    imageLabel: 'Projects Image',
     url:'/geospatial/projects'
   },
   {
     title: 'Applications',
     description:
       'Explore Geomatics Applications.',
-    image: '/img/remote-sensing.PNG',
-    imageLabel: 'Remote Sensing Image',
+    image: '/img/application.png',
+    imageLabel: 'Applications Image',
     url:'/geospatial/apps'
   },
   // {

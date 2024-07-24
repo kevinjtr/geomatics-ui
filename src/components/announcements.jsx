@@ -80,13 +80,13 @@ function Item(props)
                 <a href={props.item.link}>
                 <Image style={{ height:"500px", width:"100%"}} src={props.item.image} alt='announcement'/>
                 
-                <h4 style={{ fontSize:"40px", color:"white", textAlign:"center", paddingRight:"inherit", width:"20%", position:"absolute", top:"0",bottom:"0",left:"0", right:"0", height:"fit-content", margin:"auto", textShadow:"0 0 25px black"}}>{props.item.name}</h4>
+                {/* <h4 style={{ fontSize:"40px", color:"white", textAlign:"center", paddingRight:"inherit", width:"20%", position:"absolute", top:"0",bottom:"0",left:"0", right:"0", height:"fit-content", margin:"auto", textShadow:"0 0 25px black"}}>{props.item.name}</h4> */}
                 </a>
             </div>
-            <div style={{ float:"right", textAlign:"center",  position:"relative", paddingLeft:"20%", flexBasis:"50%", textWrap:"wrap", width:"50%"}}>
+            <div style={{ float:"left", textAlign:"center",  position:"relative", paddingLeft:"25px", flexBasis:"50%", textWrap:"wrap", width:"50%"}}>
                
                 {props.item.name ? <h1 style={{paddingTop:"25px", fontSize:"40px"}}>{props.item.name}</h1> : null}
-                <p style={{ fontSize:"20px", overflowY:"auto", lineHeight: '150%' }}>
+                <p style={{ fontSize:"20px", height: '315px', maxWidth: '500px', overflowY:"auto", lineHeight: '150%' }}>
                 {props.item.date ? <h1>{props.item.date}</h1> : null}
                     {props.item.details ? props.item.details : null}
                 </p>
@@ -103,8 +103,8 @@ function Item(props)
                 <h4 style={{ fontSize:"40px", color:"white", textAlign:"center", paddingRight:"inherit", width:"20%", position:"absolute", top:"0",bottom:"0",left:"0", right:"0", height:"fit-content", margin:"auto", textShadow:"0 0 25px black"}}>{props.item.name}</h4>
                 </a>
             </div>
-            <div style={{ float:"right", textAlign:"center",  position:"relative", paddingLeft:"20%", flexBasis:"50%", textWrap:"wrap", width:"50%"}}>       
-                <p style={{paddingTop:"100px", fontSize:"14px", overflowY:"auto", lineHeight: '150%', paddingBottom:"25px" }}>
+            <div style={{ float:"left", textAlign:"center",  position:"relative", paddingLeft:"25px", flexBasis:"50%", textWrap:"wrap", width:"50%"}}>       
+                <p style={{ fontSize:"20px", height: '315px', maxWidth: '500px', overflowY:"auto", lineHeight: '150%', paddingBottom:"25px" }}>
                     {props.item.day1 && <><br/>{props.item.day1}</>}
                     {props.item.time1 && <><br/>{props.item.time1}</>}
                     {props.item.day2 && <><br/>{props.item.day2}</>}

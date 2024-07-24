@@ -1,6 +1,7 @@
 {
     "Examples":[
         {
+            
         "template": "standard",
             "name": "",
             "image": "",
@@ -46,57 +47,11 @@
     ],
     "Announcements":[
         {
-            "template": "standard",
-            "name": "Geospatial Technical Exchange",
-            "image": "/img/portfolio/01-large.jpg",
-            "link": "",
-            "description": "I can't believe we lived without this information before.",
-            "date": "15 May 2024 1300-1400 EST",
-            "agenda1": "Foundation Mapping using Field Maps and Experience Builder - Natlee M. Hernandez-Guevara",
-            "agenda2": "National Hurricane Program: Hurricane Evacuation Study Data Model - Charlie Kaufman",
-            "agenda3": "A Custom Web Application for Managing Contract Tasks, with Geospatial Capabilities - Jon Freed",
-            "agenda4": "Minimizing Credit Usage Through Strategic Management of AGOL Services - Jay Yearwood",
-            "host": "Presenters:"
-        },
-        {
-            "template": "link-only",
-            "imageText":"USACE EGIS Strategy 2024",
-            "image": "/img/portfolio/03-large.jpg",
-            "link":"https://usace.dps.mil/sites/KMP-GS/Shared%20Documents/Forms/AllItems.aspx?csf=1&web=1&e=FWJVll&CID=797fb1c2%2D9795%2D4773%2Da777%2D48a924214e3d&FolderCTID=0x0120001A6CB11C73B09047B8A6A8549878F6BB&id=%2Fsites%2FKMP%2DGS%2FShared%20Documents%2FUSACE%20EGIS%20Strategy%202024%2D2029",
-            "name":"USACE EGIS Strategy 2024",
-            "date":"Week of May 20th to May 24th",
-            "instruction": "The EGI&S Strategy and associated Distribution Memo are available at the following KMP SharePoint location by clicking the image"
-        },
-        {
-            "template": "link-only",
-            "imageText": "GIS CoP",
-            "image": "/img/portfolio/02-large.jpg",
-            "link": "https://usace.dps.mil/sites/KMP-GIS/Shared Documents/Forms/AllItems.aspx?csf=1&web=1&e=Rlohb2&cid=0c08bbc0%2D179b%2D440e%2D9bae%2Df565c5ee2c3e&FolderCTID=0x0120001158B65CDB719C4991DB7FB7D3EC29FA&id=%2Fsites%2FKMP%2DGIS%2FShared%20Documents%2FCoP%20Meetings%2F2024%20GIS%20CoP%20Meeting%2FPresentations&viewid=cda76d11%2D032b%2D446e%2Db765%2D36182668a2e3",
-            "name": "GIS CoP",
-            "instruction": "Click the image to access all presentations for 2024's GIS CoP!"
-        },
-        {
             "template": "event",
-            "name":"Corps Day",
-            "image": "/img/portfolio/corps-day.jpg",
-            "date":"June 14th, 2024",
-            "details": "Dive into Summer Fun! Corps Day 2024! Grab your sunscreen and your sense of adventure! Corps Day 2024 is going to be an epic celebration! 🏖️"
-        },
-        {
-            "template":"multi-schedule",
-            "name": "SHARP TRAINING",
-            "image": "/img/portfolio/03-large.jpg",
-            "day1": "May 20th, 2024",
-            "time1": "0930-1030 Boneyard, 1100-1200 Boneyard, 1300-1400 Boneyard",
-            "day2": "May 21st, 2024",
-            "time2": "0930-1030 Boneyard, 1100-1200 Boneyard, 1300-1400 Boneyard, 1700-1830 Virtual",
-            "day3": "May 22nd, 2024",
-            "time3": "0930-1030 Boneyard, 1100-1200 Boneyard",
-            "day4": "May 23rd, 2024",
-            "time4": "0930-1030 Boneyard, 1100-1200 Boneyard, 1300-1400 Boneyard, 1700-1830 Virtual",
-            "day5":"May 24th, 2024",
-            "time5":"0830-0930 Virtual",
-            "host": ""
+            "name":"Change of Command",
+            "image": "/img/portfolio/Change of Command Ceremony_FLIER.jpg",
+            "date":"July 26th, 2024",
+            "details": "JAX Strong Team, The U.S. Army Corps of Engineers, Jacksonville District, will hold a Change of Command Ceremony at the Jacksonville Center for the Performing Arts Jacoby Hall, 300 Water Street, Friday, July 26 at 1 p.m.  COL James Booth, who has commanded the Jacksonville District since 2021, will relinquish command to COL Brandon Bowman. Attendance is mandatory for employees located in the Jacksonville District office. Parking is limited at the facility. Employees are encouraged to take the Skyway to Central Station and walk across the parking lot of the Marriott Jacksonville Downtown to the Jacksonville Center for the Performing Arts. Once inside, signs and ushers will direct you to the ceremony location. The Change of Command will be live streamed at https://www.facebook.com/JacksonvilleDistrict for those unable to attend in person."
         }
       ]
 }
