@@ -25,7 +25,7 @@ export const Services = (props) => {
     },
     {
       id: 2,
-      title: "UOC Common Operating Picture", 
+      title: "UCOP USACE Common Operating Picture", 
       link: "https://arcportal-ucop-corps.usace.army.mil/s0portal/home/",
       category:"COP Sites"
     },

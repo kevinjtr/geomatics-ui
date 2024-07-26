@@ -14,6 +14,7 @@ import DisciplineFeaturedPost from '../../templates/landing/DisciplineFeaturedPo
 import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFeaturedPost';
 import { Box, Typography, List, ListItem } from '@mui/material';
 import Image from '../Image';
+import ScrollToTop from '../ScrollToTop';
 
 const mainFeaturedPost = {
   title: 'Data Management/Database Design',
@@ -66,7 +67,7 @@ export function DataManagement(){
       <Container maxWidth="lg">
  
         <main>
-          
+          <ScrollToTop />
           {/* <Grid sx={{py: 2.5}} container spacing={6}>
             {featuredPosts.map((post) => (
               <DisciplineFeaturedPost key={post.title} post={post} />

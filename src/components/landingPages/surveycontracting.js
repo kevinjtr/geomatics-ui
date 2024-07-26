@@ -11,6 +11,7 @@ import post2 from "../../templates/landing/blog-post.2.md";
 import post3 from "../../templates/landing/blog-post.3.md";
 import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFeaturedPost';
 import Image from '../Image'
+import ScrollToTop from '../ScrollToTop';
 
 const mainFeaturedPost = {
   title: 'Survey/Contracting',
@@ -62,6 +63,7 @@ export function SurveyContracting() {
       <CssBaseline />
       <Container maxWidth="lg">
         <main>
+          <ScrollToTop />
         {/* <Grid sx={{py: 2.5}} container spacing={6}>
             {featuredPosts.map((post) => (
               <DisciplineFeaturedPost key={post.title} post={post} />
