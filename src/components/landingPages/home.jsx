@@ -2,7 +2,6 @@ import { About } from "../about";
 import { useState, useEffect } from "react";
 //import JsonData from "../data/data.json"
 //import announcementData from "../data/announcements.json"
-//import linkData from "../data/links.json"
 //import { Announcements } from "./announcements";
 //import { BasicList } from "./linklist";
 //import { Contact } from "./contact";
@@ -12,7 +11,6 @@ import BgVideo from '../../videos/geo.mp4'
 import { Button, Typography, Box } from "@mui/material"
 import JsonData from "../../data/data.json"
 import announcementData from "../../data/announcements.json"
-import linkData from "../../data/links.json"
 import { Announcements } from "../announcements";
 import { BasicList } from "../linklist";
 import { Contact } from "../contact";
@@ -34,13 +32,7 @@ const location = useLocation()
   useEffect(() => {
   setAnnouncementPageData(announcementData);
   }, []);
-  const [linkListPageData, setLinkListPageData] = useState({});
-  useEffect(() => {
-  setLinkListPageData(linkData);
-  }, []);
-    
-
-  console.log(location, href)
+  
     return (
      <>
         <div className="v-landingpage">

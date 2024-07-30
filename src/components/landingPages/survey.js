@@ -13,7 +13,7 @@ import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFe
 import Image from '../Image'
 
 const mainFeaturedPost = {
-  title: 'Survey/Contracting',
+  title: 'Survey',
   description:
     "Survey services include the collection, analysis, and interpretation of topographic/hydrographic, boundary, geodetic, subsurface utilities, construction, and aerial surveys. Field work is largely accomplished via architect-engineer (A-E) services in accordance with the Brooks Architect-Engineer Act and acquisition regulations.",
   image: '/img/survey-landing.JPG',
@@ -23,22 +23,22 @@ const mainFeaturedPost = {
 
 const featuredPosts = [
   {
-    title: 'Survey/Contracting Projects',
+    title: 'Survey Projects',
     //date: 'Nov 12',
     //description:
       //'Here is a collection of GIS related projects.',
     image: '/img/survey-landing.JPG',
     imageLabel: 'Image Text',
-    url: "/geospatial/survey-contracting/projects",
+    url: "/geospatial/survey/projects",
     },
   {
-    title: 'Survey/Contracting Apps',
+    title: 'Survey Apps',
     //date: 'Nov 11',
     //description:
       //'Here is a collection of GIS related apps.',
     image: '/img/survey-landing.JPG',
     imageLabel: 'Image Text',
-    url: "/geospatial/survey-contracting/apps"
+    url: "/geospatial/survey/apps"
   },
 ];
 
@@ -51,12 +51,11 @@ const posts = [post1, post2, post3];
 //     'This project has this description.Also a test idea of highlighting certain new projects when they are added.',
 //   image: 'https://source.unsplash.com/random?wallpapers',
 //   imageText: 'Image Text',
-//   url: "/survey-contracting/apps/example404"
+//   url: "/survey/apps/example404"
 // };
 const defaultTheme = createTheme();
 
-
-export function SurveyContracting() {
+export function Survey() {
   return (
     <ThemeProvider theme={defaultTheme}>
     <CssBaseline />

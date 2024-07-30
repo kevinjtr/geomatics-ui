@@ -2,7 +2,6 @@ import { About } from "./about";
 import { useState, useEffect } from "react";
 import JsonData from "../data/data.json"
 import announcementData from "../data/announcements.json"
-import linkData from "../data/links.json"
 import { Announcements } from "./announcements";
 import { BasicList } from "./linklist";
 import { Contact } from "./contact";
@@ -22,7 +21,7 @@ const Home = () => {
   useEffect(() => {
   setAnnouncementPageData(announcementData);
   }, []);
-  const [linkListPageData, setLinkListPageData] = useState({});
+  const [linkListPageDtata, setLinkListPageData] = useState({});
   useEffect(() => {
   setLinkListPageData(linkData);
   }, []);
@@ -35,7 +34,7 @@ const Home = () => {
             <div className="bg-overlay"></div> 
 
             <div className="v-home-text">
-                <h1 className="v-h2">Welcome to the Geomatics Website.</h1>
+                <h1 className="v-h2">Welcome to the Geoma1tics Website.</h1>
                 {/* <p className="v-p">Come live out your ideal vacation with us</p> */}
             </div>
 

@@ -73,20 +73,36 @@ export function RemoteSensing() {
             ))}
           </Grid> */}
           <DisciplineMainFeaturedPost post={mainFeaturedPost} />
-          <Box sx={{ margin: '50px auto', pl:'10%', pr: '10%' }}>
-            <Typography variant="h4" sx={{pb: 1.5, textAlign: 'center'}} >
-            What is Remote Sensing?
-            </Typography>
-            <Typography variant="p" sx={{ textAlign: 'left' }} >
-            Remote sensing is the science of obtaining information about objects or areas from a distance, typically from aircraft or satellites. It involves the detection and measurement of radiation reflected or emitted by objects on Earth’s surface.
-            </Typography>
+          <Box sx={{ margin: '50px auto', pl: '10%', pr: '10%' }}>
+<Typography variant="h4" sx={{ py: 2.5, textAlign: 'center' }}>
+  Why Remote Sensing is Important
+</Typography>
+<List sx={{ listStyleType: 'disc' }}>
+  <ListItem sx={{ display: 'list-item' }}>
+    Environmental Monitoring: Enables the observation and analysis of natural disasters, deforestation, climate change, and other environmental phenomena.
+  </ListItem>
+  <ListItem sx={{ display: 'list-item' }}>
+    Resource Management: Assists in the management of natural resources like water, minerals, and forests, ensuring sustainable use.
+  </ListItem>
+  <ListItem sx={{ display: 'list-item' }}>
+    Urban Planning: Provides detailed imagery and data for the development and planning of urban areas, infrastructure, and transportation systems.
+  </ListItem>
+  <ListItem sx={{ display: 'list-item' }}>
+    Agriculture: Enhances crop monitoring, soil analysis, and precision farming, leading to increased agricultural productivity.
+  </ListItem>
+  <ListItem sx={{ display: 'list-item' }}>
+    Disaster Response: Facilitates rapid assessment and response to natural disasters, such as floods, hurricanes, and earthquakes, aiding in emergency management and recovery efforts.
+  </ListItem>
+  <ListItem sx={{ display: 'list-item' }}>
+    National Security: Supports military operations, border surveillance, and homeland security by providing critical geospatial intelligence.
+  </ListItem>
+</List>
 
-            <Typography variant="h4" sx={{pt: 2.5, textAlign: 'center'}} >
-            What technologies do we use?
-            </Typography>
-
-            <List sx={{ listStyleType: 'disc' }}>
-            <ListItem sx={{ display: 'list-item' }}>
+<Typography variant="h4" sx={{ py: 2.5, textAlign: 'center' }}>
+  Technology and Software Used for Remote Sensing
+</Typography>
+<List sx={{ listStyleType: 'disc' }}>
+<ListItem sx={{ display: 'list-item' }}>
             Satellite Imagery
             </ListItem>
             <ListItem sx={{ display: 'list-item' }}>
@@ -101,21 +117,50 @@ export function RemoteSensing() {
             <ListItem sx={{ display: 'list-item' }}>
             GIS (Geographic Information Systems)
             </ListItem>
-            </List>
-            <Box sx={{ textAlign:'center' }}>
-            <Image style={{height: 100}} src="/img/satellite.PNG"/>
-            <Image style={{height: 60, marginBottom: 15}} src="/img/lidar-icon.PNG"/>
-            </Box>
-            
-            <Typography variant="h4" sx={{py: 1.5, textAlign: 'center'}} >
-            What is a Remote Sensing Specialist?
-            </Typography>
-            <Typography variant="p" sx={{ textAlign: 'left' }} >
-            A Remote Sensing Specialist uses sensors to analyze data and create detailed maps and models. They often work with satellite imagery, aerial photography, and Lidar data to monitor and assess various environmental and man-made conditions.
-            </Typography>
-         </Box>
-        </main>
-      </Container>
-    </ThemeProvider>
+  <ListItem sx={{ display: 'list-item' }}>
+    Microstation: Bentley MicroStation is a CAD software program used for designing and drafting 2D and 3D models. It is commonly used in the architecture, engineering, and construction (AEC) industries, as well as in the manufacturing and geospatial sectors.
+  </ListItem>
+</List>
+
+<Box sx={{ textAlign:'center' }}>
+  <Image style={{height: 100, paddingRight: 10}} src="/img/microstation.PNG" alt="Microstation"/>
+  <Image style={{height: 100, paddingRight: 10}} src="/img/satellite.PNG"/>
+  <Image style={{height: 60, marginBottom: 15}} src="/img/lidar-icon.PNG"/>
+</Box>
+<Typography variant="h4" sx={{ py: 2.5, textAlign: 'center' }}>
+  What is a Remote Sensing Specialist?
+</Typography>
+<Typography variant="p" sx={{ pb: 2.5, textAlign: 'left' }}>
+  A remote sensing specialist is a professional who specializes in the collection, analysis, and interpretation of data obtained through remote sensing technologies. Key responsibilities include:
+</Typography>
+<List sx={{ listStyleType: 'disc' }}>
+  <ListItem sx={{ display: 'list-item' }}>
+    Data Acquisition: Utilizing sensors on satellites, aircraft, and drones to capture geospatial data.
+  </ListItem>
+  <ListItem sx={{ display: 'list-item' }}>
+    Image Analysis: Processing and analyzing imagery to extract meaningful information.
+  </ListItem>
+  <ListItem sx={{ display: 'list-item' }}>
+    Application Development: Creating applications and models for specific uses, such as environmental monitoring, urban planning, or disaster response.
+  </ListItem>
+  <ListItem sx={{ display: 'list-item' }}>
+    Research: Conducting research to improve remote sensing techniques and applications.
+  </ListItem>
+  <ListItem sx={{ display: 'list-item' }}>
+    Collaboration: Working with interdisciplinary teams, including scientists, engineers, and policy-makers, to apply remote sensing data to real-world problems.
+  </ListItem>
+</List>
+<Typography variant="p" sx={{ pb: 2.5, textAlign: 'left' }}>
+  Remote sensing specialists play a crucial role in various fields, from environmental science and agriculture to urban planning and national security, by providing essential data and insights that drive informed decision-making and strategic planning.
+</Typography>
+
+{/* You can add images or other visual elements related to remote sensing here */}
+<Box sx={{ textAlign: 'center' }}>
+  {/* Add relevant images if available */}
+</Box>
+</Box>
+</main>
+</Container>
+</ThemeProvider>
   );
 }

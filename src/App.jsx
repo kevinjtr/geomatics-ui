@@ -18,7 +18,7 @@ import  NestedAppBar  from './components/nested-app-bar';
 import { Geospatial } from "./components/landingPages/geospatial";
 import { RemoteSensing } from "./components/landingPages/remotesensing";
 import { DataManagement } from "./components/landingPages/datamanagement";
-import { SurveyContracting } from "./components/landingPages/surveycontracting";
+import { Survey } from "./components/landingPages/survey";
 import { AppDevelopment } from "./components/landingPages/app-development";
 import { GIS } from "./components/landingPages/gis";
 import RootLayout from "./root-layout";
@@ -31,7 +31,6 @@ const App = () => {
   //const href = useHref()
 
   const verifyTimeStamp = (ts) => {
-    console.log(ts,'time-stampt')
     if(ts === undefined || ts === '' || ts === null || !isFinite(ts)){
       return true
     }
@@ -39,7 +38,6 @@ const App = () => {
     let expDate = new Date().getTime() - (30 * 24 * 60 * 60 * 1000);
 
     if (new Date(Number(ts)).getTime() < expDate) {
-      console.log('here')
       return true
       // The yourDate time is more than 1 days from now
   }
@@ -50,8 +48,6 @@ const App = () => {
   const [confirm, setConfirm] = useState( () => {
     const temp = localStorage.getItem('geo-confirm')
     const ts = localStorage.getItem('geo-timestamp')
-
-    console.log(ts)
     if(temp === undefined || temp === 'no' || temp === null)
       return 'refresh'
 
@@ -111,8 +107,8 @@ const App = () => {
                 <Route index element={<DataManagement />}/>
               </Route>
 
-              <Route path="survey-contracting" >
-                <Route index element={<SurveyContracting />}/>
+              <Route path="survey" >
+                <Route index element={<Survey />}/>
               </Route>
 
               <Route path="application-development" >
@@ -131,12 +127,9 @@ const App = () => {
   )
 
   useEffect(() => {
-    console.log(confirm)
     if(confirm !== 'yes')
       handleDialog()
   },[confirm])
-
-  //console.log(href)
   
   return (<>
   <Dialog />

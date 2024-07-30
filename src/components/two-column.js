@@ -21,7 +21,7 @@ const TwoColumnComponent = () => {
         <Grid item xs={6} sx={{ borderRadius: '16px', padding: '50px', minWidth: '500px', maxWidth: '1000px' }}>
           <div style={{ padding: '15px 15px', backgroundColor: '#FFCDD2', textAlign: 'center', borderRadius: '16px' }}>
             <Typography variant="h4" sx={{pb: 1.5}} >
-                Survey/Contracting and Remote Sensing Unit
+                Survey and Remote Sensing Unit
             </Typography>
 
           <Accordion >
@@ -33,9 +33,9 @@ const TwoColumnComponent = () => {
           Survey
         </AccordionSummary>
         <AccordionDetails>
-        Survey services include the collection, analysis, and interpretation of topographic/hydrographic, boundary, geodetic, subsurface utilities, construction, and aerial surveys. Field work is largely accomplished via architect-engineer (A-E) services in accordance with the Brooks Architect-Engineer Act and acquisition regulations.
+        Our Survey team specializes in conducting various types of surveys. We offer comprehensive services, ensuring accurate data collection and analysis to support decision-making processes.
         </AccordionDetails>
-        <AccordionDetails><Link to="/geospatial/survey-contracting">Learn more... </Link></AccordionDetails>
+        <AccordionDetails><Link to="/geospatial/survey">Learn more... </Link></AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -46,7 +46,7 @@ const TwoColumnComponent = () => {
           Remote Sensing
         </AccordionSummary>
         <AccordionDetails>
-        Remote sensing is a vital technology used by the U.S. Army Corps of Engineers to collect and analyze data about the Earth's surface from a distance. By employing advanced sensors on satellites, aircraft, and unmanned aerial systems, we can obtain detailed imagery and information crucial for infrastructure planning, environmental management, and disaster response.
+        Our Remote Sensing team specializes in the acquisition, processing, and analysis of Lidar and aerial imagery data for various applications.
         </AccordionDetails>
         <AccordionDetails><Link to="/geospatial/remote-sensing">Learn more... </Link></AccordionDetails>
       </Accordion>
@@ -67,7 +67,7 @@ const TwoColumnComponent = () => {
           GIS
         </AccordionSummary>
         <AccordionDetails>
-        Geographic Information Systems are computer-based software tools that allow users the ability to analyze, store, map, model, and display data (whether in vector or raster format) related to geographic positions on the Earth’s surface.
+        Our GIS team specializes in spatial data analysis, cartography, and geographic information systems development. We leverage GIS technology to help organizations make informed decisions, optimize resource allocation, and visualize complex spatial patterns.
         </AccordionDetails>
         <AccordionDetails><Link to="/geospatial/gis">Learn more... </Link></AccordionDetails>
       </Accordion>
@@ -80,7 +80,7 @@ const TwoColumnComponent = () => {
           Data Management/Database Development
         </AccordionSummary>
         <AccordionDetails>
-        Data management is the practice of collecting, keeping, and using data securely, efficiently, and cost-effectively. The primary purpose of designing a database is to produce physical and logical models of designs for the proposed database system.
+        Our Data Management/Database Development experts design and implement robust database solutions to efficiently store, retrieve, and manage large volumes of spatial and non-spatial data. We ensure data integrity, security, and accessibility to support informed decision-making and streamline business processes.
         </AccordionDetails>
         <AccordionDetails><Link to="/geospatial/data-management">Learn more... </Link></AccordionDetails>
       </Accordion>

@@ -110,7 +110,7 @@ const menuItemsData2 = {
         // ],
       },
       {
-        label: 'Survey/Contracting',
+        label: 'Survey',
         leftIcon: <SaveAsIcon />,
         items: [
           {

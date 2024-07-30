@@ -20,7 +20,7 @@ const nameDictionary = {
 const disciplineLabels = {
   gis: {label: "GIS", url: (name) => `/${nameDictionary?.[name.toLowerCase()]}/`},
   remoteSensing: {label: "Remote Sensing", url: (name) => `/${nameDictionary?.[name.toLowerCase()]}/`},
-  surveyContracting: {label: "Survey/Contracting", url: (name) => `/${nameDictionary?.[name.toLowerCase()]}/`},
+  survey: {label: "Survey", url: (name) => `/${nameDictionary?.[name.toLowerCase()]}/`},
   dataManagement: {label: "Data Management/Database Design", url: (name) => `/${nameDictionary?.[name.toLowerCase()]}/`},
   applicationDevelopment: {label: "Application Development", url: (name) => `/${nameDictionary?.[name.toLowerCase()]}/`},
 }
