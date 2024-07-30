@@ -52,6 +52,15 @@
             "image": "/img/portfolio/Change of Command Ceremony_FLIER.jpg",
             "date":"July 26th, 2024",
             "details": "JAX Strong Team, The U.S. Army Corps of Engineers, Jacksonville District, will hold a Change of Command Ceremony at the Jacksonville Center for the Performing Arts Jacoby Hall, 300 Water Street, Friday, July 26 at 1 p.m.  COL James Booth, who has commanded the Jacksonville District since 2021, will relinquish command to COL Brandon Bowman. Attendance is mandatory for employees located in the Jacksonville District office. Parking is limited at the facility. Employees are encouraged to take the Skyway to Central Station and walk across the parking lot of the Marriott Jacksonville Downtown to the Jacksonville Center for the Performing Arts. Once inside, signs and ushers will direct you to the ceremony location. The Change of Command will be live streamed at https://www.facebook.com/JacksonvilleDistrict for those unable to attend in person."
+        },
+        {
+            "template": "link-only",
+            "imageText":"USACE EGIS Strategy 2024",
+            "image": "/img/portfolio/03-large.jpg",
+            "link":"https://usace.dps.mil/sites/KMP-GS/Shared%20Documents/Forms/AllItems.aspx?csf=1&web=1&e=FWJVll&CID=797fb1c2%2D9795%2D4773%2Da777%2D48a924214e3d&FolderCTID=0x0120001A6CB11C73B09047B8A6A8549878F6BB&id=%2Fsites%2FKMP%2DGS%2FShared%20Documents%2FUSACE%20EGIS%20Strategy%202024%2D2029",
+            "name":"USACE EGIS Strategy 2024",
+            "date":"Week of May 20th to May 24th",
+            "instruction": "The EGI&S Strategy and associated Distribution Memo are available at the following KMP SharePoint location by clicking the image"
         }
       ]
 }

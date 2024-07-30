@@ -92,7 +92,7 @@ export const ImageGallery = (props) => {
                 if(filterVal === "all")
                   return true
 
-                  return c.type === filterVal
+                  return c.type.includes(filterVal)
               }),function(c){
                 if(searchVal)
                   return c.title.toUpperCase().includes(searchVal.toUpperCase())

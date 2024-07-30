@@ -59,97 +59,83 @@ const defaultTheme = createTheme();
 export function SurveyContracting() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <CssBaseline />
-      <Container maxWidth="lg">
-        <main>
-        {/* <Grid sx={{py: 2.5}} container spacing={6}>
-            {featuredPosts.map((post) => (
-              <DisciplineFeaturedPost key={post.title} post={post} />
-            ))}
-          </Grid> */}
-          <DisciplineMainFeaturedPost post={mainFeaturedPost} />
+    <CssBaseline />
+    <Container maxWidth="lg">
+      <main>
+        <DisciplineMainFeaturedPost post={mainFeaturedPost} />
 
-          <Box sx={{ margin: '50px auto', pl: '10%', pr: '10%' }}>
-            <Typography variant="h4" sx={{ pb: 3.5, textAlign: 'center' }}>
-              Understanding Survey Contracting
-            </Typography>
+        <Box sx={{ margin: '50px auto', pl: '10%', pr: '10%' }}>
+          <Typography variant="h4" sx={{ pb: 2.5, textAlign: 'center' }}>
+            Why Surveying is Important
+          </Typography>
+          <List sx={{ listStyleType: 'disc' }}>
+            <ListItem sx={{ display: 'list-item' }}>
+              Land Development: Determines property boundaries and supports the design and construction of infrastructure.
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              Construction: Ensures accurate placement and alignment of structures, roads, and utilities.
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              Environmental Management: Helps in the planning and management of natural resources, conservation areas, and environmental restoration projects.
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              Urban Planning: Provides detailed maps and data for the development and planning of urban areas and transportation systems.
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              Legal: Establishes legal property boundaries, which are essential for land ownership and real estate transactions.
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              Disaster Response: Aids in the rapid assessment and response to natural disasters, facilitating recovery efforts.
+            </ListItem>
+          </List>
 
-            <Typography variant="h4" sx={{ pb: 2.5, textAlign: 'center' }}>
-              Why Remote Sensing is Important
-            </Typography>
-            <Typography variant="p" sx={{ pb: 2.5, textAlign: 'left' }}>
-              Remote sensing is crucial for numerous reasons:
-            </Typography>
-            <List sx={{ listStyleType: 'disc' }}>
-              <ListItem sx={{ display: 'list-item' }}>
-                Environmental Monitoring: Enables the observation and analysis of natural disasters, deforestation, climate change, and other environmental phenomena.
-              </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>
-                Resource Management: Assists in the management of natural resources like water, minerals, and forests, ensuring sustainable use.
-              </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>
-                Urban Planning: Provides detailed imagery and data for the development and planning of urban areas, infrastructure, and transportation systems.
-              </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>
-                Agriculture: Enhances crop monitoring, soil analysis, and precision farming, leading to increased agricultural productivity.
-              </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>
-                Disaster Response: Facilitates rapid assessment and response to natural disasters, such as floods, hurricanes, and earthquakes, aiding in emergency management and recovery efforts.
-              </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>
-                National Security: Supports military operations, border surveillance, and homeland security by providing critical geospatial intelligence.
-              </ListItem>
-            </List>
+          <Typography variant="h4" sx={{ py: 2.5, textAlign: 'center' }}>
+            Tools and Technologies in Surveying
+          </Typography>
+          <List sx={{ listStyleType: 'disc' }}>
+            <ListItem sx={{ display: 'list-item' }}>
+              Microstation: Bentley MicroStation is a CAD software program used for designing and drafting 2D and 3D models. It is commonly used in the architecture, engineering, and construction (AEC) industries, as well as in the manufacturing and geospatial sectors.
+            </ListItem>
+          </List>
 
-            <Typography variant="h4" sx={{ pb: 1, textAlign: 'center' }}>
-              Software Used for Remote Sensing
-            </Typography>
-            <Typography variant="p" sx={{ pb: 2.5, textAlign: 'left' }}>
-              Software applications that are utilized in remote sensing:
-            </Typography>
-            <List sx={{ listStyleType: 'disc' }}>
-              <ListItem sx={{ display: 'list-item' }}>
-                Microstation: Bentley MicroStation is a CAD software program used for designing and drafting 2D and 3D models. It is commonly used in the architecture, engineering, and construction (AEC) industries, as well as in the manufacturing and geospatial sectors.
-              </ListItem>
-            </List>
-
-            <Box sx={{ textAlign:'center' }}>
+          <Box sx={{ textAlign:'center' }}>
               <Image style={{height: 100}} src="/img/microstation.PNG" alt="Microstation"/>
             </Box>
-            <Typography variant="h4" sx={{ py: 2.5, textAlign: 'center' }}>
-              What is a Remote Sensing Specialist?
-            </Typography>
-            <Typography variant="p" sx={{ pb: 2.5, textAlign: 'left' }}>
-              A remote sensing specialist is a professional who specializes in the collection, analysis, and interpretation of data obtained through remote sensing technologies. Key responsibilities include:
-            </Typography>
-            <List sx={{ listStyleType: 'disc' }}>
-              <ListItem sx={{ display: 'list-item' }}>
-                Data Acquisition: Utilizing sensors on satellites, aircraft, and drones to capture geospatial data.
-              </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>
-                Image Analysis: Processing and analyzing imagery to extract meaningful information.
-              </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>
-                Application Development: Creating applications and models for specific uses, such as environmental monitoring, urban planning, or disaster response.
-              </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>
-                Research: Conducting research to improve remote sensing techniques and applications.
-              </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>
-                Collaboration: Working with interdisciplinary teams, including scientists, engineers, and policy-makers, to apply remote sensing data to real-world problems.
-              </ListItem>
-            </List>
-            <Typography variant="p" sx={{ pb: 2.5, textAlign: 'left' }}>
-              Remote sensing specialists play a crucial role in various fields, from environmental science and agriculture to urban planning and national security, by providing essential data and insights that drive informed decision-making and strategic planning.
-            </Typography>
+          <Typography variant="h4" sx={{ py: 2.5, textAlign: 'center' }}>
+            What is a Surveying Specialist?
+          </Typography>
+          <Typography variant="body1" sx={{ pb: 2.5, textAlign: 'left' }}>
+            A surveying specialist is a professional who specializes in the measurement and mapping of the Earth's surface. Key responsibilities include:
+          </Typography>
+          <List sx={{ listStyleType: 'disc' }}>
+            <ListItem sx={{ display: 'list-item' }}>
+              Data Collection: Using surveying instruments to gather accurate data on land features, boundaries, and structures.
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              Data Analysis: Processing and analyzing survey data to create maps, plans, and reports.
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              Project Planning: Collaborating with engineers, architects, and planners to ensure accurate project execution.
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              Boundary Determination: Establishing legal property boundaries and resolving boundary disputes.
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              Research: Conducting research to improve surveying techniques and technologies.
+            </ListItem>
+          </List>
+          <Typography variant="body1" sx={{ pb: 2.5, textAlign: 'left' }}>
+            Surveying specialists play a critical role in various fields, from construction and land development to environmental management and urban planning, by providing essential data and insights for informed decision-making and project success.
+          </Typography>
 
-            {/* You can add images or other visual elements related to remote sensing here */}
-            <Box sx={{ textAlign: 'center' }}>
-              {/* Add relevant images if available */}
-            </Box>
+          <Box sx={{ textAlign: 'center' }}>
+            {/* Add relevant images if available */}
           </Box>
-        </main>
-      </Container>
-    </ThemeProvider>
+        </Box>
+      </main>
+    </Container>
+  </ThemeProvider>
   );
 }
+
+

@@ -4,7 +4,6 @@ import { DisplayApplications } from "./components/display-applications";
 import { ProjectView } from "./components/project-view";
 import { DisplayProjects } from "./components/display-projects";
 import Home from "./components/landingPages/home"
-import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import { createHashRouter, createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Navigate, useLocation, useHref } from "react-router-dom";
 import { SupportServices } from "./components/supportservices";
@@ -26,11 +25,6 @@ import RootLayout from "./root-layout";
 import useConfirm from "./components/useConfirm"
 import { CoronavirusOutlined } from "@mui/icons-material";
 //import './bootstrap.css';
-
-export const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 1000,
-  speedAsDuration: true,
-});
 
 const App = () => {
   //const location = useLocation()

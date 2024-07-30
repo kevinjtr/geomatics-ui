@@ -30,10 +30,10 @@ const TwoColumnComponent = () => {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          Survey/Contracting
+          Survey
         </AccordionSummary>
         <AccordionDetails>
-        Our Survey/Contracting team specializes in conducting various types of surveys including land surveys, environmental assessments, and geological surveys. We offer comprehensive services for both public and private sector projects, ensuring accurate data collection and analysis to support decision-making processes. Our team of experienced surveyors and contractors utilize state-of-the-art equipment and techniques to deliver high-quality results on time and within budget.
+        Survey services include the collection, analysis, and interpretation of topographic/hydrographic, boundary, geodetic, subsurface utilities, construction, and aerial surveys. Field work is largely accomplished via architect-engineer (A-E) services in accordance with the Brooks Architect-Engineer Act and acquisition regulations.
         </AccordionDetails>
         <AccordionDetails><Link to="/geospatial/survey-contracting">Learn more... </Link></AccordionDetails>
       </Accordion>
@@ -46,7 +46,7 @@ const TwoColumnComponent = () => {
           Remote Sensing
         </AccordionSummary>
         <AccordionDetails>
-        Our Remote Sensing team specializes in the acquisition, processing, and analysis of satellite and aerial imagery data for various applications including environmental monitoring, urban planning, agriculture, and natural resource management. We utilize advanced remote sensing techniques and algorithms to extract valuable information from satellite images, providing insights into land cover, vegetation health, and environmental changes. Our team of remote sensing experts works closely with clients to tailor solutions that meet their specific needs and objectives.
+        Remote sensing is a vital technology used by the U.S. Army Corps of Engineers to collect and analyze data about the Earth's surface from a distance. By employing advanced sensors on satellites, aircraft, and unmanned aerial systems, we can obtain detailed imagery and information crucial for infrastructure planning, environmental management, and disaster response.
         </AccordionDetails>
         <AccordionDetails><Link to="/geospatial/remote-sensing">Learn more... </Link></AccordionDetails>
       </Accordion>
@@ -67,7 +67,7 @@ const TwoColumnComponent = () => {
           GIS
         </AccordionSummary>
         <AccordionDetails>
-        Our GIS team specializes in spatial data analysis, cartography, and geographic information systems development. We leverage GIS technology to help organizations make informed decisions, optimize resource allocation, and visualize complex spatial patterns.
+        Geographic Information Systems are computer-based software tools that allow users the ability to analyze, store, map, model, and display data (whether in vector or raster format) related to geographic positions on the Earth’s surface.
         </AccordionDetails>
         <AccordionDetails><Link to="/geospatial/gis">Learn more... </Link></AccordionDetails>
       </Accordion>
@@ -80,7 +80,7 @@ const TwoColumnComponent = () => {
           Data Management/Database Development
         </AccordionSummary>
         <AccordionDetails>
-        Our Data Management/Database Development experts design and implement robust database solutions to efficiently store, retrieve, and manage large volumes of spatial and non-spatial data. We ensure data integrity, security, and accessibility to support informed decision-making and streamline business processes.
+        Data management is the practice of collecting, keeping, and using data securely, efficiently, and cost-effectively. The primary purpose of designing a database is to produce physical and logical models of designs for the proposed database system.
         </AccordionDetails>
         <AccordionDetails><Link to="/geospatial/data-management">Learn more... </Link></AccordionDetails>
       </Accordion>
@@ -90,10 +90,10 @@ const TwoColumnComponent = () => {
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          Software Development
+          Application Development
         </AccordionSummary>
         <AccordionDetails>
-        Our Software Development team specializes in creating custom GIS applications, spatial analysis tools, and data visualization software tailored to the specific needs of our clients. We use agile development methodologies to deliver high-quality solutions that empower users to leverage geospatial data effectively.
+        From front-end design to back-end functionality, our team of skilled developers harness their expertise to deliver robust, scalable, and user-centric applications that propel businesses forward in the digital landscape.
         </AccordionDetails>
         <AccordionDetails><Link to="/geospatial/application-development">Learn more... </Link></AccordionDetails>
       </Accordion>

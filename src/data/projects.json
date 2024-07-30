@@ -108,6 +108,10 @@
     {
       "id": 1,
       "type":"jax",
+      "url1":"https://arcportal-ucop-corps.usace.army.mil/s0portal/apps/sites/#/msc-sad/apps/44d01c602a734638b1fccd4c63af15c4/explore",
+      "url2":"https://arcportal-ucop-corps.usace.army.mil/s0portal/apps/sites/#/msc-sad/apps/50dedddb2ad746d192676a038cb96d32/explore",
+      "url1Name":"Fiona",
+      "url2Name":"Ian",
       "unit":"gis",
       "title": "SAJ - Geomatics Section GIS Emergency Management Support",
       "largeImage": "Geomatics Gis Emergency Support",
@@ -117,7 +121,7 @@
       },
     {
       "id": 2,
-      "type":"jax",
+      "type":"jax-em",
       "unit":"gis",
       "title": "SAJ - High Water Application",
       "largeImage": "High Water App",
@@ -130,35 +134,59 @@
       "unit":"applicationDevelopment",
       "title": "SAJ Inventory App",
       "largeImage": "SAJ Inventory App",
+      "url1": "https://sajgis.saj.usace.army.mil/inventory",
       "smallImage": "/img/projects/inventory.PNG",
       "text": "The Engineering Budget App (EBA) was created to facilitate annual equipment inventory tracking and transferring documentation. It has the ability to create documentation for issuing, transferring, and repairing equipment. Supervisors with HRA accounts can easily manage their equipment to facilitate annual inventory."
     },
     {
       "id": 4,
-      "type":"jax",
+      "type":"jax-other",
       "unit":"dataManagement",
+      "url1": "https://sajgis.saj.usace.army.mil/dictionary",
       "title": "SAJ - Data Dictionary Tool Generator for ASTM Testing",
       "largeImage": "ASTM Data Dictionary",
       "smallImage": "/img/projects/dictionary.PNG",
-      "text": "Data dictionary."
+      "text": "Data dictionary is a supplemental tool for people to use when creating a data dictionary for ASTM tests allowing the user access via a pick list then exporting out in an excel format."
     },
     {
       "id": 5,
-      "type":"jax",
+      "type":"jax-other",
       "unit":"applicationDevelopment",
+      "url1": "https://sajgis.saj.usace.army.mil/pcl",
       "title": "Project Contract Log Application (PCL)",
       "largeImage": "Project Contract Log (PCL)",
       "smallImage": "/img/projects/pcl storyboard - alt 2.png",
-      "text": "Project Contract Log (PCL) Application currently user interface is in development."
+      "text": "PCL is a place to save and share task order information. It makes it easier to share information between offices, such as notes, dates, financials, roles and maps.  PCL provides reports and mapping by contract, project and more."
     },
     {
       "id": 6,
-      "type":"jax",
-      "unit":"applicationDevelopment",
+      "type": "jax",
+      "url1": "https://sajgis.saj.usace.army.mil/eba",
+      "unit": "applicationDevelopment",
       "title": "Engineering Budget App (EBA)",
       "largeImage": "Engineering Budget App",
       "smallImage": "/img/projects/eba.PNG",
       "text": "The Engineering Budget App (EBA) was created to facilitate project management by providing an overview of future fiscal years' budget estimates. This tool allows multiple technical leads to input their budget estimations simultaneously. In addition, it can generate daily reports to overview the total budget. This application is currently being used in the Engineering Division with the intention of expanding its use to other sections in the near future."
+    },
+    {
+      "id": 7,
+      "type":"jax-em",
+      "url1":"https://experience.arcgis.com/experience/06bb9c98d9184bd9a374a244f6d27474",
+      "unit":"gis",
+      "title": "St. Augustine, Florida Back Bay Coastal Storm Risk Management (CSRM)",
+      "largeImage": "St. Augustine, Florida Back Bay Coastal Storm Risk Management (CSRM)",
+      "smallImage": "/img/projects/st-augustine-back-bay.png",
+      "text": "This Web Experience Homepage is a visual representation of the ongoing St. Augustine CSRM Study. During the study, this page will be updated with the latest information to include meeting agendas, minutes, graphics, etc. to keep the public and agencies engaged as partners in developing a long term solution to flooding within the City of St. Augustine."
+    },
+    {
+      "id": 7,
+      "type":"jax-em",
+      "url1":"https://storymaps.arcgis.com/stories/8bf6e4715e9047fb8f3aaaa25fb96b06",
+      "unit":"gis",
+      "title": "HHD Storymap",
+      "largeImage": "HHD Storymap",
+      "smallImage": "/img/projects/esri-hhd.png",
+      "text": "Geomatics Staff attended the 2024 ESRI UC Conference presenting both a poster and storymap of Herbert Hoover Dike (HHD) a walk through history and 3D view of the 143 mile earthen dam surrounding Lake Okeechobee."
     }
   ]
 }
