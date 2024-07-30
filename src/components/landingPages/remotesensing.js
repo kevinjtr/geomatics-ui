@@ -14,6 +14,7 @@ import DisciplineFeaturedPost from '../../templates/landing/DisciplineFeaturedPo
 import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFeaturedPost';
 import { Box, Typography, List, ListItem } from '@mui/material';
 import Image from '../Image'
+import ScrollToTop from '../ScrollToTop';
 const mainFeaturedPost = {
   title: 'Remote Sensing',
   description:
@@ -64,6 +65,7 @@ const defaultTheme = createTheme();
 export function RemoteSensing() {
   return (
     <ThemeProvider theme={defaultTheme} >
+      <ScrollToTop/>
       <CssBaseline />
       <Container maxWidth="lg">
         <main>

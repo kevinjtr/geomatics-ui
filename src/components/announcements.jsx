@@ -118,8 +118,23 @@ function Item(props)
                 </p>
             </div>
             </Container>    
-        </article> :
-        <h1 style={{textAlign:"center", paddingTop:"200px"}}>Slide isn't properly categorized! Check the JSON for examples.</h1>
-
+        </article> : 
+        <article style={{height:'100%', position:"relative", display:"flex", justifyContent:"center", boxShadow:'0px 0px 12px lightgray',}}>
+        <Container>
+        <div style={{ float:"left", position:"relative" , flexBasis:"auto", width:"50%"}}>
+            <a href={props.item.link}>
+            <Image style={{ height:"500px", width:"100%"}} src={"/img/portfolio/03-large.jpg"} alt='announcement'/>
+            
+            <h4 style={{ fontSize:"40px", color:"white", textAlign:"center", paddingRight:"inherit", width:"20%", position:"absolute", top:"0",bottom:"0",left:"0", right:"0", height:"fit-content", margin:"auto", textShadow:"0 0 25px black"}}>No Announcements Currently</h4>
+            </a>
+        </div>
+        <div style={{ float:"left", textAlign:"center",  position:"relative", paddingLeft:"25px", flexBasis:"50%", textWrap:"wrap", width:"50%"}}>       
+            <p style={{ fontSize:"20px", height: '315px', maxWidth: '500px', overflowY:"auto", lineHeight: '150%', paddingBottom:"25px" }}>
+                There are no new announcements at this time. Please check back in later.
+            </p>
+        </div>
+        </Container>    
+    </article>
     )
+
 }

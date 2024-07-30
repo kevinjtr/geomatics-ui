@@ -43,6 +43,10 @@
             "day3": "",
             "time3": "",
             "host": ""
+        },
+        {
+            "template": "empty",
+            "guide": "Use this template when no other announcments exist, remove once others are added. This will be automatic later."
         }
     ],
     "Announcements":[
@@ -54,6 +58,13 @@
             "name":"USACE EGIS Strategy 2024",
             "date":"Week of May 20th to May 24th",
             "instruction": "The EGI&S Strategy and associated Distribution Memo are available at the following KMP SharePoint location by clicking the image"
+        },
+        {
+            "template": "event",
+            "name":"One Drive Virtual Training",
+            "image": "../img/onedrive.jpg",
+            "date":"8/14/2024 1000 CDT & 1400 CDT 9/18/2024 1000 CDT & 1400 CDT",
+            "details": "CIO/G-6 has deployed One Drive to all SAD end user systems. In order to assist USACE employees to better understand this capability, OneDrive training sessions have been scheduled - dates, times and Teams meeting login information for the sessions are below.  All sessions will cover the same content, so you will only need to attend one session."
         }
       ]
 }

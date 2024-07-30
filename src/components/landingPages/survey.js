@@ -11,6 +11,7 @@ import post2 from "../../templates/landing/blog-post.2.md";
 import post3 from "../../templates/landing/blog-post.3.md";
 import DisciplineMainFeaturedPost from '../../templates/landing/DisciplineMainFeaturedPost';
 import Image from '../Image'
+import ScrollToTop from '../ScrollToTop';
 
 const mainFeaturedPost = {
   title: 'Survey',
@@ -57,7 +58,9 @@ const defaultTheme = createTheme();
 
 export function Survey() {
   return (
+    
     <ThemeProvider theme={defaultTheme}>
+      <ScrollToTop/>
     <CssBaseline />
     <Container maxWidth="lg">
       <main>
