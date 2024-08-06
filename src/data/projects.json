@@ -8,7 +8,8 @@
       "largeImage": "Construction Division Webapp-map", 
       "smallImage": "/img/projects/cd site web map storyboard - alt 2.png",
       "text": "Geomatics Engineering Section currently supports Construction Division in providing and maintaining an interactive project site web application of all Construction Division's project sites and office locations available to all SAJ employees. This application provides project detail information to include Program Type, Stage, and Contract Number/ID, as well as situational awareness for personnel and office location planning. Additionally, this web application may be utilized by Regulatory Division to assist in their permitting process in the near future.",
-      "smallText": "Geomatics Engineering Section currently supports Construction Division in providing and maintaining an interactive project site web application of all Construction Division's project sites and office locations available to all SAJ employees."
+      "smallText": "Geomatics Engineering Section currently supports Construction Division in providing and maintaining an interactive project site web application of all Construction Division's project sites and office locations available to all SAJ employees.",
+      "link":"https://arcportal-ucop-corps.usace.army.mil/s0portal/apps/webappviewer/index.html?id=3a14198c7b1b43dc95a91823ff9ee7a6"
       },
     
     {
@@ -102,6 +103,25 @@
       "largeImage": "Port Everglades Database",
       "smallImage": "/img/projects/database.PNG",
       "text": "This project is currently being created and is planned to encompass coral health from nurseries back to their relocated reefs while also tracking metrics regarding reefs as a whole as well as fish and other marine life."
+    },
+    {
+      "id": 12,
+      "type":"jax",
+      "unit":"gis",
+      "title": "Daytona Beach Feasibility FRM Web Experience",
+      "largeImage": "Daytona FRM Web Experience",
+      "smallImage": "/img/projects/Daytona FRM Web Experience.PNG",
+      "text": "This Web Experience Homepage is a visual representation of the ongoing Daytona Beach Feasibility FRM Study. During the study, this page will be updated with the latest information to include meetings, presentations, graphics, etc. to keep the public and agencies engaged as partners in developing a long term solution to flooding within the City of Daytona Beach."
+    },
+    {
+      "id": 13,
+      "type":"jax",
+      "unit":"gis",
+      "title": "St. Augustine, Florida Back Bay Coastal Storm Risk Management (CSRM)",
+      "largeImage": "St. Augustine, Florida Back Bay Coastal Storm Risk Management (CSRM)",
+      "smallImage": "/img/projects/st-augustine-back-bay.png",
+      "text": "This Web Experience Homepage is a visual representation of the ongoing St. Augustine CSRM Study. During the study, this page will be updated with the latest information to include meeting agendas, minutes, graphics, etc. to keep the public and agencies engaged as partners in developing a long term solution to flooding within the City of St. Augustine. ***The link to this website will be available as soon as the website is active and live. ***",
+      "link":"https://experience.arcgis.com/experience/06bb9c98d9184bd9a374a244f6d27474"
     }
   ],
   "Apps": [
@@ -171,22 +191,22 @@
     {
       "id": 7,
       "type":"jax-em",
-      "url1":"https://experience.arcgis.com/experience/06bb9c98d9184bd9a374a244f6d27474",
-      "unit":"gis",
-      "title": "St. Augustine, Florida Back Bay Coastal Storm Risk Management (CSRM)",
-      "largeImage": "St. Augustine, Florida Back Bay Coastal Storm Risk Management (CSRM)",
-      "smallImage": "/img/projects/st-augustine-back-bay.png",
-      "text": "This Web Experience Homepage is a visual representation of the ongoing St. Augustine CSRM Study. During the study, this page will be updated with the latest information to include meeting agendas, minutes, graphics, etc. to keep the public and agencies engaged as partners in developing a long term solution to flooding within the City of St. Augustine."
-    },
-    {
-      "id": 7,
-      "type":"jax-em",
       "url1":"https://storymaps.arcgis.com/stories/8bf6e4715e9047fb8f3aaaa25fb96b06",
       "unit":"gis",
       "title": "HHD Storymap",
       "largeImage": "HHD Storymap",
       "smallImage": "/img/projects/esri-hhd.png",
       "text": "Geomatics Staff attended the 2024 ESRI UC Conference presenting both a poster and storymap of Herbert Hoover Dike (HHD) a walk through history and 3D view of the 143 mile earthen dam surrounding Lake Okeechobee."
+    },
+    {
+      "id": 8,
+      "type":"jax-em",
+      "url1":"https://arcportal-ucop-corps.usace.army.mil/s0portal/apps/sites/#/dco-sad/pages/dco-sad-saj",
+      "unit":"gis",
+      "title": "SAJ uCOP EM",
+      "largeImage": "SAJ uCOP EM",
+      "smallImage": "/img/projects/SAJ_EM_UCOP.PNG",
+      "text": "The web-based products Geomatics make for EM are typically linked on the website above when there is an active event. "
     }
   ]
 }

@@ -41,6 +41,51 @@
       "label": "FLORIDA DISASTER",
       "url": "https://www.floridadisaster.org/weather/",
       "category": "other"
+    },
+    {
+      "label": "FDEM Apps",
+      "url": "https://floridadisaster.maps.arcgis.com/home/index.html",
+      "category": "other"
+    },
+    {
+      "label": "FEMA Geospatial Resource Hub - Hurricanes",
+      "url": "https://gis-fema.hub.arcgis.com/pages/hurricanes",
+      "category": "other"
+    },
+    {
+      "label": "ESRI Disaster Response GIS Hub",
+      "url": " https://esri-disasterresponse.hub.arcgis.com/pages/hurricane",
+      "category": "other"
+    },
+    {
+      "label": "Public Information Map - Hurricanes",
+      "url": "https://experience.arcgis.com/experience/cac9f4fc1c8346028bec910f0415c11f",
+      "category": "other"
+    },
+    {
+      "label": "Hurricane Aware",
+      "url": "https://livingatlas.arcgis.com/hurricane",
+      "category": "other"
+    },
+    {
+      "label": "Live Stream Gauges (Flooding)",
+      "url": "https://www.arcgis.com/home/item.html?id=81c5a9f2a2704d54a49042a44eefa5d3 ",
+      "category": "other"
+    },
+    {
+      "label": "National Hurricane Center Tropical Weather Summary",
+      "url": "https://www.arcgis.com/home/item.html?id=f55a8cead7b74f9ba8b62e90e1027774",
+      "category": "other"
+    },
+    {
+      "label": "USA Weather Watches and Warning",
+      "url": "https://www.arcgis.com/home/item.html?id=a6134ae01aad44c499d12feec782b386",
+      "category": "other"
+    },
+    {
+      "label": "NOAA Cloud GIS Web Services",
+      "url": "https://www.weather.gov/gis/cloudgiswebservices",
+      "category": "other"
     }
   ]
 }
