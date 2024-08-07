@@ -62,7 +62,7 @@
         {
             "template": "event",
             "name":"One Drive Virtual Training",
-            "image": "../img/onedrive.jpg",
+            "image": "/img/onedrive.jpg",
             "date":"8/14/2024 1000 CDT & 1400 CDT 9/18/2024 1000 CDT & 1400 CDT",
             "details": "CIO/G-6 has deployed One Drive to all SAD end user systems. In order to assist USACE employees to better understand this capability, OneDrive training sessions have been scheduled - dates, times and Teams meeting login information for the sessions are below.  All sessions will cover the same content, so you will only need to attend one session."
         }

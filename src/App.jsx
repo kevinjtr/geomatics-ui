@@ -1,7 +1,6 @@
 import { Navigation } from "./components/navigation";
-import { AppView } from "./components/app-view";
 import { DisplayApplications } from "./components/display-applications";
-import { ProjectView } from "./components/project-view";
+import { AppProjectView } from "./components/app-project-view";
 import { DisplayProjects } from "./components/display-projects";
 import Home from "./components/landingPages/home"
 import "./App.css";
@@ -87,12 +86,12 @@ const App = () => {
 
               <Route path="projects">
                 <Route index element= {<DisplayProjects data={projectData} />}/>
-                <Route path=":id" element={<ProjectView data={projectData.Projects}/>}/>
+                <Route path=":id" element={<AppProjectView data={projectData.Projects}/>}/>
               </Route>
 
               <Route path="apps">
                 <Route index element= {<DisplayApplications data={projectData}  />}/>
-                <Route path=":id" element={<AppView data={projectData.Apps}/>}/>
+                <Route path=":id" element={<AppProjectView data={projectData.Apps}/>}/>
               </Route>
 
               <Route path="gis" >

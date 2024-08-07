@@ -3,10 +3,10 @@ import {  useParams } from "react-router-dom";
 import { Stack, Grid } from "@mui/material";
 import Image from './Image'
 
-export const AppView = (props) => {
+export const AppProjectView = (props) => {
     const {id} = useParams()
     return(
-        <div id="gis-apps" className="text-center">
+        <div className="text-center">
             <div className="container" >
                 <div>
                     {props.data
@@ -30,7 +30,7 @@ export const AppView = (props) => {
                               {d.url2 && <div style={{paddingTop: '25px'}}><strong>{d.url2Name ? d.url2Name : 'URL'}: </strong><a href={d.url2} target="_blank">{d.url2}</a></div>}
                             </div>
                         }
-                        </Stack>  
+                      </Stack>    
                     </div>
                   </div>
                 ))
