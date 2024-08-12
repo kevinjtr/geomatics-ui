@@ -97,24 +97,31 @@ export function AppDevelopment(){
 
             <List sx={{ listStyleType: 'disc' }}>
             <ListItem sx={{ display: 'list-item' }}>
-            HTML (Hypertext Markup Language)
+            VS Code
             </ListItem>
             <ListItem sx={{ display: 'list-item' }}>
-            CSS (Cascading Style Sheets)
+            Carahsoft VMware
             </ListItem>
             <ListItem sx={{ display: 'list-item' }}>
-            JavaScript (Dynamically updating content, control multimedia, animate images, and pretty much everything else)
+            FME Oracle
             </ListItem>
             <ListItem sx={{ display: 'list-item' }}>
-            React (a JavaScript library/framework)
+            JavaScript 
             </ListItem>
             <ListItem sx={{ display: 'list-item' }}>
-            R (Open-source statistical programming language that's used for data analysis, visualization, and modeling)
+            Node.js
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+            React 
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+            Python
             </ListItem>
             </List>
             <Box sx={{ textAlign:'center' }}>
-            <Image style={{height: 100}} src="/img/html-css-javascript.png"/>
-            <Image style={{height: 60, marginBottom: 15}} src="/img/react-icon.PNG"/>
+            <Image style={{height: 100}} src="/img/python.png"/>
+            <Image style={{height: 100, }} src="/img/js.PNG"/>
+            <Image style={{height: 100, }} src="/img/react-icon.PNG"/>
             </Box>
          </Box>
           {/* <DisciplineFeaturedPost post={featuredProject}/> */}

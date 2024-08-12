@@ -49,11 +49,11 @@ const AboutUsPage = () => {
           </div>
           <div style={{ marginLeft: '12.25pt', clear: 'both' }}>
             <ul type="disc" style={{ margin: '0pt', paddingLeft: '0pt' }}>
-              <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>GIS Tools: ArcGIS, ArcPro, Blue Marble and QGIS</span></li>
-              <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>Remote Sensing: ArcGIS, ArcPro</span></li>
-              <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>Survey: Microstation</span></li>
+              <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>GIS Tools: ArcGIS, Blue Marble Global Mapper and QGIS</span></li>
+              <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>Remote Sensing: DAT/EM Summit, Terrasolid, QT Modeler, Agisoft Metashape, Geocue LP360, INPHO Orthobox, GeoExpress</span></li>
+              <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>Survey: Bentley, Autodesk, HYPACK, Trimble Business Center, Chesapeake Technology SonarWiz, StarNet, FieldGenius, inCAD</span></li>
               <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>Data Management: Oracle, Postgres, MsSQL, DB2</span></li>
-              <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>App Development: VS Code</span></li>
+              <li style={{ marginLeft: '27.6pt', lineHeight: 'normal', paddingLeft: '8.4pt', fontFamily: 'serif', fontSize: '10pt', color: '#0d0d0d', backgroundColor: '#ffffff' }}><span style={{ fontFamily: 'Segoe UI', fontSize: '12pt' }}>App Development: VS Code, Carahsoft VMware, FME Oracle, JavaScript, Node.js, React.js, Python</span></li>
             </ul>
           </div>
           <div style={{ marginTop: '5pt', marginBottom: '15pt', clear: 'both' }}>

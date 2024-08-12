@@ -96,12 +96,36 @@ export function Survey() {
           </Typography>
           <List sx={{ listStyleType: 'disc' }}>
             <ListItem sx={{ display: 'list-item' }}>
-              Microstation: Bentley MicroStation is a CAD software program used for designing and drafting 2D and 3D models. It is commonly used in the architecture, engineering, and construction (AEC) industries, as well as in the manufacturing and geospatial sectors.
+              Bently
             </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              Autodesk
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              HYPACK
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              Trimble Business Center
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+            Chesapeake Technology SonarWiz
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+            StarNet
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+            FieldGenius
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+            inCAD
+            </ListItem>
+            
           </List>
 
-          <Box sx={{ textAlign:'center' }}>
-              <Image style={{height: 100}} src="/img/microstation.PNG" alt="Microstation"/>
+          <Box sx={{ textAlign:'center', }}>
+              <Image style={{height: 100}} src="/img/bently.jpg" alt="Bently Software"/>
+              <Image style={{height: 100, paddingLeft: "10px"}} src="/img/hypack.png" alt="HYPACK"/>
+              <Image style={{height: 100, paddingLeft: "10px"}} src="/img/incad.png" alt="inCAD"/>
             </Box>
           <Typography variant="h4" sx={{ py: 2.5, textAlign: 'center' }}>
             What is a Surveying Specialist?

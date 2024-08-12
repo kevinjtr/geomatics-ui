@@ -89,25 +89,18 @@ export function GIS(){
             </Typography>
             <List sx={{ listStyleType: 'disc', pl: 4 }}>
               <ListItem sx={{ display: 'list-item' }}>
-                GIS Software (ArcGIS, ArcPro, Blue Marble, QGIS)
+              ArcGIS Pro 
               </ListItem>
               <ListItem sx={{ display: 'list-item' }}>
-                Remote Sensing
+              Blue Marble Global Mapper
               </ListItem>
               <ListItem sx={{ display: 'list-item' }}>
-                Spatial Databases
-              </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>
-                GPS Technology
-              </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>
-                Data Visualization Tools
+              QGIS
               </ListItem>
             </List>
             <Box sx={{ textAlign: 'center' }}>
               <Image style={{ height: 100 }} src="/img/arcgis.PNG" alt="GIS Software"/>
               <Image style={{ height: 75 }} src="/img/bmgs.png" alt="Blue Marble Geographics Software"/>
-              <Image style={{ height: 75 }} src="/img/esri.png" alt="ESRI"/>
               <Image style={{ height: 75 }} src="/img/qgis.png" alt="QGIS"/>
               {/* <img style={{ height: 60, marginBottom: 15 }} src="/img/remote-sensing.png" alt="Remote Sensing"/> */}
             </Box>

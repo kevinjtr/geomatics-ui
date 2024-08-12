@@ -104,30 +104,32 @@ export function RemoteSensing() {
   Technology and Software Used for Remote Sensing
 </Typography>
 <List sx={{ listStyleType: 'disc' }}>
-<ListItem sx={{ display: 'list-item' }}>
-            Satellite Imagery
+            <ListItem sx={{ display: 'list-item' }}>
+            DAT/EM Summit
             </ListItem>
             <ListItem sx={{ display: 'list-item' }}>
-            Aerial Photography
+            Terrasolid
             </ListItem>
             <ListItem sx={{ display: 'list-item' }}>
-            Lidar (Light Detection and Ranging)
+            QT Modeler
             </ListItem>
             <ListItem sx={{ display: 'list-item' }}>
-            Radar (Radio Detection and Ranging)
+            Agisoft Metashape
             </ListItem>
             <ListItem sx={{ display: 'list-item' }}>
-            GIS (Geographic Information Systems)
+            Geocue LP360
             </ListItem>
-  <ListItem sx={{ display: 'list-item' }}>
-    Microstation: Bentley MicroStation is a CAD software program used for designing and drafting 2D and 3D models. It is commonly used in the architecture, engineering, and construction (AEC) industries, as well as in the manufacturing and geospatial sectors.
-  </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+            INPHO Orthobox
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+            GeoExpress
+            </ListItem>
 </List>
 
 <Box sx={{ textAlign:'center' }}>
-  <Image style={{height: 100, paddingRight: 10}} src="/img/microstation.PNG" alt="Microstation"/>
-  <Image style={{height: 100, paddingRight: 10}} src="/img/satellite.PNG"/>
-  <Image style={{height: 60, marginBottom: 15}} src="/img/lidar-icon.PNG"/>
+  <Image style={{height: 100, paddingRight: 20}} src="/img/terrasolid.PNG" alt="Terrasolid"/>
+  <Image style={{height: 100, paddingRight: 10}} src="/img/lp360.jpg"/>
 </Box>
 <Typography variant="h4" sx={{ py: 2.5, textAlign: 'center' }}>
   What is a Remote Sensing Specialist?
