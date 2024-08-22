@@ -28,6 +28,8 @@ export const AppProjectView = (props) => {
                               </div>
                               {d.url1 && <div style={{paddingTop: '25px'}}><strong>{d.url1Name ? d.url1Name : 'URL'}: </strong><a href={d.url1} target="_blank">{d.url1}</a></div>}
                               {d.url2 && <div style={{paddingTop: '25px'}}><strong>{d.url2Name ? d.url2Name : 'URL'}: </strong><a href={d.url2} target="_blank">{d.url2}</a></div>}
+                              {d.url3 && <div style={{paddingTop: '25px'}}><strong>{d.url3Name ? d.url3Name : 'URL'}: </strong><a href={d.url3} target="_blank">{d.url3}</a></div>}
+                              {d.url4 && <div style={{paddingTop: '25px'}}><strong>{d.url4Name ? d.url4Name : 'URL'}: </strong><a href={d.url4} target="_blank">{d.url4}</a></div>}
                             </div>
                         }
                       </Stack>    
