@@ -120,7 +120,7 @@ export function AppDevelopment(){
             </List>
             <Box sx={{ textAlign:'center' }}>
             <Image style={{height: 100}} src="/img/python.png"/>
-            <Image style={{height: 100, }} src="/img/js.PNG"/>
+            <Image style={{height: 100, }} src="/img/js.png"/>
             <Image style={{height: 100, }} src="/img/react-icon.PNG"/>
             </Box>
          </Box>

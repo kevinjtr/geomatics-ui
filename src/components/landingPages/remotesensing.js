@@ -128,7 +128,7 @@ export function RemoteSensing() {
 </List>
 
 <Box sx={{ textAlign:'center' }}>
-  <Image style={{height: 100, paddingRight: 20}} src="/img/terrasolid.PNG" alt="Terrasolid"/>
+  <Image style={{height: 100, paddingRight: 20}} src="/img/terrasolid.png" alt="Terrasolid"/>
   <Image style={{height: 100, paddingRight: 10}} src="/img/lp360.jpg"/>
 </Box>
 <Typography variant="h4" sx={{ py: 2.5, textAlign: 'center' }}>
