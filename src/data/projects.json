@@ -31,7 +31,8 @@
       "largeImage":"Modernizing Foundation Mapping",
       "smallImage":"/img/projects/modernizing foundation mapping.PNG",
       "text":"Work done for C23/24 STA  in developing a process for our geologists to collect field data digitally.",
-      "link":"https://storymaps.arcgis.com/stories/7269c1140700470f9c92cb40e91d370c"
+      "link":"https://storymaps.arcgis.com/stories/7269c1140700470f9c92cb40e91d370c",
+      "url1":"https://storymaps.arcgis.com/stories/7269c1140700470f9c92cb40e91d370c"
       },      
       {
       "id": 4,
@@ -73,7 +74,9 @@
       "title": "Rio de La Plata Flood Damage Reduction Project",
       "largeImage": "Rio de La Plata Flood Damage Reduction", 
       "smallImage": "/img/projects/rdlpfdrp.png",
-      "text": "The Río de la Plata basin is located about 11 miles west of San Juan and drains approximately 240 square miles. Heavy rainfall combined with the steep headwater slopes causes frequent flooding in the towns of Dorado, Toa Baja, and Toa Alta. The recommended plan provides 100 year protection upstream of PR Highway 2 and SPF protection downstream. Project features consist of 7.0 miles of channel improvements, 7.6 miles of levees, the replacement of 3 bridges, recreation facilities, and mitigation for the loss of environmental habitats. The Water Resources Development Act of 1990 authorized this project. RDLP Inundation Scenarios WMV compiles various storm flooding scenarios developed by EN-WH Hydraulic and Hydrology section in which shows flooding results for existing and with project completed conditions for a 100 year storm and Standard Project Flood (SPF). The flooding scenarios are used by various divisions under USACE JAX and other Districts to identify affected properties under the existing and with project conditions."
+      "text": "The Río de la Plata basin is located about 11 miles west of San Juan and drains approximately 240 square miles. Heavy rainfall combined with the steep headwater slopes causes frequent flooding in the towns of Dorado, Toa Baja, and Toa Alta. The recommended plan provides 100 year protection upstream of PR Highway 2 and SPF protection downstream. Project features consist of 7.0 miles of channel improvements, 7.6 miles of levees, the replacement of 3 bridges, recreation facilities, and mitigation for the loss of environmental habitats. The Water Resources Development Act of 1990 authorized this project. RDLP Inundation Scenarios WMV compiles various storm flooding scenarios developed by EN-WH Hydraulic and Hydrology section in which shows flooding results for existing and with project completed conditions for a 100 year storm and Standard Project Flood (SPF). The flooding scenarios are used by various divisions under USACE JAX and other Districts to identify affected properties under the existing and with project conditions.",
+      "link": "https://coe-sajgsp01jax.saj.ds.usace.army.mil/k3portal/apps/webappviewer/index.html?id=c5a256c468794bd0a06f3a72d2648d6c",
+      "url1": "https://coe-sajgsp01jax.saj.ds.usace.army.mil/k3portal/apps/webappviewer/index.html?id=c5a256c468794bd0a06f3a72d2648d6c"
     },
     {
       "id": 8,
@@ -129,8 +132,9 @@
       "title": "St. Augustine, Florida Back Bay Coastal Storm Risk Management (CSRM)",
       "largeImage": "St. Augustine, Florida Back Bay Coastal Storm Risk Management (CSRM)",
       "smallImage": "/img/projects/st-augustine-back-bay.png",
-      "text": "This Web Experience Homepage is a visual representation of the ongoing St. Augustine CSRM Study. During the study, this page will be updated with the latest information to include meeting agendas, minutes, graphics, etc. to keep the public and agencies engaged as partners in developing a long term solution to flooding within the City of St. Augustine. ***The link to this website will be available as soon as the website is active and live. ***",
-      "link":"https://experience.arcgis.com/experience/06bb9c98d9184bd9a374a244f6d27474"
+      "text": "This Web Experience Homepage is a visual representation of the ongoing St. Augustine CSRM Study. During the study, this page will be updated with the latest information to include meeting agendas, minutes, graphics, etc. to keep the public and agencies engaged as partners in developing a long term solution to flooding within the City of St. Augustine",
+      "link":"https://experience.arcgis.com/experience/06bb9c98d9184bd9a374a244f6d27474",
+      "url1": "https://experience.arcgis.com/experience/06bb9c98d9184bd9a374a244f6d27474"
     }
   ],
   "Apps": [
