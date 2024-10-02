@@ -118,6 +118,9 @@ export const Contact = (props) => {
           </IconButton>
           </a>
           </Stack>
+          <Typography  sx={{textAlign: 'center', py: 1.5}} variant="subtitle1">
+          © 2024 USACE, Geomatics section
+                </Typography>
               </Grid>
             </Grid>
           </Container>
