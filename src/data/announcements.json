@@ -50,21 +50,22 @@
         }
     ],
     "Announcements":[
-        {
+            {
             "template": "link-only",
-            "imageText":"USACE EGIS Strategy 2024",
-            "image": "/img/portfolio/03-large.jpg",
-            "link":"https://usace.dps.mil/sites/KMP-GS/Shared%20Documents/Forms/AllItems.aspx?csf=1&web=1&e=FWJVll&CID=797fb1c2%2D9795%2D4773%2Da777%2D48a924214e3d&FolderCTID=0x0120001A6CB11C73B09047B8A6A8549878F6BB&id=%2Fsites%2FKMP%2DGS%2FShared%20Documents%2FUSACE%20EGIS%20Strategy%202024%2D2029",
-            "name":"USACE EGIS Strategy 2024",
-            "date":"Week of May 20th to May 24th",
-            "instruction": "The EGI&S Strategy and associated Distribution Memo are available at the following KMP SharePoint location by clicking the image"
-        },
-        {
-            "template": "event",
-            "name":"One Drive Virtual Training",
-            "image": "/img/onedrive.jpg",
-            "date":"8/14/2024 1000 CDT & 1400 CDT 9/18/2024 1000 CDT & 1400 CDT",
-            "details": "CIO/G-6 has deployed One Drive to all SAD end user systems. In order to assist USACE employees to better understand this capability, OneDrive training sessions have been scheduled - dates, times and Teams meeting login information for the sessions are below.  All sessions will cover the same content, so you will only need to attend one session."
-        }
+            "name": "St. Augustine, Florida Back Bay Coastal Storm Risk Management (CSRM)",
+            "image": "/img/projects/st-augustine-back-bay.png",
+            "link": "https://experience.arcgis.com/experience/06bb9c98d9184bd9a374a244f6d27474",
+            "imageText": "",
+            "instruction": "Click the image to access the link!"
+            },
+            {
+                "template": "link-only",
+                "name": "South Atlantic Regional Biological Opinion for Dredging",
+                "image": "/img/projects/sarb.png",
+                "link": "http://coe-sajgsp01jax.saj.ds.usace.army.mil/k3portal/home/webmap/viewer.html?webmap=5e86229d522448ca91567eba578388da",
+                "imageText": "",
+                "instruction": "Click the image to access the link!"
+                }
+
       ]
 }
