@@ -137,6 +137,17 @@
       "text": "This Web Experience Homepage is a visual representation of the ongoing St. Augustine CSRM Study. During the study, this page will be updated with the latest information to include meeting agendas, minutes, graphics, etc. to keep the public and agencies engaged as partners in developing a long term solution to flooding within the City of St. Augustine",
       "link":"https://experience.arcgis.com/experience/06bb9c98d9184bd9a374a244f6d27474",
       "url1": "https://experience.arcgis.com/experience/06bb9c98d9184bd9a374a244f6d27474"
+    },
+    {
+      "id": 14,
+      "type":"jax",
+      "unit":"gis",
+      "title": "3D Visualization of Bartram Island, FL",
+      "largeImage": "3D Visualization of Bartram Island, F",
+      "smallImage": "/img/projects/3d Bartram Island.png",
+      "text": "These are examples of a DMMA 3D imagery mesh model created using Agisoft Metashape software. Models represent a realistic and accurate scenario of the areas of interest and help on the design phase of projects. These models can be produced for different scenarios and can serve multiple purposes in the support of the project maturity phase. ",
+      "link":"",
+      "url1": ""
     }
   ],
   "Apps": [
